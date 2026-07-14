@@ -1,0 +1,1404 @@
+{
+  "version": "1.0.0",
+  "updatedAt": "2026-07-14T05:26:48.786Z",
+  "themes": [
+    {
+      "id": "O9lTRwPPQi1UAoc",
+      "spec": "bakamusic-theme@2",
+      "name": "Cute-Fluff-Ball-Critter【动态】",
+      "packageName": "cute-fluff-ball",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "动态毛球 — bakamusic-theme@2 官方样例（由社区 7.0 参考包迁移）",
+      "version": "2.0.0",
+      "scheme": "light",
+      "tags": [
+        "动态",
+        "可爱"
+      ],
+      "preview": "previews/cute-fluff-ball.jpg",
+      "themeUrl": "themes/cute-fluff-ball-bdfe41f12433a83b2a4ebbcfb742e259.mftheme",
+      "hash": "bdfe41f12433a83b2a4ebbcfb742e259",
+      "publishName": "cute-fluff-ball-bdfe41f12433a83b2a4ebbcfb742e259",
+      "createdAt": "2026-07-14T05:25:17.675Z",
+      "isNew": true
+    },
+    {
+      "id": "zsG0fMhcwxEsyRsD02ET3",
+      "spec": "bakamusic-theme@2",
+      "name": "纯白色♪红",
+      "packageName": "light-red",
+      "author": "akFace",
+      "authorUrl": "https://github.com/akFace",
+      "description": "纯白色♪红主题",
+      "version": "2.0.0",
+      "scheme": "light",
+      "tags": [
+        "亮色",
+        "简约"
+      ],
+      "preview": "previews/light-red.jpg",
+      "themeUrl": "themes/light-red-3eb5a5dcf51bbbeb967669c7eea0607e.mftheme",
+      "hash": "3eb5a5dcf51bbbeb967669c7eea0607e",
+      "publishName": "light-red-3eb5a5dcf51bbbeb967669c7eea0607e",
+      "createdAt": "2025-11-02T14:50:18+08:00",
+      "isNew": true
+    },
+    {
+      "id": "7Tqa2W1J7IysmlYrR-yCp",
+      "spec": "bakamusic-theme@2",
+      "name": "仙逆-李慕婉【动态】",
+      "packageName": "limuwan-dynamic",
+      "author": "akFace",
+      "authorUrl": "https://github.com/akFace",
+      "description": "仙逆-李慕婉【动态】主题",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "动态",
+        "动漫"
+      ],
+      "preview": "previews/limuwan-dynamic.jpg",
+      "themeUrl": "themes/limuwan-dynamic-aa8621534e4bf4bf23a0cb29e4cad6cc.mftheme",
+      "hash": "aa8621534e4bf4bf23a0cb29e4cad6cc",
+      "publishName": "limuwan-dynamic-aa8621534e4bf4bf23a0cb29e4cad6cc",
+      "createdAt": "2025-11-02T14:50:18+08:00",
+      "isNew": true
+    },
+    {
+      "id": "azouwGKBcVY9B6UtpOr5F",
+      "spec": "bakamusic-theme@2",
+      "name": "赛博朋克【动态】",
+      "packageName": "cyberpunk-dynamics",
+      "author": "麥天浩",
+      "authorUrl": "https://github.com/uuwor",
+      "description": "赛博朋克，视频作者：LiveWallpapers4K（pixabay）;ID是NANOID，21位",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "动态",
+        "赛博"
+      ],
+      "preview": "previews/cyberpunk-dynamics.jpeg",
+      "themeUrl": "themes/cyberpunk-dynamics-be27bdfa94ef1125c538d2ed1ca0f2f4.mftheme",
+      "hash": "be27bdfa94ef1125c538d2ed1ca0f2f4",
+      "publishName": "cyberpunk-dynamics-be27bdfa94ef1125c538d2ed1ca0f2f4",
+      "createdAt": "2025-09-07T19:33:06+08:00",
+      "isNew": true
+    },
+    {
+      "id": "_gijJS3TTtjiIygnzJCm2",
+      "spec": "bakamusic-theme@2",
+      "name": "倾霞碎绛【动态】",
+      "packageName": "pouring-clouds-dynamic",
+      "author": "麥麥（麥天浩）",
+      "authorUrl": "https://github.com/uuwor",
+      "description": "海浪、晚霞~",
+      "version": "2.0.0",
+      "scheme": "light",
+      "tags": [
+        "动态",
+        "风景"
+      ],
+      "preview": "previews/pouring-clouds-dynamic.jpeg",
+      "themeUrl": "themes/pouring-clouds-dynamic-935214abe0cae5b305cbc1449ef93f99.mftheme",
+      "hash": "935214abe0cae5b305cbc1449ef93f99",
+      "publishName": "pouring-clouds-dynamic-935214abe0cae5b305cbc1449ef93f99",
+      "createdAt": "2025-08-22T20:36:52+08:00",
+      "isNew": true
+    },
+    {
+      "id": "zEi4HYbyIwZ0f-NcHHafo",
+      "spec": "bakamusic-theme@2",
+      "name": "倾霞碎绛",
+      "packageName": "the-clouds-crimson",
+      "author": "麥天浩",
+      "authorUrl": "https://github.com/uuwor",
+      "description": "霞烧万顷赤琉璃，浪吻千沙碎绛玑。天倾一海胭脂色，风捧余红赠暮晖。",
+      "version": "2.0.0",
+      "scheme": "light",
+      "tags": [
+        "风景"
+      ],
+      "preview": "previews/the-clouds-crimson.jpeg",
+      "themeUrl": "themes/the-clouds-crimson-aaa1739e4e980072cf168c0dac2b9e1c.mftheme",
+      "hash": "aaa1739e4e980072cf168c0dac2b9e1c",
+      "publishName": "the-clouds-crimson-aaa1739e4e980072cf168c0dac2b9e1c",
+      "createdAt": "2025-08-22T09:17:59+08:00",
+      "isNew": true
+    },
+    {
+      "id": "0CxAzYYA1yq0CXZ9E_Rga",
+      "spec": "bakamusic-theme@2",
+      "name": "muranhuishou",
+      "packageName": "muranhuishou",
+      "author": "cianmoop",
+      "authorUrl": "https://github.com/Cianmoop",
+      "description": "慕然回首",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "插画"
+      ],
+      "preview": "previews/muranhuishou.jpg",
+      "themeUrl": "themes/muranhuishou-bd8140b2d53fc3302fde153e560794c7.mftheme",
+      "hash": "bd8140b2d53fc3302fde153e560794c7",
+      "publishName": "muranhuishou-bd8140b2d53fc3302fde153e560794c7",
+      "createdAt": "2025-06-09T15:28:40+08:00",
+      "isNew": true
+    },
+    {
+      "id": "c5VRpgBwc0eE0jt9z4RDc",
+      "spec": "bakamusic-theme@2",
+      "name": "frieren_4k",
+      "packageName": "frieren",
+      "author": "wfx",
+      "authorUrl": "",
+      "description": "背景图片",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "动漫"
+      ],
+      "preview": "previews/frieren.jpg",
+      "themeUrl": "themes/frieren-93ea1e257308fc991593dfc37004779a.mftheme",
+      "hash": "93ea1e257308fc991593dfc37004779a",
+      "publishName": "frieren-93ea1e257308fc991593dfc37004779a",
+      "createdAt": "2025-02-22T15:22:54+08:00",
+      "isNew": true
+    },
+    {
+      "id": "ToZYm-NKnNVsJrHQd9UFq",
+      "spec": "bakamusic-theme@2",
+      "name": "清之羽",
+      "packageName": "Qingzhiyu",
+      "author": "云浩同学",
+      "authorUrl": "https://github.com/yunhaotx",
+      "description": "图片作者：插画师-Wlop",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "插画"
+      ],
+      "preview": "previews/Qingzhiyu.png",
+      "themeUrl": "themes/Qingzhiyu-47e12e5c6c2ad0ab650a68bcae72e1d5.mftheme",
+      "hash": "47e12e5c6c2ad0ab650a68bcae72e1d5",
+      "publishName": "Qingzhiyu-47e12e5c6c2ad0ab650a68bcae72e1d5",
+      "createdAt": "2025-01-14T23:56:21+08:00",
+      "isNew": true
+    },
+    {
+      "id": "Z0UiqelHdAju-VIS9AmHx",
+      "spec": "bakamusic-theme@2",
+      "name": "椿【动态】",
+      "packageName": "chun-dynamic",
+      "author": "akFace",
+      "authorUrl": "https://github.com/akFace",
+      "description": "椿",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "动态",
+        "动漫"
+      ],
+      "preview": "previews/chun-dynamic.jpg",
+      "themeUrl": "themes/chun-dynamic-c05eb2c3fe0790f89df0be80ec2ae458.mftheme",
+      "hash": "c05eb2c3fe0790f89df0be80ec2ae458",
+      "publishName": "chun-dynamic-c05eb2c3fe0790f89df0be80ec2ae458",
+      "createdAt": "2024-09-10T11:54:54+08:00",
+      "isNew": true
+    },
+    {
+      "id": "ZQM3IWpp-zb3B6XZ5_jif",
+      "spec": "bakamusic-theme@2",
+      "name": "烟花【动态】",
+      "packageName": "fireworks",
+      "author": "akFace",
+      "authorUrl": "https://github.com/akFace",
+      "description": "提前祝大家新年快乐，喜欢烟花的可以试试哦~",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "动态",
+        "自然"
+      ],
+      "preview": "previews/fireworks.jpg",
+      "themeUrl": "themes/fireworks-1693df76f84ec91a6cb7fa10e1b4bcc1.mftheme",
+      "hash": "1693df76f84ec91a6cb7fa10e1b4bcc1",
+      "publishName": "fireworks-1693df76f84ec91a6cb7fa10e1b4bcc1",
+      "createdAt": "2024-09-10T11:54:54+08:00",
+      "isNew": false
+    },
+    {
+      "id": "eF0HSyzQ_jrSoE-wJpzwT",
+      "spec": "bakamusic-theme@2",
+      "name": "雷电将军【动态】",
+      "packageName": "ld-dynamic",
+      "author": "akFace",
+      "authorUrl": "https://github.com/akFace",
+      "description": "雷电将军【动态】主题",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "动态",
+        "动漫",
+        "游戏"
+      ],
+      "preview": "previews/ld-dynamic.jpg",
+      "themeUrl": "themes/ld-dynamic-362b9d656d22b19049e990a614577371.mftheme",
+      "hash": "362b9d656d22b19049e990a614577371",
+      "publishName": "ld-dynamic-362b9d656d22b19049e990a614577371",
+      "createdAt": "2024-09-10T11:54:54+08:00",
+      "isNew": false
+    },
+    {
+      "id": "eRtmpRP3qC26cvsgTgjcg",
+      "spec": "bakamusic-theme@2",
+      "name": "爱的告白【动态】",
+      "packageName": "love-dynamic",
+      "author": "akFace",
+      "authorUrl": "https://github.com/akFace",
+      "description": "超好看的动态主题哦，颜色会随着时间变化",
+      "version": "2.0.0",
+      "scheme": "light",
+      "tags": [
+        "动态",
+        "抽象"
+      ],
+      "preview": "previews/love-dynamic.jpg",
+      "themeUrl": "themes/love-dynamic-d1b57ad73ad46bf3ceab3fbf0c558cfd.mftheme",
+      "hash": "d1b57ad73ad46bf3ceab3fbf0c558cfd",
+      "publishName": "love-dynamic-d1b57ad73ad46bf3ceab3fbf0c558cfd",
+      "createdAt": "2024-09-10T11:54:54+08:00",
+      "isNew": false
+    },
+    {
+      "id": "TVm8BpIwv8uoebPeb0-g8",
+      "spec": "bakamusic-theme@2",
+      "name": "午后金克斯【动态】",
+      "packageName": "afternoon-jinx",
+      "author": "hope",
+      "authorUrl": "https://github.com/Hopelsz",
+      "description": "爆爆！",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "动态",
+        "动漫",
+        "游戏"
+      ],
+      "preview": "previews/afternoon-jinx.jpg",
+      "themeUrl": "themes/afternoon-jinx-7dc92f7a23b5181978550506d134da4e.mftheme",
+      "hash": "7dc92f7a23b5181978550506d134da4e",
+      "publishName": "afternoon-jinx-7dc92f7a23b5181978550506d134da4e",
+      "createdAt": "2024-08-04T16:06:26+08:00",
+      "isNew": false
+    },
+    {
+      "id": "6RMa_xPEuM9dr9PfHuK-q",
+      "spec": "bakamusic-theme@2",
+      "name": "星光美少女【动态】",
+      "packageName": "city-girl",
+      "author": "hope",
+      "authorUrl": "https://github.com/Hopelsz",
+      "description": "星光美少女",
+      "version": "2.0.0",
+      "scheme": "light",
+      "tags": [
+        "动态",
+        "动漫"
+      ],
+      "preview": "previews/city-girl.jpg",
+      "themeUrl": "themes/city-girl-84a17f0928667b74af83da158b91b9ae.mftheme",
+      "hash": "84a17f0928667b74af83da158b91b9ae",
+      "publishName": "city-girl-84a17f0928667b74af83da158b91b9ae",
+      "createdAt": "2024-08-04T16:06:26+08:00",
+      "isNew": false
+    },
+    {
+      "id": "DX55JlXdaialdTMEE5CWJ",
+      "spec": "bakamusic-theme@2",
+      "name": "白雪覆盖的哥特式城市",
+      "packageName": "gothic-city",
+      "author": "hope",
+      "authorUrl": "https://github.com/Hopelsz",
+      "description": "白雪覆盖的哥特式城市",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "风景",
+        "季节"
+      ],
+      "preview": "previews/gothic-city.jpg",
+      "themeUrl": "themes/gothic-city-a6325425c93a70346d5373f502857161.mftheme",
+      "hash": "a6325425c93a70346d5373f502857161",
+      "publishName": "gothic-city-a6325425c93a70346d5373f502857161",
+      "createdAt": "2024-08-04T16:06:26+08:00",
+      "isNew": false
+    },
+    {
+      "id": "O3UBl3wuxnPf9Ns6ttvs6",
+      "spec": "bakamusic-theme@2",
+      "name": "灶门炭治郎",
+      "packageName": "kamado-tanjirou",
+      "author": "hope",
+      "authorUrl": "https://github.com/Hopelsz",
+      "description": "灶门炭治郎",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "动漫"
+      ],
+      "preview": "previews/kamado-tanjirou.jpg",
+      "themeUrl": "themes/kamado-tanjirou-b79024e99f2eb204fd9ef7a96def9805.mftheme",
+      "hash": "b79024e99f2eb204fd9ef7a96def9805",
+      "publishName": "kamado-tanjirou-b79024e99f2eb204fd9ef7a96def9805",
+      "createdAt": "2024-08-04T16:06:26+08:00",
+      "isNew": false
+    },
+    {
+      "id": "dONCjxCKM1tQUl4d-7NE_",
+      "spec": "bakamusic-theme@2",
+      "name": "神奇蘑菇",
+      "packageName": "magical-mushroom",
+      "author": "hope",
+      "authorUrl": "https://github.com/Hopelsz",
+      "description": "神奇蘑菇",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "插画",
+        "自然"
+      ],
+      "preview": "previews/magical-mushroom.png",
+      "themeUrl": "themes/magical-mushroom-8e8ae62cdb220c593f8a3d1cf58f5224.mftheme",
+      "hash": "8e8ae62cdb220c593f8a3d1cf58f5224",
+      "publishName": "magical-mushroom-8e8ae62cdb220c593f8a3d1cf58f5224",
+      "createdAt": "2024-08-04T16:06:26+08:00",
+      "isNew": false
+    },
+    {
+      "id": "Nk8Lt2qDQnP_a_ggmzCS8",
+      "spec": "bakamusic-theme@2",
+      "name": "夏日莎",
+      "packageName": "summer-sha",
+      "author": "hope",
+      "authorUrl": "https://github.com/Hopelsz",
+      "description": "夏日莎",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "动漫",
+        "季节"
+      ],
+      "preview": "previews/summer-sha.jpg",
+      "themeUrl": "themes/summer-sha-809fe875f2792cd50951af53c86289fd.mftheme",
+      "hash": "809fe875f2792cd50951af53c86289fd",
+      "publishName": "summer-sha-809fe875f2792cd50951af53c86289fd",
+      "createdAt": "2024-08-04T16:06:26+08:00",
+      "isNew": false
+    },
+    {
+      "id": "RV7s9TjIoi_OvkLDM5WSI",
+      "spec": "bakamusic-theme@2",
+      "name": "蓝影",
+      "packageName": "blue-shadow",
+      "author": "hope",
+      "authorUrl": "https://github.com/Hopelsz",
+      "description": "影影影影影",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "暗色",
+        "插画"
+      ],
+      "preview": "previews/blue-shadow.jpeg",
+      "themeUrl": "themes/blue-shadow-296d72bc6b6119ca99cafc13575b90d6.mftheme",
+      "hash": "296d72bc6b6119ca99cafc13575b90d6",
+      "publishName": "blue-shadow-296d72bc6b6119ca99cafc13575b90d6",
+      "createdAt": "2024-07-20T10:38:30+08:00",
+      "isNew": false
+    },
+    {
+      "id": "xnTG8pwPhcGblhbB2iz46",
+      "spec": "bakamusic-theme@2",
+      "name": "蓝色科技【动态】",
+      "packageName": "blue-technology",
+      "author": "hope",
+      "authorUrl": "https://github.com/Hopelsz",
+      "description": "夏日炎炎，海边公路格外美丽~",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "动态",
+        "赛博"
+      ],
+      "preview": "previews/blue-technology.jpeg",
+      "themeUrl": "themes/blue-technology-93383e906095da516d1e2bbd62a6442e.mftheme",
+      "hash": "93383e906095da516d1e2bbd62a6442e",
+      "publishName": "blue-technology-93383e906095da516d1e2bbd62a6442e",
+      "createdAt": "2024-07-20T10:38:30+08:00",
+      "isNew": false
+    },
+    {
+      "id": "v7vpT4e0q0f5Aqv5GzyRI",
+      "spec": "bakamusic-theme@2",
+      "name": "鬼滅の刃",
+      "packageName": "demon-slaye",
+      "author": "hope",
+      "authorUrl": "https://github.com/Hopelsz",
+      "description": "当黑暗降临，鬼灭之刃将照亮前行的道路，让你勇往直前。",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "暗色",
+        "动漫"
+      ],
+      "preview": "previews/demon-slaye.jpeg",
+      "themeUrl": "themes/demon-slaye-f096e1458e730fdd0ca2ccfa8f0c53e1.mftheme",
+      "hash": "f096e1458e730fdd0ca2ccfa8f0c53e1",
+      "publishName": "demon-slaye-f096e1458e730fdd0ca2ccfa8f0c53e1",
+      "createdAt": "2024-07-20T10:38:30+08:00",
+      "isNew": false
+    },
+    {
+      "id": "r865CgdVWPGhIF6KEMy0O",
+      "spec": "bakamusic-theme@2",
+      "name": "艾莎",
+      "packageName": "elsa",
+      "author": "hope",
+      "authorUrl": "https://github.com/Hopelsz",
+      "description": "冰雪奇缘",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "动漫",
+        "影视"
+      ],
+      "preview": "previews/elsa.jpg",
+      "themeUrl": "themes/elsa-2483d3e84c80287ed1d9f24b246c8329.mftheme",
+      "hash": "2483d3e84c80287ed1d9f24b246c8329",
+      "publishName": "elsa-2483d3e84c80287ed1d9f24b246c8329",
+      "createdAt": "2024-07-20T10:38:30+08:00",
+      "isNew": false
+    },
+    {
+      "id": "Vcx9pp4-CuXN9-AU-nf-f",
+      "spec": "bakamusic-theme@2",
+      "name": "言叶之庭",
+      "packageName": "garden-of-words",
+      "author": "hope",
+      "authorUrl": "https://github.com/Hopelsz",
+      "description": "隐约雷鸣 阴霾天空 但盼风雨来",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "动漫",
+        "影视",
+        "自然"
+      ],
+      "preview": "previews/garden-of-words.jpeg",
+      "themeUrl": "themes/garden-of-words-e8d3972433f5f393cc9bc01ddce2a717.mftheme",
+      "hash": "e8d3972433f5f393cc9bc01ddce2a717",
+      "publishName": "garden-of-words-e8d3972433f5f393cc9bc01ddce2a717",
+      "createdAt": "2024-07-20T10:38:30+08:00",
+      "isNew": false
+    },
+    {
+      "id": "jlwphMbax5bSdYnRawLVk",
+      "spec": "bakamusic-theme@2",
+      "name": "金克斯【动态】",
+      "packageName": "Jinx",
+      "author": "hope",
+      "authorUrl": "https://github.com/Hopelsz",
+      "description": "金克丝的含义？就是金克丝，笨！",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "动态",
+        "动漫",
+        "游戏"
+      ],
+      "preview": "previews/Jinx.jpg",
+      "themeUrl": "themes/Jinx-425bb399ab810ff71e963cc85e800d1f.mftheme",
+      "hash": "425bb399ab810ff71e963cc85e800d1f",
+      "publishName": "Jinx-425bb399ab810ff71e963cc85e800d1f",
+      "createdAt": "2024-07-20T10:38:30+08:00",
+      "isNew": false
+    },
+    {
+      "id": "KkCzmMSlZeQOeYxztpFr9",
+      "spec": "bakamusic-theme@2",
+      "name": "集原美",
+      "packageName": "Jyanme",
+      "author": "hope",
+      "authorUrl": "https://github.com/Hopelsz",
+      "description": "集原美是一个赛博朋克风格，兼具未来感和时尚感的奇幻少女，拥有各种奇幻小能力，时而俏皮可爱，时而飒爽英姿，风格多变",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "赛博",
+        "插画"
+      ],
+      "preview": "previews/Jyanme.jpg",
+      "themeUrl": "themes/Jyanme-10417cd8be5f914d95e09c1d0d1c12bb.mftheme",
+      "hash": "10417cd8be5f914d95e09c1d0d1c12bb",
+      "publishName": "Jyanme-10417cd8be5f914d95e09c1d0d1c12bb",
+      "createdAt": "2024-07-20T10:38:30+08:00",
+      "isNew": false
+    },
+    {
+      "id": "cKhbOOn53HoLvieyfZz7_",
+      "spec": "bakamusic-theme@2",
+      "name": "卡哇伊",
+      "packageName": "kawaii",
+      "author": "hope",
+      "authorUrl": "https://github.com/Hopelsz",
+      "description": "可爱可爱捏~",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "可爱",
+        "动漫"
+      ],
+      "preview": "previews/kawaii.jpg",
+      "themeUrl": "themes/kawaii-a1e55b09ab189e2e7a14059accab02df.mftheme",
+      "hash": "a1e55b09ab189e2e7a14059accab02df",
+      "publishName": "kawaii-a1e55b09ab189e2e7a14059accab02df",
+      "createdAt": "2024-07-20T10:38:30+08:00",
+      "isNew": false
+    },
+    {
+      "id": "JhMz9_C97Ok0AJDpHQZ8H",
+      "spec": "bakamusic-theme@2",
+      "name": "新海诚动漫风【动态】",
+      "packageName": "makoto-shinkai",
+      "author": "hope",
+      "authorUrl": "https://github.com/Hopelsz",
+      "description": "动态背景",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "动态",
+        "动漫",
+        "影视"
+      ],
+      "preview": "previews/makoto-shinkai.jpg",
+      "themeUrl": "themes/makoto-shinkai-cf0d55e1f2beda0bf84f12896a5b20c5.mftheme",
+      "hash": "cf0d55e1f2beda0bf84f12896a5b20c5",
+      "publishName": "makoto-shinkai-cf0d55e1f2beda0bf84f12896a5b20c5",
+      "createdAt": "2024-07-20T10:38:30+08:00",
+      "isNew": false
+    },
+    {
+      "id": "0ouuxVcb4i8OUAGCVEG9e",
+      "spec": "bakamusic-theme@2",
+      "name": "泳池女孩",
+      "packageName": "pool-girl",
+      "author": "hope",
+      "authorUrl": "https://github.com/Hopelsz",
+      "description": "泳池女孩",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "插画"
+      ],
+      "preview": "previews/pool-girl.jpg",
+      "themeUrl": "themes/pool-girl-ee1f97e836806ad5a139164d15405322.mftheme",
+      "hash": "ee1f97e836806ad5a139164d15405322",
+      "publishName": "pool-girl-ee1f97e836806ad5a139164d15405322",
+      "createdAt": "2024-07-20T10:38:30+08:00",
+      "isNew": false
+    },
+    {
+      "id": "OlWvJvWZo4M26UUpaXl-j",
+      "spec": "bakamusic-theme@2",
+      "name": "海边流星",
+      "packageName": "seaside-meteor",
+      "author": "hope",
+      "authorUrl": "https://github.com/Hopelsz",
+      "description": "海边的夜晚，下着流星雨。咱们约会吧~",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "风景",
+        "暗色"
+      ],
+      "preview": "previews/seaside-meteor.jpg",
+      "themeUrl": "themes/seaside-meteor-e4752b65a725d86ad62c33310c3c7fc6.mftheme",
+      "hash": "e4752b65a725d86ad62c33310c3c7fc6",
+      "publishName": "seaside-meteor-e4752b65a725d86ad62c33310c3c7fc6",
+      "createdAt": "2024-07-20T10:38:30+08:00",
+      "isNew": false
+    },
+    {
+      "id": "AIPVuugpMwXaMkuvWpz90",
+      "spec": "bakamusic-theme@2",
+      "name": "海边公路【动态】",
+      "packageName": "seaside-road",
+      "author": "hope",
+      "authorUrl": "https://github.com/Hopelsz",
+      "description": "夏日炎炎，海边公路格外美丽~",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "动态",
+        "风景"
+      ],
+      "preview": "previews/seaside-road.jpeg",
+      "themeUrl": "themes/seaside-road-f881f92dad01d92b51117fa857beea72.mftheme",
+      "hash": "f881f92dad01d92b51117fa857beea72",
+      "publishName": "seaside-road-f881f92dad01d92b51117fa857beea72",
+      "createdAt": "2024-07-20T10:38:30+08:00",
+      "isNew": false
+    },
+    {
+      "id": "HKobNF-MYG5nzFBiAs-1b",
+      "spec": "bakamusic-theme@2",
+      "name": "萨勒芬妮【动态】",
+      "packageName": "seraphine",
+      "author": "hope",
+      "authorUrl": "https://github.com/Hopelsz",
+      "description": "皮皮虾，冲啊！",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "动态",
+        "动漫",
+        "游戏"
+      ],
+      "preview": "previews/seraphine.jpeg",
+      "themeUrl": "themes/seraphine-ddb8d5d627a32cb81939937a414e5a85.mftheme",
+      "hash": "ddb8d5d627a32cb81939937a414e5a85",
+      "publishName": "seraphine-ddb8d5d627a32cb81939937a414e5a85",
+      "createdAt": "2024-07-20T10:38:30+08:00",
+      "isNew": false
+    },
+    {
+      "id": "rePol0aS9AMwGM-9E9vmN",
+      "spec": "bakamusic-theme@2",
+      "name": "千与千寻",
+      "packageName": "spirited-away",
+      "author": "hope",
+      "authorUrl": "https://github.com/Hopelsz",
+      "description": "当陪你的人要下车时，即使不舍，也该心存感激，然后挥手道别。",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "动漫",
+        "影视"
+      ],
+      "preview": "previews/spirited-away.jpg",
+      "themeUrl": "themes/spirited-away-c0bdee244b91d0d025eed760c3c0deca.mftheme",
+      "hash": "c0bdee244b91d0d025eed760c3c0deca",
+      "publishName": "spirited-away-c0bdee244b91d0d025eed760c3c0deca",
+      "createdAt": "2024-07-20T10:38:30+08:00",
+      "isNew": false
+    },
+    {
+      "id": "jTXimF4z39Nal9YPKX3bn",
+      "spec": "bakamusic-theme@2",
+      "name": "街道",
+      "packageName": "street",
+      "author": "hope",
+      "authorUrl": "https://github.com/Hopelsz",
+      "description": "雨过天晴，街道也是一道风景线",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "风景"
+      ],
+      "preview": "previews/street.jpeg",
+      "themeUrl": "themes/street-a9336b2795f2373645c5fbc6c6b7697e.mftheme",
+      "hash": "a9336b2795f2373645c5fbc6c6b7697e",
+      "publishName": "street-a9336b2795f2373645c5fbc6c6b7697e",
+      "createdAt": "2024-07-20T10:38:30+08:00",
+      "isNew": false
+    },
+    {
+      "id": "hkclu6Dc4QAJl6PJsk2n3",
+      "spec": "bakamusic-theme@2",
+      "name": "龙猫",
+      "packageName": "totoro",
+      "author": "hope",
+      "authorUrl": "https://github.com/Hopelsz",
+      "description": "猫猫猫猫猫龙猫~",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "动漫",
+        "影视",
+        "可爱"
+      ],
+      "preview": "previews/totoro.jpg",
+      "themeUrl": "themes/totoro-eb6ebe53adc83d72477ed9b6549f8112.mftheme",
+      "hash": "eb6ebe53adc83d72477ed9b6549f8112",
+      "publishName": "totoro-eb6ebe53adc83d72477ed9b6549f8112",
+      "createdAt": "2024-07-20T10:38:30+08:00",
+      "isNew": false
+    },
+    {
+      "id": "nyZvQY5Ym_U_lYgJWBQ-k",
+      "spec": "bakamusic-theme@2",
+      "name": "水下女孩",
+      "packageName": "underwater-girl",
+      "author": "hope",
+      "authorUrl": "https://github.com/Hopelsz",
+      "description": "水下女孩",
+      "version": "2.0.0",
+      "scheme": "light",
+      "tags": [
+        "插画"
+      ],
+      "preview": "previews/underwater-girl.jpg",
+      "themeUrl": "themes/underwater-girl-13c02583bab9fdc94b99e192f6d010d3.mftheme",
+      "hash": "13c02583bab9fdc94b99e192f6d010d3",
+      "publishName": "underwater-girl-13c02583bab9fdc94b99e192f6d010d3",
+      "createdAt": "2024-07-20T10:38:30+08:00",
+      "isNew": false
+    },
+    {
+      "id": "mRVCjtJYLf0EtFVuNYSpn",
+      "spec": "bakamusic-theme@2",
+      "name": "行星",
+      "packageName": "planet",
+      "author": "hope",
+      "authorUrl": "https://github.com/Hopelsz",
+      "description": "宇宙行星，还挺好看。哈哈",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "暗色",
+        "自然"
+      ],
+      "preview": "previews/planet.jpg",
+      "themeUrl": "themes/planet-3e07c7164f72b1074db70954c2825af1.mftheme",
+      "hash": "3e07c7164f72b1074db70954c2825af1",
+      "publishName": "planet-3e07c7164f72b1074db70954c2825af1",
+      "createdAt": "2024-07-14T05:10:16+08:00",
+      "isNew": false
+    },
+    {
+      "id": "UOVwwV1NfFLB0BWvB44VN",
+      "spec": "bakamusic-theme@2",
+      "name": "autumn",
+      "packageName": "autumn",
+      "author": "beef-potato",
+      "authorUrl": "https://github.com/beef-potato",
+      "description": "插画作者: Bison倉鼠, https://www.pixiv.net/artworks/60095408 ",
+      "version": "2.0.0",
+      "scheme": "light",
+      "tags": [
+        "风景",
+        "季节",
+        "插画"
+      ],
+      "preview": "previews/autumn.jpg",
+      "themeUrl": "themes/autumn-aa4ec22eba18f95751e8e7e07d7ce209.mftheme",
+      "hash": "aa4ec22eba18f95751e8e7e07d7ce209",
+      "publishName": "autumn-aa4ec22eba18f95751e8e7e07d7ce209",
+      "createdAt": "2024-07-08T10:20:17+08:00",
+      "isNew": false
+    },
+    {
+      "id": "AFdFt7Zg3ITq4xD7h8EiO",
+      "spec": "bakamusic-theme@2",
+      "name": "mygo",
+      "packageName": "mygo",
+      "author": "beef-potato",
+      "authorUrl": "https://github.com/beef-potato",
+      "description": "pic author: Bison倉鼠, https://www.pixiv.net/artworks/112236596",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "动漫"
+      ],
+      "preview": "previews/mygo.jpg",
+      "themeUrl": "themes/mygo-9d827fea4b6b43b4951b9e3d3617fcb3.mftheme",
+      "hash": "9d827fea4b6b43b4951b9e3d3617fcb3",
+      "publishName": "mygo-9d827fea4b6b43b4951b9e3d3617fcb3",
+      "createdAt": "2024-07-08T10:20:17+08:00",
+      "isNew": false
+    },
+    {
+      "id": "0vdPAd8oqGMBVtvrW8mk-",
+      "spec": "bakamusic-theme@2",
+      "name": "纯白色♪粉",
+      "packageName": "light-pink",
+      "author": "akFace",
+      "authorUrl": "https://github.com/akFace",
+      "description": "纯白色♪粉主题",
+      "version": "2.0.0",
+      "scheme": "light",
+      "tags": [
+        "亮色",
+        "简约"
+      ],
+      "preview": "previews/light-pink.jpg",
+      "themeUrl": "themes/light-pink-ac8f9dcae8b9db5db24ad6a9cf1742a4.mftheme",
+      "hash": "ac8f9dcae8b9db5db24ad6a9cf1742a4",
+      "publishName": "light-pink-ac8f9dcae8b9db5db24ad6a9cf1742a4",
+      "createdAt": "2024-07-06T13:33:17+08:00",
+      "isNew": false
+    },
+    {
+      "id": "tt2NbyC4K2ao3PMbMZWHp",
+      "spec": "bakamusic-theme@2",
+      "name": "荧光文字倒影",
+      "packageName": "tubeLightText",
+      "author": "beef-potato",
+      "authorUrl": "https://github.com/beef-potato",
+      "description": "文本需要在app.html里修改",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "动态",
+        "赛博"
+      ],
+      "preview": "previews/tubeLightText.png",
+      "themeUrl": "themes/tubeLightText-ff5ebfbcea1b8a5eb21ef3dd38b409c3.mftheme",
+      "hash": "ff5ebfbcea1b8a5eb21ef3dd38b409c3",
+      "publishName": "tubeLightText-ff5ebfbcea1b8a5eb21ef3dd38b409c3",
+      "createdAt": "2024-07-06T13:00:57+08:00",
+      "isNew": false
+    },
+    {
+      "id": "av_M5CZe9JnRFu6-jAKKw",
+      "spec": "bakamusic-theme@2",
+      "name": "幻想世界",
+      "packageName": "fantasy-world",
+      "author": "hope",
+      "authorUrl": "https://github.com/Hopelsz",
+      "description": "背景图片",
+      "version": "2.0.0",
+      "scheme": "light",
+      "tags": [
+        "插画"
+      ],
+      "preview": "previews/fantasy-world.png",
+      "themeUrl": "themes/fantasy-world-3cc91b63048ad26d5bb48c4946c15072.mftheme",
+      "hash": "3cc91b63048ad26d5bb48c4946c15072",
+      "publishName": "fantasy-world-3cc91b63048ad26d5bb48c4946c15072",
+      "createdAt": "2024-07-06T06:27:53+08:00",
+      "isNew": false
+    },
+    {
+      "id": "fRQjhe9hvOUQ5de77ym0E",
+      "spec": "bakamusic-theme@2",
+      "name": "gradient",
+      "packageName": "gradient",
+      "author": "beef-potato",
+      "authorUrl": "https://github.com/beef-potato",
+      "description": "渐变色主题, 自定义参数好多，眼睛看花了",
+      "version": "2.0.0",
+      "scheme": "light",
+      "tags": [
+        "渐变",
+        "简约"
+      ],
+      "preview": "previews/gradient.png",
+      "themeUrl": "themes/gradient-0ff4b7a2c94fad8fcb32831249642840.mftheme",
+      "hash": "0ff4b7a2c94fad8fcb32831249642840",
+      "publishName": "gradient-0ff4b7a2c94fad8fcb32831249642840",
+      "createdAt": "2024-06-30T17:12:10+08:00",
+      "isNew": false
+    },
+    {
+      "id": "gpMpMQuj5zot53Ca_YlXF",
+      "spec": "bakamusic-theme@2",
+      "name": "gradient2",
+      "packageName": "gradient2",
+      "author": "beef-potato",
+      "authorUrl": "https://github.com/beef-potato",
+      "description": "渐变色主题2, 尝试分离主题色和两种背景色, transparent 大法好",
+      "version": "2.0.0",
+      "scheme": "light",
+      "tags": [
+        "渐变",
+        "简约"
+      ],
+      "preview": "previews/gradient2.png",
+      "themeUrl": "themes/gradient2-136393520ae0ea801ed345822023c04b.mftheme",
+      "hash": "136393520ae0ea801ed345822023c04b",
+      "publishName": "gradient2-136393520ae0ea801ed345822023c04b",
+      "createdAt": "2024-06-30T17:12:10+08:00",
+      "isNew": false
+    },
+    {
+      "id": "iTsBcAhCH5_TYByejTtFr",
+      "spec": "bakamusic-theme@2",
+      "name": "纯白色",
+      "packageName": "light-white",
+      "author": "akFace",
+      "authorUrl": "https://github.com/akFace",
+      "description": "纯白色主题",
+      "version": "2.0.0",
+      "scheme": "light",
+      "tags": [
+        "亮色",
+        "简约"
+      ],
+      "preview": "previews/light-white.jpg",
+      "themeUrl": "themes/light-white-ef6c26d3e1814305676b45979a124416.mftheme",
+      "hash": "ef6c26d3e1814305676b45979a124416",
+      "publishName": "light-white-ef6c26d3e1814305676b45979a124416",
+      "createdAt": "2024-06-24T08:03:36+08:00",
+      "isNew": false
+    },
+    {
+      "id": "J5XSMFUeBTFxn51lMG0p5",
+      "spec": "bakamusic-theme@2",
+      "name": "黑红",
+      "packageName": "black-red",
+      "author": "hope",
+      "authorUrl": "https://github.com/Hopelsz",
+      "description": "对之前做了细微修改",
+      "version": "2.0.0",
+      "scheme": "light",
+      "tags": [
+        "暗色"
+      ],
+      "preview": "previews/black-red.png",
+      "themeUrl": "themes/black-red-9d313c7a715781049510c11157cdafc4.mftheme",
+      "hash": "9d313c7a715781049510c11157cdafc4",
+      "publishName": "black-red-9d313c7a715781049510c11157cdafc4",
+      "createdAt": "2024-06-23T15:37:47+08:00",
+      "isNew": false
+    },
+    {
+      "id": "SBzyAo-AInR7naLcoccHN",
+      "spec": "bakamusic-theme@2",
+      "name": "红娘",
+      "packageName": "matchmaker",
+      "author": "hope",
+      "authorUrl": "https://github.com/Hopelsz",
+      "description": "背景图片",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "动漫",
+        "插画"
+      ],
+      "preview": "previews/matchmaker.jpg",
+      "themeUrl": "themes/matchmaker-08ff0ed5e390bcb2cb728cf3d485d1f6.mftheme",
+      "hash": "08ff0ed5e390bcb2cb728cf3d485d1f6",
+      "publishName": "matchmaker-08ff0ed5e390bcb2cb728cf3d485d1f6",
+      "createdAt": "2024-06-23T15:37:47+08:00",
+      "isNew": false
+    },
+    {
+      "id": "lfFIro-7IQNubVotuMRkP",
+      "spec": "bakamusic-theme@2",
+      "name": "海盗船",
+      "packageName": "pirate-boat",
+      "author": "hope",
+      "authorUrl": "https://github.com/Hopelsz",
+      "description": "背景图片，优化歌曲详情页",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "插画"
+      ],
+      "preview": "previews/pirate-boat.jpg",
+      "themeUrl": "themes/pirate-boat-e5e26cfefb2f70571cfa2a2d46c27f3d.mftheme",
+      "hash": "e5e26cfefb2f70571cfa2a2d46c27f3d",
+      "publishName": "pirate-boat-e5e26cfefb2f70571cfa2a2d46c27f3d",
+      "createdAt": "2024-06-23T15:37:47+08:00",
+      "isNew": false
+    },
+    {
+      "id": "P-Or4HUL71ZRxpf4zpAhf",
+      "spec": "bakamusic-theme@2",
+      "name": "晚霞",
+      "packageName": "sunset-glow",
+      "author": "hope",
+      "authorUrl": "https://github.com/Hopelsz",
+      "description": "背景图片，优化歌曲详情页",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "风景"
+      ],
+      "preview": "previews/sunset-glow.jpg",
+      "themeUrl": "themes/sunset-glow-ec9e0b86f8890f751aa3d21090ab040c.mftheme",
+      "hash": "ec9e0b86f8890f751aa3d21090ab040c",
+      "publishName": "sunset-glow-ec9e0b86f8890f751aa3d21090ab040c",
+      "createdAt": "2024-06-23T15:37:47+08:00",
+      "isNew": false
+    },
+    {
+      "id": "V52fVc-ztv1cG_mxgFs4f",
+      "spec": "bakamusic-theme@2",
+      "name": "飞鸟",
+      "packageName": "birds-of-a-feather",
+      "author": "猫头猫",
+      "authorUrl": "https://github.com/maotoumao",
+      "description": "飞鸟动态主题",
+      "version": "2.0.0",
+      "scheme": "light",
+      "tags": [
+        "动态",
+        "自然"
+      ],
+      "preview": "previews/birds-of-a-feather.png",
+      "themeUrl": "themes/birds-of-a-feather-da9d6930fc32031131c18f6b4c439f39.mftheme",
+      "hash": "da9d6930fc32031131c18f6b4c439f39",
+      "publishName": "birds-of-a-feather-da9d6930fc32031131c18f6b4c439f39",
+      "createdAt": "2023-08-20T12:12:31+08:00",
+      "isNew": false
+    },
+    {
+      "id": "EIY5V7tND8S8udI_qqAdO",
+      "spec": "bakamusic-theme@2",
+      "name": "星夜",
+      "packageName": "night-star",
+      "author": "猫头猫",
+      "authorUrl": "https://github.com/maotoumao",
+      "description": "背景图片",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "暗色",
+        "自然"
+      ],
+      "preview": "previews/night-star.png",
+      "themeUrl": "themes/night-star-a5057ef0dbc20b44cf59c851426ff92e.mftheme",
+      "hash": "a5057ef0dbc20b44cf59c851426ff92e",
+      "publishName": "night-star-a5057ef0dbc20b44cf59c851426ff92e",
+      "createdAt": "2023-07-23T21:39:19+08:00",
+      "isNew": false
+    },
+    {
+      "id": "Jh53eoHmKOL0lQOw7T4ji",
+      "spec": "bakamusic-theme@2",
+      "name": "暗黑模式",
+      "packageName": "darkmode",
+      "author": "猫头猫",
+      "authorUrl": "https://github.com/maotoumao",
+      "description": "暗黑模式，好黑啊。",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "暗色",
+        "简约"
+      ],
+      "preview": "#000",
+      "themeUrl": "themes/darkmode-025621c72245436d20048f660c585e72.mftheme",
+      "hash": "025621c72245436d20048f660c585e72",
+      "publishName": "darkmode-025621c72245436d20048f660c585e72",
+      "createdAt": "2023-07-22T22:40:00+08:00",
+      "isNew": false
+    },
+    {
+      "id": "RpUgsCFv2uNOQEpxaMfag",
+      "spec": "bakamusic-theme@2",
+      "name": "fliqlo",
+      "packageName": "fliqlo",
+      "author": "猫头猫",
+      "authorUrl": "https://github.com/maotoumao",
+      "description": "类似fliqlo的效果",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "动态",
+        "简约",
+        "暗色"
+      ],
+      "preview": "previews/fliqlo.png",
+      "themeUrl": "themes/fliqlo-46df115fc93541193fccc5098a8778d3.mftheme",
+      "hash": "46df115fc93541193fccc5098a8778d3",
+      "publishName": "fliqlo-46df115fc93541193fccc5098a8778d3",
+      "createdAt": "2023-07-22T22:40:00+08:00",
+      "isNew": false
+    },
+    {
+      "id": "fqDKd1xoZ6_flNjhsRi9T",
+      "spec": "bakamusic-theme@2",
+      "name": "雨季",
+      "packageName": "rainy-season",
+      "author": "猫头猫",
+      "authorUrl": "https://github.com/maotoumao",
+      "description": "雨季动态主题",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "动态",
+        "自然"
+      ],
+      "preview": "previews/rainy-season.png",
+      "themeUrl": "themes/rainy-season-ea8be38db9f135c36f921253ddf85eca.mftheme",
+      "hash": "ea8be38db9f135c36f921253ddf85eca",
+      "publishName": "rainy-season-ea8be38db9f135c36f921253ddf85eca",
+      "createdAt": "2023-07-22T22:40:00+08:00",
+      "isNew": false
+    },
+    {
+      "id": "4C3iJxQc5o-9QEIF7Ih0_",
+      "spec": "bakamusic-theme@2",
+      "name": "樱花",
+      "packageName": "sakura",
+      "author": "猫头猫",
+      "authorUrl": "https://github.com/maotoumao",
+      "description": "樱花飘落动态主题",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "动态",
+        "自然",
+        "季节"
+      ],
+      "preview": "previews/sakura.png",
+      "themeUrl": "themes/sakura-22d1f2137d0782ae4f90407d171530dc.mftheme",
+      "hash": "22d1f2137d0782ae4f90407d171530dc",
+      "publishName": "sakura-22d1f2137d0782ae4f90407d171530dc",
+      "createdAt": "2023-07-22T22:40:00+08:00",
+      "isNew": false
+    },
+    {
+      "id": "_Cv5IxWH8WIUd24j-RQgy",
+      "spec": "bakamusic-theme@2",
+      "name": "Hacker",
+      "packageName": "word-rain",
+      "author": "猫头猫",
+      "authorUrl": "https://github.com/maotoumao",
+      "description": "背景源代码：https://codesandbox.io/embed/word-rain-e4itf",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "动态",
+        "赛博",
+        "暗色"
+      ],
+      "preview": "previews/word-rain.png",
+      "themeUrl": "themes/word-rain-ed8f73181f3da3a9caaee69bab1d4961.mftheme",
+      "hash": "ed8f73181f3da3a9caaee69bab1d4961",
+      "publishName": "word-rain-ed8f73181f3da3a9caaee69bab1d4961",
+      "createdAt": "2023-07-22T22:40:00+08:00",
+      "isNew": false
+    }
+  ],
+  "tagIndex": {
+    "动态": [
+      "O9lTRwPPQi1UAoc",
+      "7Tqa2W1J7IysmlYrR-yCp",
+      "azouwGKBcVY9B6UtpOr5F",
+      "_gijJS3TTtjiIygnzJCm2",
+      "Z0UiqelHdAju-VIS9AmHx",
+      "ZQM3IWpp-zb3B6XZ5_jif",
+      "eF0HSyzQ_jrSoE-wJpzwT",
+      "eRtmpRP3qC26cvsgTgjcg",
+      "TVm8BpIwv8uoebPeb0-g8",
+      "6RMa_xPEuM9dr9PfHuK-q",
+      "xnTG8pwPhcGblhbB2iz46",
+      "jlwphMbax5bSdYnRawLVk",
+      "JhMz9_C97Ok0AJDpHQZ8H",
+      "AIPVuugpMwXaMkuvWpz90",
+      "HKobNF-MYG5nzFBiAs-1b",
+      "tt2NbyC4K2ao3PMbMZWHp",
+      "V52fVc-ztv1cG_mxgFs4f",
+      "RpUgsCFv2uNOQEpxaMfag",
+      "fqDKd1xoZ6_flNjhsRi9T",
+      "4C3iJxQc5o-9QEIF7Ih0_",
+      "_Cv5IxWH8WIUd24j-RQgy"
+    ],
+    "可爱": [
+      "O9lTRwPPQi1UAoc",
+      "cKhbOOn53HoLvieyfZz7_",
+      "hkclu6Dc4QAJl6PJsk2n3"
+    ],
+    "亮色": [
+      "zsG0fMhcwxEsyRsD02ET3",
+      "0vdPAd8oqGMBVtvrW8mk-",
+      "iTsBcAhCH5_TYByejTtFr"
+    ],
+    "简约": [
+      "zsG0fMhcwxEsyRsD02ET3",
+      "0vdPAd8oqGMBVtvrW8mk-",
+      "fRQjhe9hvOUQ5de77ym0E",
+      "gpMpMQuj5zot53Ca_YlXF",
+      "iTsBcAhCH5_TYByejTtFr",
+      "Jh53eoHmKOL0lQOw7T4ji",
+      "RpUgsCFv2uNOQEpxaMfag"
+    ],
+    "动漫": [
+      "7Tqa2W1J7IysmlYrR-yCp",
+      "c5VRpgBwc0eE0jt9z4RDc",
+      "Z0UiqelHdAju-VIS9AmHx",
+      "eF0HSyzQ_jrSoE-wJpzwT",
+      "TVm8BpIwv8uoebPeb0-g8",
+      "6RMa_xPEuM9dr9PfHuK-q",
+      "O3UBl3wuxnPf9Ns6ttvs6",
+      "Nk8Lt2qDQnP_a_ggmzCS8",
+      "v7vpT4e0q0f5Aqv5GzyRI",
+      "r865CgdVWPGhIF6KEMy0O",
+      "Vcx9pp4-CuXN9-AU-nf-f",
+      "jlwphMbax5bSdYnRawLVk",
+      "cKhbOOn53HoLvieyfZz7_",
+      "JhMz9_C97Ok0AJDpHQZ8H",
+      "HKobNF-MYG5nzFBiAs-1b",
+      "rePol0aS9AMwGM-9E9vmN",
+      "hkclu6Dc4QAJl6PJsk2n3",
+      "AFdFt7Zg3ITq4xD7h8EiO",
+      "SBzyAo-AInR7naLcoccHN"
+    ],
+    "赛博": [
+      "azouwGKBcVY9B6UtpOr5F",
+      "xnTG8pwPhcGblhbB2iz46",
+      "KkCzmMSlZeQOeYxztpFr9",
+      "tt2NbyC4K2ao3PMbMZWHp",
+      "_Cv5IxWH8WIUd24j-RQgy"
+    ],
+    "风景": [
+      "_gijJS3TTtjiIygnzJCm2",
+      "zEi4HYbyIwZ0f-NcHHafo",
+      "DX55JlXdaialdTMEE5CWJ",
+      "OlWvJvWZo4M26UUpaXl-j",
+      "AIPVuugpMwXaMkuvWpz90",
+      "jTXimF4z39Nal9YPKX3bn",
+      "UOVwwV1NfFLB0BWvB44VN",
+      "P-Or4HUL71ZRxpf4zpAhf"
+    ],
+    "插画": [
+      "0CxAzYYA1yq0CXZ9E_Rga",
+      "ToZYm-NKnNVsJrHQd9UFq",
+      "dONCjxCKM1tQUl4d-7NE_",
+      "RV7s9TjIoi_OvkLDM5WSI",
+      "KkCzmMSlZeQOeYxztpFr9",
+      "0ouuxVcb4i8OUAGCVEG9e",
+      "nyZvQY5Ym_U_lYgJWBQ-k",
+      "UOVwwV1NfFLB0BWvB44VN",
+      "av_M5CZe9JnRFu6-jAKKw",
+      "SBzyAo-AInR7naLcoccHN",
+      "lfFIro-7IQNubVotuMRkP"
+    ],
+    "自然": [
+      "ZQM3IWpp-zb3B6XZ5_jif",
+      "dONCjxCKM1tQUl4d-7NE_",
+      "Vcx9pp4-CuXN9-AU-nf-f",
+      "mRVCjtJYLf0EtFVuNYSpn",
+      "V52fVc-ztv1cG_mxgFs4f",
+      "EIY5V7tND8S8udI_qqAdO",
+      "fqDKd1xoZ6_flNjhsRi9T",
+      "4C3iJxQc5o-9QEIF7Ih0_"
+    ],
+    "游戏": [
+      "eF0HSyzQ_jrSoE-wJpzwT",
+      "TVm8BpIwv8uoebPeb0-g8",
+      "jlwphMbax5bSdYnRawLVk",
+      "HKobNF-MYG5nzFBiAs-1b"
+    ],
+    "抽象": [
+      "eRtmpRP3qC26cvsgTgjcg"
+    ],
+    "季节": [
+      "DX55JlXdaialdTMEE5CWJ",
+      "Nk8Lt2qDQnP_a_ggmzCS8",
+      "UOVwwV1NfFLB0BWvB44VN",
+      "4C3iJxQc5o-9QEIF7Ih0_"
+    ],
+    "暗色": [
+      "RV7s9TjIoi_OvkLDM5WSI",
+      "v7vpT4e0q0f5Aqv5GzyRI",
+      "OlWvJvWZo4M26UUpaXl-j",
+      "mRVCjtJYLf0EtFVuNYSpn",
+      "J5XSMFUeBTFxn51lMG0p5",
+      "EIY5V7tND8S8udI_qqAdO",
+      "Jh53eoHmKOL0lQOw7T4ji",
+      "RpUgsCFv2uNOQEpxaMfag",
+      "_Cv5IxWH8WIUd24j-RQgy"
+    ],
+    "影视": [
+      "r865CgdVWPGhIF6KEMy0O",
+      "Vcx9pp4-CuXN9-AU-nf-f",
+      "JhMz9_C97Ok0AJDpHQZ8H",
+      "rePol0aS9AMwGM-9E9vmN",
+      "hkclu6Dc4QAJl6PJsk2n3"
+    ],
+    "渐变": [
+      "fRQjhe9hvOUQ5de77ym0E",
+      "gpMpMQuj5zot53Ca_YlXF"
+    ]
+  },
+  "availableTags": [
+    {
+      "key": "dark",
+      "label": "暗色",
+      "description": "深色/暗黑系主题"
+    },
+    {
+      "key": "light",
+      "label": "亮色",
+      "description": "浅色/明亮系主题"
+    },
+    {
+      "key": "gradient",
+      "label": "渐变",
+      "description": "渐变色背景主题"
+    },
+    {
+      "key": "minimalist",
+      "label": "简约",
+      "description": "简洁风格主题"
+    },
+    {
+      "key": "anime",
+      "label": "动漫",
+      "description": "动漫/二次元风格主题"
+    },
+    {
+      "key": "landscape",
+      "label": "风景",
+      "description": "自然风景背景主题"
+    },
+    {
+      "key": "illustration",
+      "label": "插画",
+      "description": "插画风格背景主题"
+    },
+    {
+      "key": "cyberpunk",
+      "label": "赛博",
+      "description": "赛博朋克/科技感主题"
+    },
+    {
+      "key": "pixel",
+      "label": "像素",
+      "description": "像素风格主题"
+    },
+    {
+      "key": "abstract",
+      "label": "抽象",
+      "description": "抽象艺术风格主题"
+    },
+    {
+      "key": "dynamic",
+      "label": "动态",
+      "description": "包含动画效果的主题"
+    },
+    {
+      "key": "cute",
+      "label": "可爱",
+      "description": "可爱/萌系风格主题"
+    },
+    {
+      "key": "game",
+      "label": "游戏",
+      "description": "游戏相关主题"
+    },
+    {
+      "key": "movie",
+      "label": "影视",
+      "description": "电影/动画电影相关主题"
+    },
+    {
+      "key": "season",
+      "label": "季节",
+      "description": "与季节相关的主题"
+    },
+    {
+      "key": "nature",
+      "label": "自然",
+      "description": "花、樱花、星空等自然元素主题"
+    }
+  ]
+}
