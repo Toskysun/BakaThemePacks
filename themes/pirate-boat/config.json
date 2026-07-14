@@ -2,7 +2,7 @@
     "spec": "bakamusic-theme@2",
     "name": "海盗船",
     "author": "hope",
-    "version": "2.0.0",
+    "version": "2.1.0",
     "preview": "@/imgs/Pirates.jpg",
     "description": "背景图片，优化歌曲详情页",
     "tags": [

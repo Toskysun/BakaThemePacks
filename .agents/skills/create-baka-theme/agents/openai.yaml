@@ -1,0 +1,4 @@
+interface:
+  display_name: "Baka 主题生成器"
+  short_description: "一键创建并校验 BakaMusic V2.1 主题骨架"
+  default_prompt: "Use $create-baka-theme to scaffold and validate a new BakaMusic V2.1 theme."

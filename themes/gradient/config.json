@@ -2,7 +2,7 @@
     "spec": "bakamusic-theme@2",
     "name": "gradient",
     "author": "beef-potato",
-    "version": "2.0.0",
+    "version": "2.1.0",
     "preview": "@/imgs/preview.png",
     "description": "渐变色主题, 自定义参数好多，眼睛看花了",
     "tags": [

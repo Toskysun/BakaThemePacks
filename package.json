@@ -1,13 +1,14 @@
 {
   "name": "baka-themepacks",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "type": "module",
-  "description": "BakaMusic 主题包（bakamusic-theme@2）",
+  "description": "BakaMusic 主题包（bakamusic-theme@2.1 semantic contract）",
   "scripts": {
     "publish": "node ./.scripts/publish.mjs",
     "validate": "node ./.scripts/validate.mjs",
     "validate:theme": "node ./.scripts/validate.mjs --themes",
-    "migrate:v2": "node ./.scripts/migrate-to-v2.mjs"
+    "migrate:v2": "node ./.scripts/migrate-to-v2.mjs",
+    "upgrade:semantic": "node ./.scripts/upgrade-semantic-v2.mjs"
   },
   "keywords": ["bakamusic", "theme"],
   "author": "Toskysun",

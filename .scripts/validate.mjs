@@ -10,11 +10,16 @@
 import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import {
+    CLIENT_OWNED_COMPATIBILITY_TOKENS,
+    THEME_SPEC as SPEC,
+    THEME_TOKENS,
+    parseThemeCss,
+} from './theme-contract.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 const THEMES_DIR = path.join(ROOT, 'themes');
-const SPEC = 'bakamusic-theme@2';
 
 const SIZE_LIMITS = {
     IMAGE_MAX: 500 * 1024,
@@ -32,54 +37,23 @@ const ALLOWED_EXTS = new Set([
 const FOLDER_NAME_REGEX = /^[a-zA-Z0-9_-]+$/;
 const COLOR_VALUE_REGEX = /^#([0-9a-fA-F]{3}|[0-9a-fA-F]{6}|[0-9a-fA-F]{8})$/;
 const SEMVER_REGEX = /^\d+\.\d+\.\d+$/;
+
+async function validateTokenDocumentation() {
+    const documentPath = path.join(ROOT, 'docs', 'THEME_TOKENS.md');
+    const documentText = await fs.readFile(documentPath, 'utf-8');
+    const documentedTokens = new Set(
+        [...documentText.matchAll(/`(--theme-[a-z0-9-]+)`/g)].map((match) => match[1]),
+    );
+    const missingTokens = THEME_TOKENS.filter((token) => !documentedTokens.has(token));
+    const unknownTokens = [...documentedTokens].filter((token) => !THEME_TOKENS.includes(token));
+    if (missingTokens.length || unknownTokens.length) {
+        const messages = [];
+        if (missingTokens.length) messages.push(`缺少: ${missingTokens.join(', ')}`);
+        if (unknownTokens.length) messages.push(`未知: ${unknownTokens.join(', ')}`);
+        throw new Error(`docs/THEME_TOKENS.md 与 theme-contract.json 不一致；${messages.join('；')}`);
+    }
+}
 const PREVIEW_PATH_REGEX = /^@\/.+\/.+$/;
-
-const REQUIRED_CSS_TOKENS = [
-    '--theme-primary',
-    '--theme-bg',
-    '--theme-text',
-    '--theme-scheme',
-];
-
-const ALLOWED_CSS_TOKENS = new Set([
-    ...REQUIRED_CSS_TOKENS,
-    '--theme-text-secondary',
-    '--theme-text-on-primary',
-    '--theme-header-text',
-    '--theme-link',
-    '--theme-divider',
-    '--theme-mask',
-    '--theme-placeholder',
-    '--theme-surface-alpha',
-    '--theme-blur',
-    '--theme-bg-image',
-    '--theme-scrollbar-thumb',
-]);
-
-/** Client internals / legacy MusicFree selectors — banned in theme CSS */
-const BANNED_SELECTOR_PATTERNS = [
-    /\.music-bar-container\b/,
-    /\.header-container\b/,
-    /\.sidebar-container\b/,
-    /\.body-container\b/,
-    /\.app-container\b/,
-    /\.music-detail/,
-    /\.l-sidebar\b/,
-    /\.l-player-bar\b/,
-    /body\[data-window/,
-    /#root\s*\{/,
-    /::-webkit-scrollbar[^{]*\{\s*display\s*:\s*none/i,
-];
-
-const BANNED_TOKEN_PATTERNS = [
-    /--color-bg-/,
-    /--color-fill-/,
-    /--color-text-/,
-    /--color-border-/,
-    /--primaryColor\b/,
-    /--backgroundColor\b/,
-    /--textColor\b/,
-];
 
 function formatSize(bytes) {
     if (bytes < 1024) return `${bytes}B`;
@@ -166,7 +140,7 @@ class ThemeValidator {
             this.error(`config.spec 必须为 "${SPEC}"（当前: ${config.spec ?? 'missing'}）`);
         }
 
-        const required = ['name', 'author', 'preview', 'description', 'version', 'tags'];
+        const required = ['name', 'author', 'preview', 'description', 'version', 'tags', 'scheme'];
         for (const field of required) {
             if (config[field] === undefined || config[field] === null || config[field] === '') {
                 this.error(`config.json 缺少必填字段: ${field}`);
@@ -186,6 +160,9 @@ class ThemeValidator {
 
         if (config.scheme && config.scheme !== 'light' && config.scheme !== 'dark') {
             this.error(`scheme 必须是 light 或 dark（当前: ${config.scheme}）`);
+        }
+        if (config.authorUrl && !/^https?:\/\//.test(config.authorUrl)) {
+            this.error('authorUrl 必须是 http(s) URL');
         }
 
         if (Array.isArray(config.tags)) {
@@ -224,6 +201,8 @@ class ThemeValidator {
         if (config.iframe) {
             if (typeof config.iframe !== 'object' || !config.iframe.app) {
                 this.error('iframe 配置格式不正确（需要 { "app": "@/iframes/xxx.html" }）');
+            } else if (!config.iframe.app.startsWith('@/')) {
+                this.error('iframe.app 必须使用 @/ 包内路径');
             } else {
                 const iframePath = path.join(this.dir, config.iframe.app.replace('@/', ''));
                 try {
@@ -244,7 +223,7 @@ class ThemeValidator {
         ]);
         for (const key of Object.keys(config)) {
             if (!allowedFields.has(key)) {
-                this.warn(`config.json 包含未知字段: "${key}"`);
+                this.error(`config.json 包含未知字段: "${key}"`);
             }
         }
 
@@ -260,46 +239,23 @@ class ThemeValidator {
             return;
         }
 
-        for (const token of REQUIRED_CSS_TOKENS) {
-            if (!css.includes(token)) {
-                this.error(`index.css 缺少必填 token: ${token}`);
-            }
-        }
-
-        // Collect custom properties declared in the file
-        const declared = [...css.matchAll(/--([a-zA-Z0-9-]+)\s*:/g)].map((m) => `--${m[1]}`);
-        for (const token of declared) {
-            if (!ALLOWED_CSS_TOKENS.has(token)) {
-                this.error(`index.css 含未在契约中的 token: ${token}`);
-            }
-        }
-
-        for (const re of BANNED_SELECTOR_PATTERNS) {
-            if (re.test(css)) {
-                this.error(`index.css 含禁止选择器/规则: ${re}`);
-            }
-        }
-
-        for (const re of BANNED_TOKEN_PATTERNS) {
-            if (re.test(css)) {
-                this.error(`index.css 含废弃 token 模式: ${re}`);
-            }
-        }
-
-        // Outside :root rules (rough): any selector block that isn't :root
-        const withoutComments = css.replace(/\/\*[\s\S]*?\*\//g, '');
-        const nonRootBlocks = withoutComments.match(/(^|})\s*([^@{}][^{]*)\{/g) || [];
-        for (const block of nonRootBlocks) {
-            const selector = block.replace(/^}/, '').replace(/\{$/, '').trim();
-            if (!selector || selector === ':root' || selector.startsWith('@')) continue;
-            if (selector.includes(':root')) continue;
-            this.error(`index.css 禁止非 :root 规则: "${selector}"`);
+        let tokens;
+        try {
+            tokens = parseThemeCss(css);
+        } catch (error) {
+            this.error(`index.css 不符合公开契约: ${error.message}`);
+            return;
         }
 
         if (config?.scheme) {
-            const schemeMatch = css.match(/--theme-scheme\s*:\s*(light|dark)\s*;/);
-            if (schemeMatch && schemeMatch[1] !== config.scheme) {
-                this.warn(`config.scheme (${config.scheme}) 与 CSS --theme-scheme (${schemeMatch[1]}) 不一致`);
+            const cssScheme = tokens.get('--theme-scheme');
+            if (cssScheme !== config.scheme) {
+                this.error(`config.scheme (${config.scheme}) 与 CSS --theme-scheme (${cssScheme}) 不一致`);
+            }
+        }
+        for (const token of CLIENT_OWNED_COMPATIBILITY_TOKENS) {
+            if (tokens.has(token)) {
+                this.error(`${token} 属于客户端产品视觉行为，仅兼容旧包，新主题不得声明`);
             }
         }
     }
@@ -361,6 +317,8 @@ async function main() {
             process.exit(0);
         }
     }
+
+    await validateTokenDocumentation();
 
     console.log('');
     console.log('╔══════════════════════════════════════════╗');

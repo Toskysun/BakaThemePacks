@@ -1,16 +1,16 @@
 # BakaMusic 主题包完整写作教程
 
-**契约版本：** `bakamusic-theme@2`  
-**适用客户端：** [BakaMusic](https://github.com/Toskysun/BakaMusic)（须支持 V2 主题系统）  
+**契约版本：** `bakamusic-theme@2`（语义修订 2.1）
+**适用客户端：** [BakaMusic](https://github.com/Zencok/BakaMusic)（须支持 V2 主题系统）
 **本仓库：** 主题市场源码与发布
 
 ---
 
 ## 0. 一句话原则
 
-> **客户端定布局与组件样式；主题只填色（token）和可选背景资源。**
+> **客户端定结构与产品视觉行为；主题通过公开语义 token 绘制可主题化区域，并可提供背景资源。**
 
-你**不要**再去写 `.header-container`、`.music-bar-container`、`.sidebar-container` 这类选择器，也不要用 `!important` 去盖客户端 UI。  
+你**不要**再去写 `.header-container`、`.music-bar-container`、`.sidebar-container` 这类选择器，也不要用 `!important` 去盖客户端 UI。
 正确做法：在 `index.css` 的 `:root` 里声明 `--theme-*` 变量；需要动态壁纸时再加 `iframes/app.html`。
 
 旧版「改一堆 class + 毛玻璃扫全站」的写法已**废弃**，客户端会拒绝非 V2 包。
@@ -21,8 +21,8 @@
 
 写好一个主题包后，可以：
 
-1. **本地安装**：打包成 `.mftheme`（zip 改后缀即可）→ BakaMusic 主题页「+」安装  
-2. **上架市场**：向本仓库 `v2/source` 提 PR → CI 校验 → 合并后自动发布到 `v2/prod` → 客户端主题市场可下载  
+1. **本地安装**：打包成 `.mftheme`（zip 改后缀即可）→ BakaMusic 主题页「+」安装
+2. **上架市场**：向本仓库 `v2/source` 提 PR → CI 校验 → 合并后自动发布到 `v2/prod` → 客户端主题市场可下载
 
 ---
 
@@ -63,7 +63,7 @@ themes/my-cool-theme/
   "spec": "bakamusic-theme@2",
   "name": "夏日柠檬",
   "author": "你的名字",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "preview": "@/imgs/preview.jpg",
   "description": "清爽浅色主题",
   "tags": ["亮色", "简约"],
@@ -79,7 +79,7 @@ themes/my-cool-theme/
   "name": "星河【动态】",
   "author": "你的名字",
   "authorUrl": "https://github.com/yourname",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "preview": "@/imgs/preview.jpg",
   "description": "动态星空背景",
   "tags": ["动态", "暗色", "自然"],
@@ -101,7 +101,7 @@ themes/my-cool-theme/
 | `preview` | ✅ | 市场缩略图：`@/imgs/...` **或** 纯色 `#RRGGBB` / `#RGB` |
 | `description` | ✅ | 一句话介绍，建议 ≤ 200 字 |
 | `tags` | ✅ | 1～5 个标签，**必须**来自仓库根目录 [`tags.json`](../tags.json) 的 `label` |
-| `scheme` | 强烈推荐 | `light` 或 `dark`，应与 CSS 中 `--theme-scheme` 一致 |
+| `scheme` | ✅ | `light` 或 `dark`，必须与 CSS 中 `--theme-scheme` 一致 |
 | `iframe` | 否 | 仅允许 `{ "app": "@/iframes/xxx.html" }` |
 | `authorUrl` | 否 | 作者主页（GitHub / 个人站等） |
 | `id` | ❌ 禁止 | 由仓库 `meta.json` 统一管理，**不要写进 config** |
@@ -115,8 +115,8 @@ themes/my-cool-theme/
 
 规则：
 
-- 有 `iframe`（动态背景）时，**必须**包含标签 **`动态`**  
-- 最多 5 个，至少 1 个  
+- 有 `iframe`（动态背景）时，**必须**包含标签 **`动态`**
+- 最多 5 个，至少 1 个
 
 ---
 
@@ -124,11 +124,12 @@ themes/my-cool-theme/
 
 ### 4.1 铁律
 
-1. **只允许**在 `:root { ... }` 里声明 **契约内的** `--theme-*` 变量  
-2. **禁止**任何其它选择器（`.xxx`、`#root`、`body`、`::-webkit-scrollbar` 等）  
-3. **禁止** MusicFree 旧 token：`--color-*`、`--primaryColor`、`--backgroundColor` 等  
-4. **禁止**用 `!important` 去改客户端布局  
-5. 客户端会把 `--theme-*` 映射成内部的表面色、标题栏、侧栏、列表等  
+1. **只允许**在 `:root { ... }` 里声明 **契约内的** `--theme-*` 变量
+2. **禁止**任何其它选择器（`.xxx`、`#root`、`body`、`::-webkit-scrollbar` 等）
+3. **禁止** MusicFree 旧 token：`--color-*`、`--primaryColor`、`--backgroundColor` 等
+4. **禁止** `!important`、`@import` 和额外 CSS 规则
+5. 客户端会把 `--theme-*` 映射成内部的表面色、标题栏、侧栏、列表等
+6. `var()` 只能引用 [`theme-contract.json`](../theme-contract.json) 内其他公开 token
 
 ### 4.2 必填 Token
 
@@ -139,7 +140,7 @@ themes/my-cool-theme/
 | `--theme-text` | 主文字色 | 与背景对比度要够 |
 | `--theme-scheme` | 对比基调 | 只能是 `light` 或 `dark` |
 
-### 4.3 推荐 Token
+### 4.3 基础推荐 Token
 
 | Token | 含义 |
 |-------|------|
@@ -155,7 +156,23 @@ themes/my-cool-theme/
 | `--theme-bg-image` | 静态壁纸：`url("@/imgs/wall.jpg")`（动态请用 iframe） |
 | `--theme-scrollbar-thumb` | 滚动条滑块色 |
 
-### 4.4 最小合法 CSS（静态浅色）
+### 4.4 全区域语义 Token（2.1）
+
+机器清单以 [`theme-contract.json`](../theme-contract.json) 为准；全部 91 个可自定义 token 的逐项说明见 [`THEME_TOKENS.md`](./THEME_TOKENS.md)：
+
+- 通用表面：`surface-*`、`interactive-*`、`page-bg`、`card-*`
+- 标题栏：`header-bg`、`header-border`、`header-control-*`、`header-search-*`
+- 侧栏：`sidebar-bg`、`sidebar-text*`、`sidebar-item-*`
+- 播放栏：`player-bg*`、`player-text*`、`player-accent`、`player-border`（flat 使用；glass 的封面动态取色由客户端拥有）
+- 内容：`list-*`、`panel-*`、`input-*`、`popover-*`
+- 详情页：`detail-text*`、`detail-surface*`、`detail-border`、`detail-accent`
+- 其他：状态色、滚动条三态、control/card/panel/cover 小圆角
+
+省略项由客户端从四个必填基础 token 派生。要定制某个区域，只覆盖其语义 token，不写该区域的 class。
+
+详情页封面模糊流光背景、暗色衬底与覆盖光效，以及 glass 播放栏的封面动态取色属于客户端行为。`detail-bg`、`detail-overlay` 仅为早期 2.1 包加载兼容而保留在白名单，新主题不得声明。
+
+### 4.5 最小合法 CSS（静态浅色）
 
 ```css
 /* bakamusic-theme@2 */
@@ -170,7 +187,7 @@ themes/my-cool-theme/
 }
 ```
 
-### 4.5 深色主题示例
+### 4.6 深色主题示例
 
 ```css
 /* bakamusic-theme@2 */
@@ -192,7 +209,7 @@ themes/my-cool-theme/
 }
 ```
 
-### 4.6 动态主题（半透明底 + 视频）示例
+### 4.7 动态主题（半透明底 + 视频）示例
 
 动态壁纸靠 iframe 播视频；`index.css` 用**半透明** `--theme-bg`，让视频透出来，同时保证文字可读：
 
@@ -221,7 +238,7 @@ themes/my-cool-theme/
 | 毛玻璃更强 | `--theme-blur: 16px`～`22px`（客户端 glass 模式才会用） |
 | 扁平模式 | 用户可在设置里切 flat；主题**不要**强行改布局 |
 
-### 4.7 静态壁纸（无视频）
+### 4.8 静态壁纸（无视频）
 
 不用 iframe，在 CSS 里：
 
@@ -242,8 +259,8 @@ themes/my-cool-theme/
 
 ### 5.1 何时需要
 
-- 背景是 **视频 / 动画 / Canvas**  
-- 需要循环播放、调亮度等  
+- 背景是 **视频 / 动画 / Canvas**
+- 需要循环播放、调亮度等
 
 静态图片优先用 `--theme-bg-image`，更简单。
 
@@ -283,12 +300,12 @@ themes/my-cool-theme/
 
 ### 5.3 iframe 注意
 
-- **只做背景**，不要依赖主窗口 class  
-- 视频务必 `muted` + `autoplay` + `loop` + `playsinline`（浏览器策略）  
-- 资源路径用 `@/imgs/...`  
-- `config.json` 写 `"iframe": { "app": "@/iframes/app.html" }`  
-- `tags` 必须含 **`动态`**  
-- **不要**在主文档 `index.css` 里写视频样式  
+- **只做背景**，不要依赖主窗口 class
+- 视频务必 `muted` + `autoplay` + `loop` + `playsinline`（浏览器策略）
+- 资源路径用 `@/imgs/...`
+- `config.json` 写 `"iframe": { "app": "@/iframes/app.html" }`
+- `tags` 必须含 **`动态`**
+- **不要**在主文档 `index.css` 里写视频样式
 
 ---
 
@@ -304,9 +321,9 @@ themes/my-cool-theme/
 
 **图片（预览图）：**
 
-- 分辨率够用即可（如长边 1280）  
-- 优先 JPEG / WebP  
-- 工具：`ffmpeg`、Squoosh、Photoshop「导出为 Web」  
+- 分辨率够用即可（如长边 1280）
+- 优先 JPEG / WebP
+- 工具：`ffmpeg`、Squoosh、Photoshop「导出为 Web」
 
 示例：
 
@@ -316,10 +333,10 @@ ffmpeg -y -i raw.png -vf "scale='min(1280,iw)':-2" -q:v 5 imgs/preview.jpg
 
 **视频：**
 
-- 分辨率 720p 或更低  
-- 去掉音轨（`-an`）  
-- 适当提高 CRF（如 32～36）  
-- 循环背景可裁短时长  
+- 分辨率 720p 或更低
+- 去掉音轨（`-an`）
+- 适当提高 CRF（如 32～36）
+- 循环背景可裁短时长
 
 示例：
 
@@ -346,11 +363,11 @@ npm run validate -- --themes my-cool-theme
 
 校验会检查：
 
-- `spec`、必填字段、semver、标签合法性  
-- `index.css` 必填 token、禁止选择器、禁止废弃 token  
-- 预览文件是否存在  
-- iframe 路径  
-- 资源体积  
+- `spec`、必填字段、semver、标签合法性
+- `index.css` 必填 token、禁止选择器、禁止废弃 token
+- 预览文件是否存在
+- iframe 路径
+- 资源体积
 
 **校验不过 = 无法合并 PR。**
 
@@ -358,11 +375,11 @@ npm run validate -- --themes my-cool-theme
 
 ## 8. 本地安装测试（.mftheme）
 
-1. 把主题文件夹打成 zip，保证 zip **根目录**就是 `config.json` + `index.css`（不要多套一层无关目录）  
-2. 将后缀改为 `.mftheme`（或安装时选 zip）  
-3. 打开 BakaMusic → 主题 → 本地 → 「+」→ 选择文件  
-4. 切换 glass / flat 两种界面风格各看一遍  
-5. 打开搜索历史、侧栏、播放栏、歌曲详情，确认对比度可读  
+1. 把主题文件夹打成 zip，保证 zip **根目录**就是 `config.json` + `index.css`（不要多套一层无关目录）
+2. 将后缀改为 `.mftheme`（或安装时选 zip）
+3. 打开 BakaMusic → 主题 → 本地 → 「+」→ 选择文件
+4. 切换 glass / flat 两种界面风格各看一遍
+5. 打开搜索历史、侧栏、播放栏、歌曲详情，确认对比度可读
 
 也可用任意压缩工具：
 
@@ -388,19 +405,19 @@ my-cool-theme/
 
 ### 9.2 流程
 
-1. Fork 本仓库  
-2. 从 `v2/source` 拉分支  
-3. 在 `themes/你的文件夹名/` 放入完整主题  
-4. **不要**改 `meta.json` 里别人的 id；新主题的 id 由维护者/CI 处理  
-5. 本地 `npm run validate -- --themes 你的文件夹名`  
-6. 提 PR 到 **`v2/source`**  
-7. 合并后 CI 自动打包发布到 `v2/prod`，客户端市场即可拉到  
+1. Fork 本仓库
+2. 从 `v2/source` 拉分支
+3. 在 `themes/你的文件夹名/` 放入完整主题
+4. **不要**改 `meta.json` 里别人的 id；新主题的 id 由维护者/CI 处理
+5. 本地 `npm run validate -- --themes 你的文件夹名`
+6. 提 PR 到 **`v2/source`**
+7. 合并后 CI 自动打包发布到 `v2/prod`，客户端市场即可拉到
 
 ### 9.3 文件夹命名
 
-- 仅 `a-z` `A-Z` `0-9` `-` `_`  
-- 推荐英文短名：`summer-lemon`、`night-star`  
-- 显示名用 `config.name` 写中文即可  
+- 仅 `a-z` `A-Z` `0-9` `-` `_`
+- 推荐英文短名：`summer-lemon`、`night-star`
+- 显示名用 `config.name` 写中文即可
 
 ---
 
@@ -434,25 +451,25 @@ node .scripts/import-legacy-zips.mjs "路径/到/主题zip目录"
 
 ### Q1：装上主题还是默认橙白？
 
-- 确认 `config.spec` 为 `bakamusic-theme@2`  
-- 确认客户端版本支持 V2  
-- 确认 `index.css` 只有 `:root` token，没有被写坏  
+- 确认 `config.spec` 为 `bakamusic-theme@2`
+- 确认客户端版本支持 V2
+- 确认 `index.css` 只有 `:root` token，没有被写坏
 
 ### Q2：深色主题发白 / 发灰？
 
-- `--theme-scheme: dark` 与 `config.scheme: "dark"` 都要写  
-- `--theme-bg` 不要只有极低 alpha  
-- 文字用浅色（如 `#f5f5f5`），背景用深色实色或较高 alpha  
+- `--theme-scheme: dark` 与 `config.scheme: "dark"` 都要写
+- `--theme-bg` 不要只有极低 alpha
+- 文字用浅色（如 `#f5f5f5`），背景用深色实色或较高 alpha
 
 ### Q3：视频很卡 / 包太大？
 
-- 压视频到 5MB 内、包总大小 10MB 内  
-- 不要 4K 原片  
+- 压视频到 5MB 内、包总大小 10MB 内
+- 不要 4K 原片
 
 ### Q4：可以只改字体 / 圆角吗？
 
-- V2 **不允许**主题改布局尺寸与组件结构  
-- 圆角、flat/glass 由客户端用户设置控制  
+- V2 **不允许**主题改布局尺寸与组件结构
+- 圆角、flat/glass 由客户端用户设置控制
 
 ### Q5：preview 可以用纯色吗？
 
@@ -462,19 +479,19 @@ node .scripts/import-legacy-zips.mjs "路径/到/主题zip目录"
 
 ## 12. 提交前检查清单
 
-- [ ] 文件夹名合法（`[a-zA-Z0-9_-]+`）  
-- [ ] `config.json` 含 `"spec": "bakamusic-theme@2"`  
-- [ ] `name` / `author` / `version` / `preview` / `description` / `tags` 齐全  
-- [ ] `version` 为 `x.y.z`  
-- [ ] `tags` 均在 `tags.json` 中；动态主题含「动态」  
-- [ ] **没有** `id` 字段  
-- [ ] `index.css` 仅 `:root` + 契约 token；含 4 个必填 token  
-- [ ] 无客户端 class、无 `--color-*`、无藏滚动条  
-- [ ] 图片 ≤ 500KB，视频 ≤ 5MB，整包 ≤ 10MB  
-- [ ] `preview` 文件真实存在（或纯色合法）  
-- [ ] 若有 iframe：路径正确，资源 `@/` 可解析  
-- [ ] `npm run validate -- --themes 你的主题` 通过  
-- [ ] 客户端本地安装实机看过 glass + flat  
+- [ ] 文件夹名合法（`[a-zA-Z0-9_-]+`）
+- [ ] `config.json` 含 `"spec": "bakamusic-theme@2"`
+- [ ] `name` / `author` / `version` / `preview` / `description` / `tags` 齐全
+- [ ] `version` 为 `x.y.z`
+- [ ] `tags` 均在 `tags.json` 中；动态主题含「动态」
+- [ ] **没有** `id` 字段
+- [ ] `index.css` 仅 `:root` + 契约 token；含 4 个必填 token
+- [ ] 无客户端 class、无 `--color-*`、无藏滚动条
+- [ ] 图片 ≤ 500KB，视频 ≤ 5MB，整包 ≤ 10MB
+- [ ] `preview` 文件真实存在（或纯色合法）
+- [ ] 若有 iframe：路径正确，资源 `@/` 可解析
+- [ ] `npm run validate -- --themes 你的主题` 通过
+- [ ] 客户端本地安装实机看过 glass + flat
 
 ---
 
@@ -492,9 +509,9 @@ node .scripts/import-legacy-zips.mjs "路径/到/主题zip目录"
 
 ## 14. 相关链接
 
-- 客户端：[Toskysun/BakaMusic](https://github.com/Toskysun/BakaMusic)  
-- 主题仓库：[Toskysun/BakaThemePacks](https://github.com/Toskysun/BakaThemePacks)  
-- 贡献摘要：[CONTRIBUTING.md](../CONTRIBUTING.md)  
-- 市场产物分支：`v2/prod`（`publish.json` + `.mftheme`）  
+- 客户端：[Zencok/BakaMusic](https://github.com/Zencok/BakaMusic)
+- 主题仓库：[Toskysun/BakaThemePacks](https://github.com/Toskysun/BakaThemePacks)
+- 贡献摘要：[CONTRIBUTING.md](../CONTRIBUTING.md)
+- 市场产物分支：`v2/prod`（`publish.json` + `.mftheme`）
 
 祝创作愉快。做好对比度与体积，就是好主题。

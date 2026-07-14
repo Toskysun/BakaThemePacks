@@ -2,7 +2,7 @@
     "spec": "bakamusic-theme@2",
     "name": "fliqlo",
     "author": "猫头猫",
-    "version": "2.0.0",
+    "version": "2.1.0",
     "preview": "@/imgs/preview.png",
     "description": "类似fliqlo的效果",
     "tags": [

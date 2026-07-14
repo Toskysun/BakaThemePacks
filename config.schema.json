@@ -3,7 +3,7 @@
     "title": "BakaMusic Theme Config",
     "description": "BakaMusic 主题包配置（bakamusic-theme@2）",
     "type": "object",
-    "required": ["spec", "name", "author", "preview", "description", "version", "tags"],
+    "required": ["spec", "name", "author", "preview", "description", "version", "tags", "scheme"],
     "properties": {
         "spec": {
             "type": "string",
