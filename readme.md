@@ -32,7 +32,14 @@
 | `v2/source` | 源代码（**PR 提交目标**） |
 | `v2/prod` | CI 自动生成的市场产物（`publish.json`、`.mftheme`、预览图）**请勿手改** |
 
-客户端主题市场默认拉取：
+客户端主题市场优先使用以下 GitHub 加速源：
+
+```text
+https://gh.xmly.dev/https://raw.githubusercontent.com/Toskysun/BakaThemePacks/v2/prod/
+https://gh-proxy.org/https://raw.githubusercontent.com/Toskysun/BakaThemePacks/v2/prod/
+```
+
+无法使用加速源时，可回退到 GitHub 原始地址：
 
 ```text
 https://raw.githubusercontent.com/Toskysun/BakaThemePacks/v2/prod/

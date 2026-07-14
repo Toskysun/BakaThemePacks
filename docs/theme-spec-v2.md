@@ -187,6 +187,15 @@ my-theme/
 
 客户端市场源：
 
+推荐使用以下 GitHub 加速源：
+
+```text
+https://gh.xmly.dev/https://raw.githubusercontent.com/Toskysun/BakaThemePacks/v2/prod/
+https://gh-proxy.org/https://raw.githubusercontent.com/Toskysun/BakaThemePacks/v2/prod/
+```
+
+GitHub 原始地址作为回退：
+
 ```text
 https://raw.githubusercontent.com/Toskysun/BakaThemePacks/v2/prod/
 ```
