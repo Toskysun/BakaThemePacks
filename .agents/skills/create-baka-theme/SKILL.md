@@ -40,6 +40,7 @@ Useful options:
 7. Customize only `config.json`, `index.css`, and pack assets under the new theme folder.
 8. Run `node .scripts/validate.mjs --themes <slug>` after every substantial edit.
 9. Smoke-test both glass and flat client styles before publishing.
+10. Treat `npm run validate` contrast failures as theme defects; adjust theme text/surface tokens instead of asking the client for a selector workaround.
 
 ## Contract rules
 
@@ -47,6 +48,8 @@ Useful options:
 - Never use client selectors, private variables, `!important`, `@import`, layout overrides, or hidden scrollbars.
 - Never declare any `--theme-detail-*` token; they are accepted only to load old packs and are rejected for new source themes.
 - Treat the complete playback detail page and glass MusicBar artwork palette as client-owned behavior.
+- Keep wallpaper transparency in `--theme-bg`; use high-opacity tinted `surface-*` values for every text-bearing region.
+- Meet at least 4.5:1 for primary text and 3:1 for secondary text on header/sidebar/player/panel/popover surfaces.
 - Use `@/imgs/...` for pack assets and only `iframe.app` for dynamic backgrounds.
 - Keep images at most 500 KB, videos at most 5 MB, and the whole theme at most 10 MB.
 - Do not edit `meta.json` for a normal theme addition; publishing owns `id` and `createdAt`.

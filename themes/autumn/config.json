@@ -2,7 +2,7 @@
     "spec": "bakamusic-theme@2",
     "name": "autumn",
     "author": "beef-potato",
-    "version": "2.1.0",
+    "version": "2.1.1",
     "preview": "@/imgs/autumn.jpg",
     "description": "插画作者: Bison倉鼠, https://www.pixiv.net/artworks/60095408 ",
     "tags": [
@@ -10,6 +10,6 @@
         "季节",
         "插画"
     ],
-    "scheme": "light",
+    "scheme": "dark",
     "authorUrl": "https://github.com/beef-potato"
 }

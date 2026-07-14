@@ -2,7 +2,7 @@
     "spec": "bakamusic-theme@2",
     "name": "龙猫",
     "author": "hope",
-    "version": "2.1.0",
+    "version": "2.1.1",
     "preview": "@/imgs/preview.jpg",
     "description": "猫猫猫猫猫龙猫~",
     "tags": [
@@ -10,6 +10,6 @@
         "影视",
         "可爱"
     ],
-    "scheme": "dark",
+    "scheme": "light",
     "authorUrl": "https://github.com/Hopelsz"
 }

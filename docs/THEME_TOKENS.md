@@ -4,6 +4,8 @@
 
 除四个必填项外均可省略，由客户端派生默认值。主题只能在唯一的 `:root` 中声明这些 token，值中的 `var()` 也只能引用本清单内 token。
 
+官方市场额外执行文字可读性门禁：主文字与承载表面至少 `4.5:1`，次级文字至少 `3:1`，并分别在黑、白两种极端壁纸底色上复核半透明表面。壁纸可以透明，承载文字的 `surface`、标题栏、侧栏、播放栏、面板与浮层不能直接复用低透明度 `--theme-bg`。
+
 ## 1. 必填基础（4）
 
 | Token | 作用 |
@@ -22,7 +24,7 @@
 | `--theme-text-secondary` | 次级说明文字 |
 | `--theme-text-muted` | 更弱的辅助、禁用或提示文字 |
 | `--theme-text-on-primary` | 主色背景上的文字/图标 |
-| `--theme-header-text` | 标题栏文字，可与全局文字不同 |
+| `--theme-header-text` | 标题栏文字；通常使用 `var(--theme-text)`，自定义时必须与标题栏背景达到 `4.5:1` |
 | `--theme-link` | 链接与可点击文本 |
 | `--theme-success` | 成功状态 |
 | `--theme-warning` | 警告状态 |
@@ -37,9 +39,9 @@
 
 | Token | 作用 |
 |---|---|
-| `--theme-surface` | 默认玻璃/面板表面 |
-| `--theme-surface-strong` | 更实、更强调的表面 |
-| `--theme-surface-muted` | 更弱、更透明的表面 |
+| `--theme-surface` | 默认玻璃/面板表面；必须在任意壁纸上承载清晰主文字 |
+| `--theme-surface-strong` | 更实、更强调的表面，推荐用于标题栏与设置面板 |
+| `--theme-surface-muted` | 更弱的表面；仍需保留足够底色，不能等同极低 alpha 的主题背景 |
 | `--theme-surface-border` | 默认表面边框 |
 | `--theme-surface-border-strong` | 强调边框 |
 | `--theme-shadow` | 面板/浮层主阴影，可为完整 `box-shadow` 值 |

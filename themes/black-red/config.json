@@ -2,12 +2,12 @@
     "spec": "bakamusic-theme@2",
     "name": "黑红",
     "author": "hope",
-    "version": "2.1.0",
+    "version": "2.1.1",
     "preview": "@/imgs/black-red.png",
     "description": "对之前做了细微修改",
     "tags": [
         "暗色"
     ],
-    "scheme": "light",
+    "scheme": "dark",
     "authorUrl": "https://github.com/Hopelsz"
 }

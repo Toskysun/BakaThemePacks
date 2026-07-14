@@ -133,6 +133,17 @@ my-theme/
 
 `--theme-surface-alpha` 为 2.0 兼容提示（`0`–`1`）；新主题应直接声明所需 surface token。
 
+### 4.10 文字可读性门禁
+
+主题仓库会静态解析颜色并强制检查以下规则：
+
+- 主文字与 `surface`、标题栏、侧栏、播放栏、面板、浮层和主色按钮背景至少 `4.5:1`。
+- 次级文字与对应表面至少 `3:1`。
+- 半透明表面同时在纯黑和纯白壁纸底层上计算，取更差结果。
+- 参与检查的 token 必须显式存在，并使用仓库可静态解析的 `hex`、`rgb(a)`、`var()` 或 `color-mix(in srgb, ...)`。
+
+`--theme-bg` 可以保持低透明度以展示壁纸，但承载文字的表面不得直接使用它。官方主题应从主色向高不透明度的明/暗中性色轻量混合，而不是让客户端针对某个主题补丁。
+
 ## 5. 默认派生
 
 除四个必填 token 外均可省略。客户端会从基础色派生可读默认值；主题若要精确控制某个区域，只覆盖对应语义 token：
@@ -144,10 +155,12 @@ my-theme/
     --theme-text: #111;
     --theme-scheme: light;
 
-    --theme-header-bg: var(--theme-bg);
-    --theme-sidebar-bg: var(--theme-bg);
-    --theme-player-bg: var(--theme-bg);
-    --theme-panel-bg: rgba(94, 226, 212, 0.82);
+    --theme-surface: color-mix(in srgb, var(--theme-primary) 8%, rgba(248, 249, 252, 0.92));
+    --theme-surface-strong: color-mix(in srgb, var(--theme-primary) 5%, rgba(250, 250, 252, 0.98));
+    --theme-header-bg: var(--theme-surface-strong);
+    --theme-sidebar-bg: var(--theme-surface);
+    --theme-player-bg: var(--theme-surface);
+    --theme-panel-bg: var(--theme-surface-strong);
     --theme-popover-bg: #f7fffe;
 }
 ```

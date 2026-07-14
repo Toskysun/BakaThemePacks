@@ -2,7 +2,7 @@
     "spec": "bakamusic-theme@2",
     "name": "荧光文字倒影",
     "author": "beef-potato",
-    "version": "2.1.0",
+    "version": "2.1.1",
     "preview": "@/imgs/preview.png",
     "description": "文本需要在app.html里修改",
     "tags": [

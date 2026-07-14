@@ -130,6 +130,7 @@ themes/my-cool-theme/
 4. **禁止** `!important`、`@import` 和额外 CSS 规则
 5. 客户端会把 `--theme-*` 映射成内部的表面色、标题栏、侧栏、列表等
 6. `var()` 只能引用 [`theme-contract.json`](../theme-contract.json) 内其他公开 token
+7. 官方市场要求主文字对比度至少 `4.5:1`、次级文字至少 `3:1`；校验会覆盖标题栏、侧栏、播放栏、面板与浮层
 
 ### 4.2 必填 Token
 
@@ -146,7 +147,7 @@ themes/my-cool-theme/
 |-------|------|
 | `--theme-text-secondary` | 次级文字 |
 | `--theme-text-on-primary` | 画在主色按钮上的文字色 |
-| `--theme-header-text` | 标题栏文字（可与主文字不同，如深底浅字） |
+| `--theme-header-text` | 标题栏文字；推荐 `var(--theme-text)`，单独设置时必须通过对比度校验 |
 | `--theme-link` | 链接色（默认同 primary） |
 | `--theme-divider` | 分割线 |
 | `--theme-mask` | 弹层遮罩 |
@@ -172,6 +173,8 @@ themes/my-cool-theme/
 完整播放详情页（背景、文字、面板、控件、边框和强调色）以及 glass 播放栏的封面动态取色属于客户端行为。全部 `detail-*` token 仅为早期 2.1 包加载兼容而保留在白名单，新主题不得声明。
 
 ### 4.5 最小合法 CSS（静态浅色）
+
+以下只代表客户端最小契约。提交官方市场前应运行 `npm run upgrade:semantic -- --themes <目录>` 补齐可读表面，再执行校验。
 
 ```css
 /* bakamusic-theme@2 */
@@ -210,7 +213,7 @@ themes/my-cool-theme/
 
 ### 4.7 动态主题（半透明底 + 视频）示例
 
-动态壁纸靠 iframe 播视频；`index.css` 用**半透明** `--theme-bg`，让视频透出来，同时保证文字可读：
+动态壁纸靠 iframe 播视频；`--theme-bg` 可以半透明，但文字所在表面必须单独设置成高不透明度：
 
 ```css
 /* bakamusic-theme@2 — 动态 */
@@ -218,12 +221,16 @@ themes/my-cool-theme/
   --theme-primary: #ff6142;
   /* 半透明：能透出 iframe 视频，又别太透导致字糊 */
   --theme-bg: rgba(255, 97, 66, 0.28);
-  --theme-text: #111111;
-  --theme-scheme: light;
-  --theme-header-text: #ffffff;
-  --theme-text-secondary: rgba(17, 17, 17, 0.68);
+  --theme-text: #f5f7fa;
+  --theme-scheme: dark;
+  --theme-header-text: var(--theme-text);
+  --theme-text-secondary: rgba(245, 247, 250, 0.76);
+  --theme-surface: color-mix(in srgb, var(--theme-primary) 10%, rgba(17, 19, 25, 0.90));
+  --theme-surface-strong: color-mix(in srgb, var(--theme-primary) 6%, rgba(14, 16, 22, 0.97));
+  --theme-surface-muted: color-mix(in srgb, var(--theme-primary) 8%, rgba(17, 19, 25, 0.82));
+  --theme-header-bg: var(--theme-surface-strong);
   --theme-blur: 12px;
-  --theme-surface-alpha: 0.42;
+  --theme-surface-alpha: 0.9;
   --theme-scrollbar-thumb: #ff6142;
 }
 ```
@@ -233,7 +240,7 @@ themes/my-cool-theme/
 | 目标 | 建议 |
 |------|------|
 | 视频更明显 | 降低 `--theme-bg` 的 alpha（如 `0.18`～`0.32`） |
-| 字更清楚 | 提高 alpha，或把 `--theme-text` 调得更对比 |
+| 字更清楚 | 保持壁纸 alpha，提升 `surface-*` 不透明度并运行对比度校验 |
 | 毛玻璃更强 | `--theme-blur: 16px`～`22px`（客户端 glass 模式才会用） |
 | 扁平模式 | 用户可在设置里切 flat；主题**不要**强行改布局 |
 
@@ -357,6 +364,7 @@ npm ci
 npm run validate
 
 # 只校验你的主题
+npm run upgrade:semantic -- --themes my-cool-theme
 npm run validate -- --themes my-cool-theme
 ```
 
@@ -364,6 +372,7 @@ npm run validate -- --themes my-cool-theme
 
 - `spec`、必填字段、semver、标签合法性
 - `index.css` 必填 token、禁止选择器、禁止废弃 token
+- 主文字 `4.5:1`、次级文字 `3:1` 的跨表面对比度
 - 预览文件是否存在
 - iframe 路径
 - 资源体积
@@ -485,6 +494,7 @@ node .scripts/import-legacy-zips.mjs "路径/到/主题zip目录"
 - [ ] `tags` 均在 `tags.json` 中；动态主题含「动态」
 - [ ] **没有** `id` 字段
 - [ ] `index.css` 仅 `:root` + 契约 token；含 4 个必填 token
+- [ ] 标题栏、侧栏、播放栏、面板、浮层文字通过 `4.5:1` / `3:1` 对比度门禁
 - [ ] 无客户端 class、无 `--color-*`、无藏滚动条
 - [ ] 图片 ≤ 500KB，视频 ≤ 5MB，整包 ≤ 10MB
 - [ ] `preview` 文件真实存在（或纯色合法）

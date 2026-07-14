@@ -16,6 +16,7 @@ import {
     THEME_TOKENS,
     parseThemeCss,
 } from './theme-contract.mjs';
+import { auditThemeContrast } from './theme-contrast.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
@@ -257,6 +258,9 @@ class ThemeValidator {
             if (tokens.has(token)) {
                 this.error(`${token} 属于客户端产品视觉行为，仅兼容旧包，新主题不得声明`);
             }
+        }
+        for (const contrastFailure of auditThemeContrast(tokens)) {
+            this.error(`文字可读性不达标: ${contrastFailure}`);
         }
     }
 

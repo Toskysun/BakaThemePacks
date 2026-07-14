@@ -71,7 +71,7 @@ def main() -> None:
         "spec": "bakamusic-theme@2",
         "name": args.name,
         "author": args.author,
-        "version": "2.1.0",
+        "version": "2.1.1",
         "preview": preview,
         "description": args.description or f"{args.name} 主题",
         "tags": tags,
@@ -87,13 +87,12 @@ def main() -> None:
     --theme-text: {text};
     --theme-scheme: {args.scheme};
     --theme-text-secondary: color-mix(in srgb, var(--theme-text) 72%, transparent);
-    --theme-text-on-primary: {"#ffffff" if args.scheme == "dark" else "#0b0b0f"};
     --theme-header-text: var(--theme-text);
     --theme-link: var(--theme-primary);
     --theme-divider: color-mix(in srgb, var(--theme-text) 12%, transparent);
     --theme-mask: rgba(0, 0, 0, 0.42);
     --theme-placeholder: color-mix(in srgb, var(--theme-text) 8%, var(--theme-bg));
-    --theme-surface-alpha: 0.88;
+    --theme-surface-alpha: 0.9;
     --theme-blur: 14px;
     --theme-bg-image: none;
     --theme-scrollbar-thumb: var(--theme-primary);

@@ -10,6 +10,10 @@ import {
     CLIENT_OWNED_COMPATIBILITY_TOKENS,
     parseThemeCss,
 } from './theme-contract.mjs';
+import {
+    chooseReadableText,
+    createReadableSemanticLayer,
+} from './theme-contrast.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
@@ -20,7 +24,6 @@ const SEMANTIC_DEFAULTS = new Map([
     ['--theme-primary-active', 'color-mix(in srgb, var(--theme-primary) 72%, black)'],
     ['--theme-text-secondary', 'color-mix(in srgb, var(--theme-text) 72%, transparent)'],
     ['--theme-text-muted', 'color-mix(in srgb, var(--theme-text) 52%, transparent)'],
-    ['--theme-text-on-primary', '#0b0b0f'],
     ['--theme-header-text', 'var(--theme-text)'],
     ['--theme-link', 'var(--theme-primary)'],
     ['--theme-success', '#08a34c'],
@@ -30,10 +33,7 @@ const SEMANTIC_DEFAULTS = new Map([
     ['--theme-divider', 'color-mix(in srgb, var(--theme-text) 12%, transparent)'],
     ['--theme-mask', 'rgba(0, 0, 0, 0.42)'],
     ['--theme-placeholder', 'color-mix(in srgb, var(--theme-text) 8%, var(--theme-bg))'],
-    ['--theme-surface-alpha', '0.88'],
-    ['--theme-surface', 'var(--theme-bg)'],
-    ['--theme-surface-strong', 'var(--theme-bg)'],
-    ['--theme-surface-muted', 'var(--theme-bg)'],
+    ['--theme-surface-alpha', '0.9'],
     ['--theme-surface-border', 'var(--theme-divider)'],
     ['--theme-surface-border-strong', 'color-mix(in srgb, var(--theme-text) 22%, transparent)'],
     ['--theme-shadow', '0 22px 48px color-mix(in srgb, black 22%, transparent)'],
@@ -45,7 +45,7 @@ const SEMANTIC_DEFAULTS = new Map([
     ['--theme-card-bg', 'var(--theme-surface)'],
     ['--theme-card-bg-hover', 'var(--theme-surface-strong)'],
     ['--theme-card-border', 'var(--theme-surface-border)'],
-    ['--theme-header-bg', 'var(--theme-surface)'],
+    ['--theme-header-bg', 'var(--theme-surface-strong)'],
     ['--theme-header-border', 'var(--theme-surface-border)'],
     ['--theme-header-control-bg', 'var(--theme-interactive)'],
     ['--theme-header-control-hover-bg', 'var(--theme-interactive-hover)'],
@@ -129,6 +129,14 @@ for (const entry of directoryEntries) {
     const configPath = path.join(themeDir, 'config.json');
     const tokens = parseThemeCss(await fs.readFile(cssPath, 'utf-8'));
     for (const token of CLIENT_OWNED_COMPATIBILITY_TOKENS) tokens.delete(token);
+    if (!tokens.has('--theme-text-on-primary')) {
+        tokens.set('--theme-text-on-primary', chooseReadableText(tokens.get('--theme-primary'), tokens));
+    }
+    const readableLayer = createReadableSemanticLayer(tokens.get('--theme-scheme'), tokens);
+    for (const token of ['--theme-surface', '--theme-surface-strong', '--theme-surface-muted']) {
+        const value = readableLayer.get(token);
+        if (!tokens.has(token)) tokens.set(token, value);
+    }
     for (const [token, value] of SEMANTIC_DEFAULTS) {
         if (!tokens.has(token)) tokens.set(token, value);
     }
