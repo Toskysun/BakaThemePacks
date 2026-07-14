@@ -1,0 +1,15 @@
+{
+    "spec": "bakamusic-theme@2",
+    "name": "素袂霞红【动态】",
+    "author": "轻舟折枝",
+    "version": "2.0.0",
+    "preview": "@/imgs/preview.jpg",
+    "description": "素袂霞红",
+    "tags": [
+        "动态"
+    ],
+    "scheme": "light",
+    "iframe": {
+        "app": "@/iframes/app.html"
+    }
+}

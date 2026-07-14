@@ -1,0 +1,15 @@
+{
+    "spec": "bakamusic-theme@2",
+    "name": "满月【动态】蓝",
+    "author": "轻舟折枝",
+    "version": "2.0.0",
+    "preview": "@/imgs/preview.jpg",
+    "description": "满月",
+    "tags": [
+        "动态"
+    ],
+    "scheme": "light",
+    "iframe": {
+        "app": "@/iframes/app.html"
+    }
+}

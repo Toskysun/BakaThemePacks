@@ -1,0 +1,15 @@
+{
+    "spec": "bakamusic-theme@2",
+    "name": "芙宁娜丨细雨绵绵【动态】",
+    "author": "轻舟折枝",
+    "version": "2.0.0",
+    "preview": "@/imgs/preview.jpg",
+    "description": "芙宁娜丨细雨绵绵",
+    "tags": [
+        "动态"
+    ],
+    "scheme": "light",
+    "iframe": {
+        "app": "@/iframes/app.html"
+    }
+}

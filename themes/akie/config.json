@@ -1,0 +1,15 @@
+{
+    "spec": "bakamusic-theme@2",
+    "name": "Akie秋绘【动态】",
+    "author": "轻舟折枝",
+    "version": "2.0.0",
+    "preview": "@/imgs/preview.jpg",
+    "description": "Akie秋绘",
+    "tags": [
+        "动态"
+    ],
+    "scheme": "light",
+    "iframe": {
+        "app": "@/iframes/app.html"
+    }
+}

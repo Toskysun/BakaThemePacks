@@ -1,0 +1,16 @@
+/* bakamusic-theme@2 — imported from legacy BakaMusic pack */
+:root {
+    --theme-primary: rgb(236, 109, 90);
+    --theme-bg: rgba(236, 109, 90, 0.12);
+    --theme-text: rgb(0, 0, 0);
+    --theme-scheme: light;
+    --theme-text-secondary: rgba(0, 0, 0, 0.68);
+    --theme-header-text: rgb(221, 221, 221);
+    --theme-link: rgb(236, 109, 90);
+    --theme-divider: rgba(0, 0, 0, 0.12);
+    --theme-mask: rgba(0, 0, 0, 0.28);
+    --theme-placeholder: rgb(222, 222, 222);
+    --theme-surface-alpha: 0.12;
+    --theme-blur: 10px;
+    --theme-scrollbar-thumb: rgb(236, 109, 90);
+}
