@@ -1,64 +1,108 @@
-# 贡献指南 — bakamusic-theme@2
+# 贡献指南
 
-BakaMusic 主题由 **客户端定义契约**，主题包 **只填 token**。  
-完整规范见客户端仓库：[`docs/theme-spec-v2.md`](https://github.com/Toskysun/BakaMusic/blob/main/docs/theme-spec-v2.md)（以本地 BakaMusic 仓库文档为准）。
+感谢为 [BakaMusic](https://github.com/Toskysun/BakaMusic) 贡献主题。
+
+## 写主题请先读这个
+
+**完整写作教程（推荐）：** [docs/THEME_GUIDE.md](./docs/THEME_GUIDE.md)
+
+其中包含：
+
+- 包结构与 `@/` 路径  
+- `config.json` 全字段  
+- 全部 `--theme-*` token 说明与示例  
+- 动态 iframe / 视频压缩  
+- 本地校验与 `.mftheme` 安装  
+- PR 上架流程与检查清单  
+
+本页只保留 **PR 流程摘要**。
+
+---
+
+## 契约
+
+- 版本：`bakamusic-theme@2`  
+- 原则：客户端定布局；主题只填 token + 可选背景  
+- Schema：[`config.schema.json`](./config.schema.json)  
+
+---
 
 ## 分支
 
 | 分支 | 用途 |
 |------|------|
-| `v2/source` | 源码与 PR 目标 |
-| `v2/prod` | CI 产物（勿手改） |
+| `v2/source` | 源码，**PR 目标** |
+| `v2/prod` | CI 产物，勿手改 |
 
-## 快速开始
+---
+
+## 提 PR 步骤
 
 1. Fork 本仓库，从 `v2/source` 建分支  
-2. 在 `themes/` 下新建文件夹（仅 `a-zA-Z0-9_-`）  
-3. 编写 `config.json`（**必须** `"spec": "bakamusic-theme@2"`）  
-4. 编写 `index.css`：**仅** `:root { --theme-*; }`  
-5. 可选：`iframes/app.html` + 媒体资源  
-6. 本地：`npm run validate`  
-7. 向 `v2/source` 提 PR  
+2. 在 `themes/<folder>/` 添加主题（文件夹名仅 `a-zA-Z0-9_-`）  
+3. 确保 `config.json` 含 `"spec": "bakamusic-theme@2"`  
+4. `index.css` **仅** `:root { --theme-*; }`  
+5. 本地校验：
 
-## config.json 必填
+   ```bash
+   npm ci
+   npm run validate -- --themes <folder>
+   ```
+
+6. 向 **`v2/source`** 开 PR，说明主题效果与作者信息  
+7. 合并后 CI 自动发布到 `v2/prod`  
+
+---
+
+## 硬性限制（CI）
+
+| 项 | 限制 |
+|----|------|
+| 单图 | ≤ 500 KB |
+| 单视频 | ≤ 5 MB |
+| 整包 | ≤ 10 MB |
+| tags | 1～5 个，且 ∈ `tags.json` |
+| 动态主题 | 必须带标签「动态」 |
+| `id` 字段 | 禁止写入 config（由 meta 管理） |
+
+禁止：客户端 class 选择器、MusicFree `--color-*`、全局藏滚动条、改布局尺寸。
+
+---
+
+## 快速模板
+
+**config.json**
 
 ```json
 {
   "spec": "bakamusic-theme@2",
   "name": "我的主题",
-  "author": "你",
+  "author": "你的名字",
   "version": "2.0.0",
   "preview": "@/imgs/preview.jpg",
   "description": "描述",
-  "tags": ["暗色"],
-  "scheme": "dark"
+  "tags": ["亮色"],
+  "scheme": "light"
 }
 ```
 
-含 iframe 时 tags 必须包含 **「动态」**。
-
-## index.css 必填 token
+**index.css**
 
 ```css
 :root {
-  --theme-primary: #…;
-  --theme-bg: …;
-  --theme-text: …;
-  --theme-scheme: light; /* 或 dark */
+  --theme-primary: #f17d34;
+  --theme-bg: #fdfdfd;
+  --theme-text: #333333;
+  --theme-scheme: light;
 }
 ```
 
-禁止：客户端 class、MusicFree `--color-*`、隐藏滚动条、改布局尺寸。
+更多示例（深色 / 动态视频）见 [THEME_GUIDE.md](./docs/THEME_GUIDE.md)。
 
-## 体积
+---
 
-- 单图 ≤ 500KB  
-- 单视频 ≤ 5MB  
-- 整包 ≤ 10MB  
+## 行为准则
 
-## 校验
-
-```bash
-npm run validate
-npm run validate:theme -- --themes my-theme
-```
+- 尊重素材版权，注明来源  
+- 勿提交过大或无关文件  
+- 保持 PR 只改自己的主题（除非修仓库工具）  
