@@ -1,15 +1,17 @@
 {
+    "spec": "bakamusic-theme@2",
     "name": "荧光文字倒影",
+    "author": "beef-potato",
+    "version": "2.0.0",
     "preview": "@/imgs/preview.png",
     "description": "文本需要在app.html里修改",
-    "author": "beef-potato",
-    "iframe": {
-        "app": "@/iframes/app.html"
-    },
-    "version": "0.0.1",
-    "authorUrl": "https://github.com/beef-potato",
     "tags": [
         "动态",
         "赛博"
-    ]
+    ],
+    "scheme": "dark",
+    "authorUrl": "https://github.com/beef-potato",
+    "iframe": {
+        "app": "@/iframes/app.html"
+    }
 }

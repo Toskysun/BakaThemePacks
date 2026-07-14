@@ -1,11 +1,13 @@
 {
+    "spec": "bakamusic-theme@2",
     "name": "mygo",
+    "author": "beef-potato",
+    "version": "2.0.0",
     "preview": "@/imgs/mygo.jpg",
     "description": "pic author: Bison倉鼠, https://www.pixiv.net/artworks/112236596",
-    "author": "beef-potato",
-    "version": "0.0.1",
-    "authorUrl": "https://github.com/beef-potato",
     "tags": [
         "动漫"
-    ]
+    ],
+    "scheme": "dark",
+    "authorUrl": "https://github.com/beef-potato"
 }

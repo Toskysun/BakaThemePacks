@@ -1,0 +1,16 @@
+{
+    "spec": "bakamusic-theme@2",
+    "name": "Cute-Fluff-Ball-Critter【动态】",
+    "author": "轻舟折枝",
+    "version": "2.0.0",
+    "preview": "@/imgs/preview.jpg",
+    "description": "动态毛球 — bakamusic-theme@2 官方样例（由社区 7.0 参考包迁移）",
+    "tags": [
+        "动态",
+        "可爱"
+    ],
+    "scheme": "light",
+    "iframe": {
+        "app": "@/iframes/app.html"
+    }
+}

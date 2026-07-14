@@ -1,61 +1,18 @@
-/*
- * Upgraded for MusicFree Desktop v2 semantic token system
- */
+/* bakamusic-theme@2 — token-only pack (client owns chrome) */
 :root {
-
-    /* ── Background ── */
-    --color-bg-base: rgb(0, 26, 61);
-    --color-bg-sidebar: rgba(0, 26, 61, 0.4);
-    --color-bg-player: rgba(0, 26, 61, 0.85);
-    --color-bg-surface: rgba(255, 255, 255, 0.04);
-    --color-bg-surface-raised: rgba(255, 255, 255, 0.08);
-    --color-bg-drawer: rgba(0, 23, 55, 0.95);
-    --color-bg-overlay: rgba(51, 51, 51, 0.7);
-    --color-bg-modal: rgb(0, 23, 55);
-    --color-bg-popover: rgba(0, 23, 55, 0.95);
-    --color-bg-fullscreen: rgb(0, 26, 61);
-    --color-bg-placeholder: rgba(161, 132, 103, 0.92);
-
-    /* ── Fill ── */
-    --color-fill-brand: rgb(255, 102, 102);
-    --color-fill-brand-hover: rgba(255, 102, 102, 0.85);
-    --color-fill-brand-muted: rgba(255, 102, 102, 0.15);
-    --color-fill-neutral: rgba(255, 255, 255, 0.1);
-    --color-fill-neutral-hover: rgba(255, 255, 255, 0.16);
-    --color-fill-neutral-active: rgba(255, 255, 255, 0.06);
-    --color-fill-subtle: rgba(255, 255, 255, 0.03);
-    --color-fill-subtle-hover: rgba(255, 255, 255, 0.06);
-
-    /* ── Text ── */
-    --color-text-primary: rgb(255, 204, 153);
-    --color-text-secondary: rgba(255, 204, 153, 0.7);
-    --color-text-muted: rgba(255, 204, 153, 0.6);
-    --color-text-placeholder: rgba(255, 204, 153, 0.5);
-    --color-text-disabled: rgba(255, 204, 153, 0.3);
-    --color-text-brand: rgb(255, 102, 102);
-    --color-text-on-brand: rgb(18, 18, 18);
-
-    /* ── Border ── */
-    --color-border-default: rgba(255, 255, 255, 0.05);
-    --color-border-subtle: rgba(255, 255, 255, 0.05);
-    --color-border-strong: rgba(255, 255, 255, 0.16);
-    --color-border-focus: rgba(255, 255, 255, 0.2);
-    --color-border-brand: rgba(255, 102, 102, 0.3);
-
-    /* ── Background Image ── */
-    --bg-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('@/imgs/preview.jpg');
-}
-
-body[data-window='main'] {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.l-sidebar {
-    backdrop-filter: blur(var(--blur-sm));
-}
-
-.l-player-bar {
-    backdrop-filter: blur(var(--blur-sm));
+    --theme-primary: rgb(255, 102, 102);
+    --theme-bg: rgba(0, 26, 61, 0.42);
+    --theme-text: rgb(255, 204, 153);
+    --theme-scheme: dark;
+    --theme-text-secondary: rgba(255, 204, 153, 0.7);
+    --theme-text-on-primary: rgb(18, 18, 18);
+    --theme-header-text: rgb(255, 204, 153);
+    --theme-link: rgb(255, 102, 102);
+    --theme-divider: rgba(255, 255, 255, 0.05);
+    --theme-mask: rgba(51, 51, 51, 0.7);
+    --theme-placeholder: rgba(161, 132, 103, 0.92);
+    --theme-surface-alpha: 0.42;
+    --theme-blur: 14px;
+    --theme-bg-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('@/imgs/preview.jpg');
+    --theme-scrollbar-thumb: rgb(255, 102, 102);
 }

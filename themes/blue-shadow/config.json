@@ -1,12 +1,14 @@
 {
+    "spec": "bakamusic-theme@2",
     "name": "蓝影",
-    "preview": "@/imgs/preview.jpeg",
     "author": "hope",
+    "version": "2.0.0",
+    "preview": "@/imgs/preview.jpeg",
     "description": "影影影影影",
-    "version": "0.0.0",
-    "authorUrl": "https://github.com/Hopelsz",
     "tags": [
         "暗色",
         "插画"
-    ]
+    ],
+    "scheme": "dark",
+    "authorUrl": "https://github.com/Hopelsz"
 }

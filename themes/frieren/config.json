@@ -1,10 +1,12 @@
 {
+    "spec": "bakamusic-theme@2",
     "name": "frieren_4k",
+    "author": "wfx",
+    "version": "2.0.0",
     "preview": "@/imgs/frieren_4k.jpg",
     "description": "背景图片",
-    "author": "wfx",
-    "version": "0.0.0",
     "tags": [
         "动漫"
-    ]
+    ],
+    "scheme": "dark"
 }

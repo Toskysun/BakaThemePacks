@@ -1,15 +1,17 @@
 {
+    "spec": "bakamusic-theme@2",
     "name": "爱的告白【动态】",
-    "preview": "@/imgs/preview.jpg",
-    "version": "1.0.1",
-    "iframe": {
-        "app": "@/iframes/app.html"
-    },
     "author": "akFace",
+    "version": "2.0.0",
+    "preview": "@/imgs/preview.jpg",
     "description": "超好看的动态主题哦，颜色会随着时间变化",
-    "authorUrl": "https://github.com/akFace",
     "tags": [
         "动态",
         "抽象"
-    ]
+    ],
+    "scheme": "light",
+    "authorUrl": "https://github.com/akFace",
+    "iframe": {
+        "app": "@/iframes/app.html"
+    }
 }

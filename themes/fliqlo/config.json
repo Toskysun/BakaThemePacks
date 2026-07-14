@@ -1,16 +1,18 @@
 {
+    "spec": "bakamusic-theme@2",
     "name": "fliqlo",
+    "author": "猫头猫",
+    "version": "2.0.0",
     "preview": "@/imgs/preview.png",
     "description": "类似fliqlo的效果",
-    "author": "猫头猫",
-    "iframe": {
-        "app": "@/iframes/app.html"
-    },
-    "version": "0.0.1",
-    "authorUrl": "https://github.com/maotoumao",
     "tags": [
         "动态",
         "简约",
         "暗色"
-    ]
+    ],
+    "scheme": "dark",
+    "authorUrl": "https://github.com/maotoumao",
+    "iframe": {
+        "app": "@/iframes/app.html"
+    }
 }

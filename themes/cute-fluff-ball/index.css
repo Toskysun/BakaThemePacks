@@ -1,0 +1,17 @@
+/* bakamusic-theme@2 — official dynamic sample (token-only) */
+:root {
+    --theme-primary: #5ee2d4;
+    --theme-bg: rgba(94, 226, 212, 0.28);
+    --theme-text: #111111;
+    --theme-scheme: light;
+    --theme-text-secondary: rgba(17, 17, 17, 0.68);
+    --theme-text-on-primary: #0b0b0f;
+    --theme-header-text: #ffffff;
+    --theme-link: #5ee2d4;
+    --theme-divider: rgba(17, 17, 17, 0.12);
+    --theme-mask: rgba(17, 17, 17, 0.32);
+    --theme-placeholder: rgba(94, 226, 212, 0.35);
+    --theme-surface-alpha: 0.42;
+    --theme-blur: 12px;
+    --theme-scrollbar-thumb: #5ee2d4;
+}

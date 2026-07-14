@@ -1,7 +1,7 @@
-name: 发布到 v1/prod
+name: 发布到 v2/prod
 on:
   push:
-    branches: [v1/source]
+    branches: [v2/source]
   workflow_dispatch:
 
 jobs:
@@ -11,10 +11,10 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Checkout v1/source
+      - name: Checkout v2/source
         uses: actions/checkout@v4
         with:
-          ref: v1/source
+          ref: v2/source
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -25,53 +25,46 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Validate all themes
+        run: node .scripts/validate.mjs
+
       - name: Run publish
         run: node .scripts/publish.mjs
 
-      - name: Deploy to v1/prod
+      - name: Deploy to v2/prod
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # 暂存产物到临时目录
           mkdir -p /tmp/publish-output
           cp -r .publish/* /tmp/publish-output/
-
-          # 备份更新后的 meta.json
           cp meta.json /tmp/meta.json.updated
 
-          # 暂存工作区变更（publish 可能更新了 meta.json）
           git stash --include-untracked
 
-          # 切换到 v1/prod 分支（如不存在则创建孤儿分支）
-          git fetch origin v1/prod || true
-          if git show-ref --verify --quiet refs/remotes/origin/v1/prod; then
-            git checkout v1/prod
+          git fetch origin v2/prod || true
+          if git show-ref --verify --quiet refs/remotes/origin/v2/prod; then
+            git checkout v2/prod
             git rm -rf . || true
           else
-            git checkout --orphan v1/prod
+            git checkout --orphan v2/prod
             git rm -rf . || true
           fi
 
-          # 清理所有未追踪文件（包括 node_modules、.publish 等）
           git clean -fdx
-
-          # 复制产物
           cp -r /tmp/publish-output/* .
 
-          # 提交并推送
           git add .
           git commit -m "Publish: $(date -u '+%Y-%m-%dT%H:%M:%SZ')" || echo "No changes to commit"
-          git push origin v1/prod --force
+          git push origin v2/prod --force
 
-      - name: Update meta.json on v1/source
+      - name: Update meta.json on v2/source
         run: |
-          git checkout v1/source
+          git checkout v2/source
           git stash pop || true
-          # 用备份的 meta.json 覆盖（确保包含最新变更）
           cp /tmp/meta.json.updated meta.json
           if [ -n "$(git diff --name-only meta.json 2>/dev/null)" ]; then
             git add meta.json
             git commit -m "chore: update meta.json"
-            git push origin v1/source
+            git push origin v2/source
           fi

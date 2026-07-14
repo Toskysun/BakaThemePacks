@@ -1,16 +1,18 @@
 {
+    "spec": "bakamusic-theme@2",
     "name": "樱花",
-    "preview": "@/imgs/preview.png",
-    "iframe": {
-        "app": "@/iframes/app.html"
-    },
     "author": "猫头猫",
-    "version": "0.0.1",
+    "version": "2.0.0",
+    "preview": "@/imgs/preview.png",
     "description": "樱花飘落动态主题",
-    "authorUrl": "https://github.com/maotoumao",
     "tags": [
         "动态",
         "自然",
         "季节"
-    ]
+    ],
+    "scheme": "dark",
+    "authorUrl": "https://github.com/maotoumao",
+    "iframe": {
+        "app": "@/iframes/app.html"
+    }
 }

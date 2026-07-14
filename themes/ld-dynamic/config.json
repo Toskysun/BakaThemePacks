@@ -1,16 +1,18 @@
 {
+    "spec": "bakamusic-theme@2",
     "name": "雷电将军【动态】",
-    "preview": "@/imgs/preview.jpg",
-    "version": "1.0.1",
-    "iframe": {
-        "app": "@/iframes/app.html"
-    },
     "author": "akFace",
+    "version": "2.0.0",
+    "preview": "@/imgs/preview.jpg",
     "description": "雷电将军【动态】主题",
-    "authorUrl": "https://github.com/akFace",
     "tags": [
         "动态",
         "动漫",
         "游戏"
-    ]
+    ],
+    "scheme": "dark",
+    "authorUrl": "https://github.com/akFace",
+    "iframe": {
+        "app": "@/iframes/app.html"
+    }
 }

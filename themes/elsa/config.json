@@ -1,12 +1,14 @@
 {
+    "spec": "bakamusic-theme@2",
     "name": "艾莎",
-    "preview": "@/imgs/preview.jpg",
     "author": "hope",
+    "version": "2.0.0",
+    "preview": "@/imgs/preview.jpg",
     "description": "冰雪奇缘",
-    "version": "0.0.0",
-    "authorUrl": "https://github.com/Hopelsz",
     "tags": [
         "动漫",
         "影视"
-    ]
+    ],
+    "scheme": "dark",
+    "authorUrl": "https://github.com/Hopelsz"
 }

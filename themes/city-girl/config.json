@@ -1,15 +1,17 @@
 {
+    "spec": "bakamusic-theme@2",
     "name": "星光美少女【动态】",
+    "author": "hope",
+    "version": "2.0.0",
     "preview": "@/imgs/preview.jpg",
     "description": "星光美少女",
-    "author": "hope",
-    "version": "0.0.0",
-    "iframe": {
-        "app": "@/iframes/app.html"
-    },
-    "authorUrl": "https://github.com/Hopelsz",
     "tags": [
         "动态",
         "动漫"
-    ]
+    ],
+    "scheme": "light",
+    "authorUrl": "https://github.com/Hopelsz",
+    "iframe": {
+        "app": "@/iframes/app.html"
+    }
 }

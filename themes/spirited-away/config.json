@@ -1,12 +1,14 @@
 {
+    "spec": "bakamusic-theme@2",
     "name": "千与千寻",
-    "preview": "@/imgs/preview.jpg",
     "author": "hope",
+    "version": "2.0.0",
+    "preview": "@/imgs/preview.jpg",
     "description": "当陪你的人要下车时，即使不舍，也该心存感激，然后挥手道别。",
-    "version": "0.0.0",
-    "authorUrl": "https://github.com/Hopelsz",
     "tags": [
         "动漫",
         "影视"
-    ]
+    ],
+    "scheme": "dark",
+    "authorUrl": "https://github.com/Hopelsz"
 }

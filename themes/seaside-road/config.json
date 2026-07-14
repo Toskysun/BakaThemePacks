@@ -1,15 +1,17 @@
 {
+    "spec": "bakamusic-theme@2",
     "name": "海边公路【动态】",
+    "author": "hope",
+    "version": "2.0.0",
     "preview": "@/imgs/preview.jpeg",
     "description": "夏日炎炎，海边公路格外美丽~",
-    "author": "hope",
-    "version": "0.0.0",
-    "iframe": {
-        "app": "@/iframes/app.html"
-    },
-    "authorUrl": "https://github.com/Hopelsz",
     "tags": [
         "动态",
         "风景"
-    ]
+    ],
+    "scheme": "dark",
+    "authorUrl": "https://github.com/Hopelsz",
+    "iframe": {
+        "app": "@/iframes/app.html"
+    }
 }

@@ -1,15 +1,17 @@
 {
+    "spec": "bakamusic-theme@2",
     "name": "倾霞碎绛【动态】",
+    "author": "麥麥（麥天浩）",
+    "version": "2.0.0",
     "preview": "@/imgs/preview.jpeg",
     "description": "海浪、晚霞~",
-    "author": "麥麥（麥天浩）",
-    "version": "0.0.1",
-    "iframe": {
-        "app": "@/iframes/app.html"
-    },
-    "authorUrl": "https://github.com/uuwor",
     "tags": [
         "动态",
         "风景"
-    ]
+    ],
+    "scheme": "light",
+    "authorUrl": "https://github.com/uuwor",
+    "iframe": {
+        "app": "@/iframes/app.html"
+    }
 }

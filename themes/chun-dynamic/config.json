@@ -1,15 +1,17 @@
 {
+    "spec": "bakamusic-theme@2",
     "name": "椿【动态】",
-    "preview": "@/imgs/preview.jpg",
-    "version": "1.0.1",
-    "iframe": {
-        "app": "@/iframes/app.html"
-    },
     "author": "akFace",
+    "version": "2.0.0",
+    "preview": "@/imgs/preview.jpg",
     "description": "椿",
-    "authorUrl": "https://github.com/akFace",
     "tags": [
         "动态",
         "动漫"
-    ]
+    ],
+    "scheme": "dark",
+    "authorUrl": "https://github.com/akFace",
+    "iframe": {
+        "app": "@/iframes/app.html"
+    }
 }

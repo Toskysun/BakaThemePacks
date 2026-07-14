@@ -1,7 +1,7 @@
 name: PR 校验
 on:
   pull_request:
-    branches: [v1/source]
+    branches: [v2/source]
     types: [opened, synchronize, reopened]
 
 jobs:
@@ -26,12 +26,10 @@ jobs:
       - name: Get changed themes
         id: changed
         run: |
-          # 获取 PR 中变更的文件，提取涉及的主题文件夹名
           CHANGED_FILES=$(git diff --name-only origin/${{ github.base_ref }}...HEAD)
           echo "Changed files:"
           echo "$CHANGED_FILES"
 
-          # 提取 themes/ 下的主题文件夹名
           THEMES=$(echo "$CHANGED_FILES" \
             | grep '^themes/' \
             | cut -d'/' -f2 \

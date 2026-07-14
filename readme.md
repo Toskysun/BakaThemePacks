@@ -1,49 +1,28 @@
-# MusicFree 桌面版主题包
+# BakaMusic 主题包（bakamusic-theme@2）
 
-MusicFree 桌面版音乐播放器的社区主题包仓库。
+[BakaMusic](https://github.com/Toskysun/BakaMusic) 的官方主题市场源。
 
-## 分支说明
+## 规范
+
+- 契约 ID：`bakamusic-theme@2`  
+- **客户端定规范，主题只填色**（token + 可选 iframe 背景）  
+- 权威文档：客户端仓库 `docs/theme-spec-v2.md`
+
+## 分支
 
 | 分支 | 说明 |
 |------|------|
-| `v1/source` | 源代码分支（PR 提交目标） |
-| `v1/prod` | 打包产物分支（CI 自动生成，请勿手动修改） |
+| `v2/source` | 源代码（PR 提交目标） |
+| `v2/prod` | 打包产物（客户端市场拉取） |
 
 ## 提交主题
 
-请 Fork 本仓库，并向 `v1/source` 分支提交 PR。
+见 [CONTRIBUTING.md](./CONTRIBUTING.md)。
 
-详细指南请参阅 [CONTRIBUTING.md](./CONTRIBUTING.md)。
+## 安装
 
-### 快速概览
-
-1. 在 `themes/` 目录下创建主题文件夹（仅允许字母、数字、`-`、`_`）
-2. 编写 `config.json`（必填：name, author, preview, description, version, tags）
-3. 编写 `index.css` 样式
-4. 压缩图片（≤ 500KB/张）和视频（≤ 5MB/个）
-5. 本地运行 `npm run validate` 校验
-6. 提交 PR 到 `v1/source` 分支
-
-## 安装主题
-
-### 0.0.2 及以上版本
-
-1. 下载 [主题包](https://wwwzb.lanzoue.com/i9eDT1dowk7i) 并解压
-2. 点击 + 号安装主题，选择 `.mftheme` 文件
-3. 在软件内切换主题
-
-### 0.0.2 以下版本
-
-1. 下载并解压
-2. 点击 + 号安装主题，选择文件夹  
-   ![安装示例](./.imgs/install.png)
-3. 在软件内切换主题
-
-## 可用标签
-
-主题按标签分类，可在主题市场中按标签筛选。完整标签列表请查看 [`tags.json`](./tags.json)。
+在 BakaMusic **主题市场** 浏览安装，或本地安装 `.mftheme`（须 `spec: bakamusic-theme@2`）。
 
 ## 许可证
 
-[GPL-3.0](./LICENSE)
-
+GPL-3.0

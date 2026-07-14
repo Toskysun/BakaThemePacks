@@ -122,12 +122,14 @@ async function publish() {
 
             return {
                 id: themeMeta.id,
+                spec: mergedConfig.spec || 'bakamusic-theme@2',
                 name: mergedConfig.name,
                 packageName: folder.name,
                 author: mergedConfig.author,
                 authorUrl: mergedConfig.authorUrl || '',
                 description: mergedConfig.description || '',
                 version: mergedConfig.version || '0.0.1',
+                scheme: mergedConfig.scheme || '',
                 tags: mergedConfig.tags || [],
                 preview: previewUrl || mergedConfig.preview,
                 themeUrl: `themes/${outputName}.mftheme`,

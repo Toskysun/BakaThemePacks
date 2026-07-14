@@ -1,11 +1,13 @@
 {
+    "spec": "bakamusic-theme@2",
     "name": "黑红",
-    "preview": "@/imgs/black-red.png",
     "author": "hope",
+    "version": "2.0.0",
+    "preview": "@/imgs/black-red.png",
     "description": "对之前做了细微修改",
-    "version": "0.0.1",
-    "authorUrl": "https://github.com/Hopelsz",
     "tags": [
         "暗色"
-    ]
+    ],
+    "scheme": "light",
+    "authorUrl": "https://github.com/Hopelsz"
 }

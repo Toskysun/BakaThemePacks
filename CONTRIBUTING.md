@@ -1,125 +1,64 @@
-# 贡献指南
+# 贡献指南 — bakamusic-theme@2
 
-感谢你对 MusicFree 主题包项目的贡献！请仔细阅读以下指南。
+BakaMusic 主题由 **客户端定义契约**，主题包 **只填 token**。  
+完整规范见客户端仓库：[`docs/theme-spec-v2.md`](https://github.com/Toskysun/BakaMusic/blob/main/docs/theme-spec-v2.md)（以本地 BakaMusic 仓库文档为准）。
 
-## 提交新主题
+## 分支
 
-### 1. Fork 仓库
+| 分支 | 用途 |
+|------|------|
+| `v2/source` | 源码与 PR 目标 |
+| `v2/prod` | CI 产物（勿手改） |
 
-Fork 本仓库，并基于 `v1/source` 分支创建你的开发分支。
+## 快速开始
 
-### 2. 创建主题文件夹
+1. Fork 本仓库，从 `v2/source` 建分支  
+2. 在 `themes/` 下新建文件夹（仅 `a-zA-Z0-9_-`）  
+3. 编写 `config.json`（**必须** `"spec": "bakamusic-theme@2"`）  
+4. 编写 `index.css`：**仅** `:root { --theme-*; }`  
+5. 可选：`iframes/app.html` + 媒体资源  
+6. 本地：`npm run validate`  
+7. 向 `v2/source` 提 PR  
 
-在 `themes/` 目录下创建主题文件夹，命名规则：**仅允许字母、数字、连字符（-）、下划线（_）**。
-
-```
-themes/your-theme-name/
-├── config.json          # 必须 - 主题配置
-├── index.css            # 必须 - 主题样式
-├── imgs/                # 图片/视频资源
-│   ├── preview.webp     # 预览图（推荐 webp 格式）
-│   └── ...
-└── iframes/             # 仅动态主题需要
-    ├── app.html         # 动态主题入口
-    └── ...
-```
-
-### 3. 编写 config.json
-
-**静态主题模板：**
+## config.json 必填
 
 ```json
 {
-    "name": "你的主题名称",
-    "preview": "@/imgs/preview.webp",
-    "description": "主题描述",
-    "author": "你的名字",
-    "authorUrl": "https://github.com/yourname",
-    "version": "0.0.1",
-    "tags": ["标签1", "标签2"]
+  "spec": "bakamusic-theme@2",
+  "name": "我的主题",
+  "author": "你",
+  "version": "2.0.0",
+  "preview": "@/imgs/preview.jpg",
+  "description": "描述",
+  "tags": ["暗色"],
+  "scheme": "dark"
 }
 ```
 
-**动态主题模板：**
+含 iframe 时 tags 必须包含 **「动态」**。
 
-```json
-{
-    "name": "你的主题名称【动态】",
-    "preview": "@/imgs/preview.webp",
-    "description": "主题描述",
-    "author": "你的名字",
-    "authorUrl": "https://github.com/yourname",
-    "version": "0.0.1",
-    "tags": ["动态", "标签2"],
-    "iframe": {
-        "app": "@/iframes/app.html"
-    }
+## index.css 必填 token
+
+```css
+:root {
+  --theme-primary: #…;
+  --theme-bg: …;
+  --theme-text: …;
+  --theme-scheme: light; /* 或 dark */
 }
 ```
 
-> ⚠️ **不要** 在 config.json 中添加 `id` 字段，ID 由系统自动管理。
+禁止：客户端 class、MusicFree `--color-*`、隐藏滚动条、改布局尺寸。
 
-### 4. 选择标签
+## 体积
 
-从 [`tags.json`](./tags.json) 中选择 1-5 个预定义标签。含 `iframe` 的动态主题必须包含 `"动态"` 标签。
+- 单图 ≤ 500KB  
+- 单视频 ≤ 5MB  
+- 整包 ≤ 10MB  
 
-### 5. 资源限制
-
-| 约束项 | 限制 |
-|--------|------|
-| 单张图片 | ≤ 500 KB |
-| 单个视频 | ≤ 5 MB |
-| 整个主题包 | ≤ 10 MB |
-
-**推荐做法：**
-- 使用 WebP 格式图片（比 PNG/JPG 体积小很多）
-- 使用 [TinyPNG](https://tinypng.com/) 等工具压缩图片
-- 视频尽量使用较低的分辨率或帧率
-
-### 6. 本地校验
-
-提交 PR 前，请在本地运行校验确保通过：
+## 校验
 
 ```bash
-npm install
 npm run validate
+npm run validate:theme -- --themes my-theme
 ```
-
-或仅校验你的主题：
-
-```bash
-npm run validate:theme your-theme-name
-```
-
-### 7. 提交 PR
-
-将你的分支推送到 fork 仓库，然后向本仓库的 `v1/source` 分支提交 Pull Request。
-
-CI 会自动运行校验，请确保所有检查通过。
-
----
-
-## 更新已有主题
-
-1. 在对应主题的 config.json 中 **递增 version 版本号**
-2. 进行修改
-3. 本地校验通过后提交 PR
-
----
-
-## 新增标签
-
-如果现有标签不能满足需求，可以提交 PR 修改 `tags.json` 文件添加新标签，需要维护者审批。
-
----
-
-## 常见问题
-
-**Q: 预览图可以不用文件吗？**  
-A: 可以。如果你的主题是纯色主题，`preview` 字段可以使用 CSS 颜色值，如 `"#000"`。
-
-**Q: 为什么不能在 config.json 中设置 id？**  
-A: 为了保证 ID 的全局唯一性和一致性，所有主题的 ID 由 `meta.json` 统一管理，在发布时自动合并。
-
-**Q: 图片资源必须放在 imgs/ 目录下吗？**  
-A: 不是必须的。你可以使用任意子目录名（如 `imgs/`、`assets/` 等），只要 `config.json` 中的 `preview` 路径与实际文件位置一致即可。推荐使用 `imgs/` 保持统一。

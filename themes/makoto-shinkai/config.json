@@ -1,16 +1,18 @@
 {
+    "spec": "bakamusic-theme@2",
     "name": "新海诚动漫风【动态】",
+    "author": "hope",
+    "version": "2.0.0",
     "preview": "@/imgs/preview.jpg",
     "description": "动态背景",
-    "author": "hope",
-    "version": "0.0.0",
-    "iframe": {
-        "app": "@/iframes/app.html"
-    },
-    "authorUrl": "https://github.com/Hopelsz",
     "tags": [
         "动态",
         "动漫",
         "影视"
-    ]
+    ],
+    "scheme": "dark",
+    "authorUrl": "https://github.com/Hopelsz",
+    "iframe": {
+        "app": "@/iframes/app.html"
+    }
 }

@@ -1,12 +1,14 @@
 {
-    "author": "akFace",
+    "spec": "bakamusic-theme@2",
     "name": "纯白色",
+    "author": "akFace",
+    "version": "2.0.0",
     "preview": "@/imgs/preview.jpg",
     "description": "纯白色主题",
-    "version": "0.0.1",
-    "authorUrl": "https://github.com/akFace",
     "tags": [
         "亮色",
         "简约"
-    ]
+    ],
+    "scheme": "light",
+    "authorUrl": "https://github.com/akFace"
 }

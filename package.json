@@ -1,15 +1,16 @@
 {
-  "name": "musicfree-themepacks",
-  "version": "1.0.0",
+  "name": "baka-themepacks",
+  "version": "2.0.0",
   "type": "module",
-  "description": "MusicFree主题包",
+  "description": "BakaMusic 主题包（bakamusic-theme@2）",
   "scripts": {
     "publish": "node ./.scripts/publish.mjs",
     "validate": "node ./.scripts/validate.mjs",
-    "validate:theme": "node ./.scripts/validate.mjs --themes"
+    "validate:theme": "node ./.scripts/validate.mjs --themes",
+    "migrate:v2": "node ./.scripts/migrate-to-v2.mjs"
   },
-  "keywords": [],
-  "author": "maotoumao",
+  "keywords": ["bakamusic", "theme"],
+  "author": "Toskysun",
   "license": "GPL-3.0-only",
   "dependencies": {
     "archiver": "^7.0.1",

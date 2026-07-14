@@ -1,15 +1,17 @@
 {
+    "spec": "bakamusic-theme@2",
     "name": "飞鸟",
-    "preview": "@/imgs/preview.png",
     "author": "猫头猫",
-    "iframe": {
-        "app": "@/iframes/app.html"
-    },
-    "version": "0.0.1",
+    "version": "2.0.0",
+    "preview": "@/imgs/preview.png",
     "description": "飞鸟动态主题",
-    "authorUrl": "https://github.com/maotoumao",
     "tags": [
         "动态",
         "自然"
-    ]
+    ],
+    "scheme": "light",
+    "authorUrl": "https://github.com/maotoumao",
+    "iframe": {
+        "app": "@/iframes/app.html"
+    }
 }

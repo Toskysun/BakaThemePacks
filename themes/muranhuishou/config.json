@@ -1,11 +1,13 @@
 {
+    "spec": "bakamusic-theme@2",
     "name": "muranhuishou",
+    "author": "cianmoop",
+    "version": "2.0.0",
     "preview": "@/imgs/muran.jpg",
     "description": "慕然回首",
-    "author": "cianmoop",
-    "version": "0.0.1",
-    "authorUrl": "https://github.com/Cianmoop",
     "tags": [
         "插画"
-    ]
+    ],
+    "scheme": "dark",
+    "authorUrl": "https://github.com/Cianmoop"
 }
