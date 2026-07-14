@@ -126,25 +126,12 @@
 
 | Token | 作用 |
 |---|---|
-| `--theme-popover-bg` | 菜单、搜索历史、音质选择等浮层背景 |
+| `--theme-popover-bg` | 菜单、搜索历史、音质选择等浮层背景；应使用近乎不透明或不透明颜色保证文字可读 |
 | `--theme-popover-text` | 浮层主文字 |
 | `--theme-popover-text-secondary` | 浮层次级文字 |
 | `--theme-popover-border` | 浮层边框 |
 
-## 11. 音乐详情页可主题化部分（6）
-
-| Token | 作用 |
-|---|---|
-| `--theme-detail-text` | 详情页主文字和图标 |
-| `--theme-detail-text-secondary` | 详情页次级信息和非当前歌词 |
-| `--theme-detail-surface` | 详情页工具栏、按钮和歌词面板表面 |
-| `--theme-detail-surface-hover` | 详情页控件 hover 表面 |
-| `--theme-detail-border` | 详情页控件边框 |
-| `--theme-detail-accent` | 当前歌词、进度与详情页强调色 |
-
-封面模糊流光背景、暗色衬底与覆盖光效由客户端拥有，主题不能替换或关闭。
-
-## 12. 背景、模糊与滚动条（6）
+## 11. 背景、模糊与滚动条（6）
 
 | Token | 作用 |
 |---|---|
@@ -155,7 +142,7 @@
 | `--theme-scrollbar-thumb-hover` | 滚动条 hover 状态 |
 | `--theme-scrollbar-thumb-active` | 滚动条拖动状态 |
 
-## 13. 小圆角（4）
+## 12. 小圆角（4）
 
 | Token | 作用 |
 |---|---|
@@ -166,11 +153,17 @@
 
 圆角 token 只改变小型视觉半径，不允许主题修改组件尺寸、定位或布局。
 
-## 14. 仅兼容、不可自定义（2）
+## 13. 仅兼容、不可自定义（8）
 
 | Token | 状态 |
 |---|---|
 | `--theme-detail-bg` | 仅接受早期 2.1 已发布包，客户端不消费；新主题声明会被仓库校验拒绝 |
 | `--theme-detail-overlay` | 仅接受早期 2.1 已发布包，客户端不消费；新主题声明会被仓库校验拒绝 |
+| `--theme-detail-text` | 仅兼容旧包；播放详情页文字由客户端固定 |
+| `--theme-detail-text-secondary` | 仅兼容旧包；播放详情页次级文字由客户端固定 |
+| `--theme-detail-surface` | 仅兼容旧包；播放详情页面板由客户端固定 |
+| `--theme-detail-surface-hover` | 仅兼容旧包；播放详情页交互表面由客户端固定 |
+| `--theme-detail-border` | 仅兼容旧包；播放详情页边框由客户端固定 |
+| `--theme-detail-accent` | 仅兼容旧包；播放详情页强调色由客户端固定 |
 
-因此当前机器白名单共 93 项，其中 **91 项可自定义、2 项仅用于旧包加载兼容**。
+因此当前机器白名单共 93 项，其中 **85 项可自定义、8 项仅用于旧包加载兼容**。播放详情页整体属于客户端产品视觉，不接受主题控制。

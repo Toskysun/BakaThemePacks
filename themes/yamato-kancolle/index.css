@@ -62,16 +62,10 @@
     --theme-input-bg-hover: var(--theme-card-bg-hover);
     --theme-input-border: var(--theme-surface-border);
     --theme-input-border-active: var(--theme-primary);
-    --theme-popover-bg: var(--theme-surface-strong);
+    --theme-popover-bg: color-mix(in srgb, var(--theme-primary) 8%, #17171d);
     --theme-popover-text: var(--theme-text);
     --theme-popover-text-secondary: var(--theme-text-secondary);
     --theme-popover-border: var(--theme-surface-border-strong);
-    --theme-detail-text: var(--theme-text);
-    --theme-detail-text-secondary: var(--theme-text-secondary);
-    --theme-detail-surface: var(--theme-surface);
-    --theme-detail-surface-hover: var(--theme-interactive-hover);
-    --theme-detail-border: var(--theme-surface-border);
-    --theme-detail-accent: var(--theme-primary);
     --theme-scrollbar-track: transparent;
     --theme-scrollbar-thumb-hover: var(--theme-primary-hover);
     --theme-scrollbar-thumb-active: var(--theme-primary-active);

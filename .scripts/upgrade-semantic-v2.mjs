@@ -1,11 +1,15 @@
 /**
  * Fill the semantic coverage layer introduced by theme@2.1.
- * Safe to run repeatedly; existing author-provided values always win.
+ * Safe to run repeatedly. Author values win except retired client-owned detail
+ * tokens and the old translucent popover default, which are migrated.
  */
 import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { parseThemeCss } from './theme-contract.mjs';
+import {
+    CLIENT_OWNED_COMPATIBILITY_TOKENS,
+    parseThemeCss,
+} from './theme-contract.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
@@ -79,16 +83,9 @@ const SEMANTIC_DEFAULTS = new Map([
     ['--theme-input-bg-hover', 'var(--theme-card-bg-hover)'],
     ['--theme-input-border', 'var(--theme-surface-border)'],
     ['--theme-input-border-active', 'var(--theme-primary)'],
-    ['--theme-popover-bg', 'var(--theme-surface-strong)'],
     ['--theme-popover-text', 'var(--theme-text)'],
     ['--theme-popover-text-secondary', 'var(--theme-text-secondary)'],
     ['--theme-popover-border', 'var(--theme-surface-border-strong)'],
-    ['--theme-detail-text', 'var(--theme-text)'],
-    ['--theme-detail-text-secondary', 'var(--theme-text-secondary)'],
-    ['--theme-detail-surface', 'var(--theme-surface)'],
-    ['--theme-detail-surface-hover', 'var(--theme-interactive-hover)'],
-    ['--theme-detail-border', 'var(--theme-surface-border)'],
-    ['--theme-detail-accent', 'var(--theme-primary)'],
     ['--theme-blur', '14px'],
     ['--theme-bg-image', 'none'],
     ['--theme-scrollbar-track', 'transparent'],
@@ -131,8 +128,13 @@ for (const entry of directoryEntries) {
     const cssPath = path.join(themeDir, 'index.css');
     const configPath = path.join(themeDir, 'config.json');
     const tokens = parseThemeCss(await fs.readFile(cssPath, 'utf-8'));
+    for (const token of CLIENT_OWNED_COMPATIBILITY_TOKENS) tokens.delete(token);
     for (const [token, value] of SEMANTIC_DEFAULTS) {
         if (!tokens.has(token)) tokens.set(token, value);
+    }
+    if (!tokens.has('--theme-popover-bg') || tokens.get('--theme-popover-bg') === 'var(--theme-surface-strong)') {
+        const popoverBase = tokens.get('--theme-scheme') === 'dark' ? '#17171d' : '#f8f8fa';
+        tokens.set('--theme-popover-bg', `color-mix(in srgb, var(--theme-primary) 8%, ${popoverBase})`);
     }
     await fs.writeFile(cssPath, serialise(tokens), 'utf-8');
 

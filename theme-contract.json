@@ -8,7 +8,13 @@
     ],
     "clientOwnedCompatibilityTokens": [
         "--theme-detail-bg",
-        "--theme-detail-overlay"
+        "--theme-detail-overlay",
+        "--theme-detail-text",
+        "--theme-detail-text-secondary",
+        "--theme-detail-surface",
+        "--theme-detail-surface-hover",
+        "--theme-detail-border",
+        "--theme-detail-accent"
     ],
     "tokens": [
         "--theme-primary",

@@ -45,8 +45,8 @@ Useful options:
 
 - Keep `index.css` to exactly one `:root` block containing public `--theme-*` declarations.
 - Never use client selectors, private variables, `!important`, `@import`, layout overrides, or hidden scrollbars.
-- Never declare compatibility-only `--theme-detail-bg` or `--theme-detail-overlay` in new source themes.
-- Treat the detail artwork flow backdrop and glass MusicBar artwork palette as client-owned behavior.
+- Never declare any `--theme-detail-*` token; they are accepted only to load old packs and are rejected for new source themes.
+- Treat the complete playback detail page and glass MusicBar artwork palette as client-owned behavior.
 - Use `@/imgs/...` for pack assets and only `iframe.app` for dynamic backgrounds.
 - Keep images at most 500 KB, videos at most 5 MB, and the whole theme at most 10 MB.
 - Do not edit `meta.json` for a normal theme addition; publishing owns `id` and `createdAt`.

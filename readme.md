@@ -12,7 +12,7 @@
 | 文档 | 内容 |
 |------|------|
 | **[docs/THEME_GUIDE.md](./docs/THEME_GUIDE.md)** | **完整主题包写作教程**（结构、token、动态背景、校验、上架） |
-| **[docs/THEME_TOKENS.md](./docs/THEME_TOKENS.md)** | **全部 91 个可自定义 token 的作用与覆盖区域** |
+| **[docs/THEME_TOKENS.md](./docs/THEME_TOKENS.md)** | **全部 85 个可自定义 token 的作用与覆盖区域** |
 | [docs/theme-spec-v2.md](./docs/theme-spec-v2.md) | V2.1 规范、包格式与客户端/主题职责边界 |
 | [docs/theme-coverage-v2.md](./docs/theme-coverage-v2.md) | 公开 token 到客户端覆盖点位审查表 |
 | [$create-baka-theme](./.agents/skills/create-baka-theme/SKILL.md) | 一键创建、补齐语义层并校验新主题的仓库 Skill |

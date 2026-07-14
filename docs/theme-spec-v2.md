@@ -121,11 +121,8 @@ my-theme/
 
 ### 4.8 音乐详情页
 
-`--theme-detail-text`、`--theme-detail-text-secondary`、`--theme-detail-surface`、
-`--theme-detail-surface-hover`、`--theme-detail-border`、`--theme-detail-accent`。
-
-封面模糊流光背景、暗色衬底及覆盖光效属于客户端行为，主题不能关闭或替换。
-早期 2.1 包中的 `--theme-detail-bg`、`--theme-detail-overlay` 仅为加载兼容而接受，客户端不再消费。
+播放详情页的背景、文字、面板、控件、边框与强调色全部属于客户端产品视觉，主题不能覆盖。
+全部 `--theme-detail-*` token 仅为加载早期 2.1 已安装包而接受，客户端不再消费；主题仓库拒绝新主题声明这些 token。
 
 ### 4.9 背景、滚动条与圆角
 
@@ -151,7 +148,7 @@ my-theme/
     --theme-sidebar-bg: var(--theme-bg);
     --theme-player-bg: var(--theme-bg);
     --theme-panel-bg: rgba(94, 226, 212, 0.82);
-    --theme-detail-surface: rgba(94, 226, 212, 0.2);
+    --theme-popover-bg: #f7fffe;
 }
 ```
 
@@ -170,8 +167,8 @@ my-theme/
 |---|---|
 | DOM、布局、尺寸、层级、响应式 | 颜色与表面 |
 | glass / flat 结构语言、玻璃播放栏封面动态取色 | 各区域语义 token |
-| 详情页封面流光背景与覆盖光效 | 详情页文字、控件和面板表面 |
-| auto-hide、详情页不透底、面板行为 | 壁纸 / 沙箱背景 iframe |
+| 完整播放详情页（背景、文字、控件、面板与强调色） | 壁纸 / 沙箱背景 iframe |
+| auto-hide、详情页不透底、面板行为 | 其他可主题化区域的语义 token |
 | CSS 解析、token 白名单、路径校验 | 合法 `:root` 声明 |
 
 主题不得隐藏控件、修改尺寸、改变定位或针对版本 class 打补丁；客户端不得再为某个具体主题添加 selector workaround。

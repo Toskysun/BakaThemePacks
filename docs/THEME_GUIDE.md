@@ -158,19 +158,18 @@ themes/my-cool-theme/
 
 ### 4.4 全区域语义 Token（2.1）
 
-机器清单以 [`theme-contract.json`](../theme-contract.json) 为准；全部 91 个可自定义 token 的逐项说明见 [`THEME_TOKENS.md`](./THEME_TOKENS.md)：
+机器清单以 [`theme-contract.json`](../theme-contract.json) 为准；全部 85 个可自定义 token 的逐项说明见 [`THEME_TOKENS.md`](./THEME_TOKENS.md)：
 
 - 通用表面：`surface-*`、`interactive-*`、`page-bg`、`card-*`
 - 标题栏：`header-bg`、`header-border`、`header-control-*`、`header-search-*`
 - 侧栏：`sidebar-bg`、`sidebar-text*`、`sidebar-item-*`
 - 播放栏：`player-bg*`、`player-text*`、`player-accent`、`player-border`（flat 使用；glass 的封面动态取色由客户端拥有）
 - 内容：`list-*`、`panel-*`、`input-*`、`popover-*`
-- 详情页：`detail-text*`、`detail-surface*`、`detail-border`、`detail-accent`
 - 其他：状态色、滚动条三态、control/card/panel/cover 小圆角
 
 省略项由客户端从四个必填基础 token 派生。要定制某个区域，只覆盖其语义 token，不写该区域的 class。
 
-详情页封面模糊流光背景、暗色衬底与覆盖光效，以及 glass 播放栏的封面动态取色属于客户端行为。`detail-bg`、`detail-overlay` 仅为早期 2.1 包加载兼容而保留在白名单，新主题不得声明。
+完整播放详情页（背景、文字、面板、控件、边框和强调色）以及 glass 播放栏的封面动态取色属于客户端行为。全部 `detail-*` token 仅为早期 2.1 包加载兼容而保留在白名单，新主题不得声明。
 
 ### 4.5 最小合法 CSS（静态浅色）
 
