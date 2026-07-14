@@ -1,7 +1,527 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-07-14T05:26:48.786Z",
+  "updatedAt": "2026-07-14T05:48:09.265Z",
   "themes": [
+    {
+      "id": "uXJu7fAti4YGQMsz",
+      "spec": "bakamusic-theme@2",
+      "name": "素袂霞红【动态】",
+      "packageName": "theme-09d9ab7850",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "素袂霞红",
+      "version": "2.0.0",
+      "scheme": "light",
+      "tags": [
+        "动态"
+      ],
+      "preview": "previews/theme-09d9ab7850.jpg",
+      "themeUrl": "themes/theme-09d9ab7850-72b71fce370ed9068c5d291899b85d71.mftheme",
+      "hash": "72b71fce370ed9068c5d291899b85d71",
+      "publishName": "theme-09d9ab7850-72b71fce370ed9068c5d291899b85d71",
+      "createdAt": "2026-07-14T05:46:43.103Z",
+      "isNew": true
+    },
+    {
+      "id": "1T8Sh_HbjdBfiRap",
+      "spec": "bakamusic-theme@2",
+      "name": "芙宁娜丨细雨绵绵【动态】",
+      "packageName": "theme-2a301c88ad",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "芙宁娜丨细雨绵绵",
+      "version": "2.0.0",
+      "scheme": "light",
+      "tags": [
+        "动态"
+      ],
+      "preview": "previews/theme-2a301c88ad.jpg",
+      "themeUrl": "themes/theme-2a301c88ad-70ab2229fb3ab32d14b783ab51bb7455.mftheme",
+      "hash": "70ab2229fb3ab32d14b783ab51bb7455",
+      "publishName": "theme-2a301c88ad-70ab2229fb3ab32d14b783ab51bb7455",
+      "createdAt": "2026-07-14T05:46:43.103Z",
+      "isNew": true
+    },
+    {
+      "id": "ruvoAf5KjUm2MybM",
+      "spec": "bakamusic-theme@2",
+      "name": "神里绫华丨窗畔澜海【动态】",
+      "packageName": "theme-4dc00941af",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "神里绫华丨窗畔澜海",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "动态"
+      ],
+      "preview": "previews/theme-4dc00941af.jpg",
+      "themeUrl": "themes/theme-4dc00941af-23e158a82d26edee3a03e3609f9e2bea.mftheme",
+      "hash": "23e158a82d26edee3a03e3609f9e2bea",
+      "publishName": "theme-4dc00941af-23e158a82d26edee3a03e3609f9e2bea",
+      "createdAt": "2026-07-14T05:46:43.103Z",
+      "isNew": true
+    },
+    {
+      "id": "z3OYcA_r4aJcNO3E",
+      "spec": "bakamusic-theme@2",
+      "name": "绯色潮声【动态】",
+      "packageName": "theme-808ce545b0",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "溺于星眸",
+      "version": "2.0.0",
+      "scheme": "light",
+      "tags": [
+        "动态"
+      ],
+      "preview": "previews/theme-808ce545b0.jpg",
+      "themeUrl": "themes/theme-808ce545b0-7000978e96a4c88ca41d144d80addb63.mftheme",
+      "hash": "7000978e96a4c88ca41d144d80addb63",
+      "publishName": "theme-808ce545b0-7000978e96a4c88ca41d144d80addb63",
+      "createdAt": "2026-07-14T05:46:43.103Z",
+      "isNew": true
+    },
+    {
+      "id": "p3Wbj-ExH5SuFUlh",
+      "spec": "bakamusic-theme@2",
+      "name": "Cute-Fluff-Ball-Critter【动态】",
+      "packageName": "cute-fluff-ball-critter",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "Cute-Fluff-Ball-Critter",
+      "version": "2.0.0",
+      "scheme": "light",
+      "tags": [
+        "动态"
+      ],
+      "preview": "previews/cute-fluff-ball-critter.jpg",
+      "themeUrl": "themes/cute-fluff-ball-critter-54883d7f22e2b999085c531cd28ad70c.mftheme",
+      "hash": "54883d7f22e2b999085c531cd28ad70c",
+      "publishName": "cute-fluff-ball-critter-54883d7f22e2b999085c531cd28ad70c",
+      "createdAt": "2026-07-14T05:46:43.102Z",
+      "isNew": true
+    },
+    {
+      "id": "tCH5oblzHykffOpq",
+      "spec": "bakamusic-theme@2",
+      "name": "Cute-Girl-with-Forest-Ghosts",
+      "packageName": "cute-girl-with-forest-ghosts",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "Cute-Girl-with-Forest-Ghosts",
+      "version": "2.0.0",
+      "scheme": "light",
+      "tags": [
+        "动态"
+      ],
+      "preview": "previews/cute-girl-with-forest-ghosts.jpg",
+      "themeUrl": "themes/cute-girl-with-forest-ghosts-43552727f877f68c46c1313144f775c6.mftheme",
+      "hash": "43552727f877f68c46c1313144f775c6",
+      "publishName": "cute-girl-with-forest-ghosts-43552727f877f68c46c1313144f775c6",
+      "createdAt": "2026-07-14T05:46:43.102Z",
+      "isNew": true
+    },
+    {
+      "id": "OpUEsjSpkNNegPlK",
+      "spec": "bakamusic-theme@2",
+      "name": "午后金克斯【动态】",
+      "packageName": "theme-1ec8ccc1db",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "金克斯",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "动态"
+      ],
+      "preview": "previews/theme-1ec8ccc1db.jpg",
+      "themeUrl": "themes/theme-1ec8ccc1db-748c602065d066709e42f7efdbc65e7d.mftheme",
+      "hash": "748c602065d066709e42f7efdbc65e7d",
+      "publishName": "theme-1ec8ccc1db-748c602065d066709e42f7efdbc65e7d",
+      "createdAt": "2026-07-14T05:46:43.102Z",
+      "isNew": true
+    },
+    {
+      "id": "G2YGjGITMj0Q6HFt",
+      "spec": "bakamusic-theme@2",
+      "name": "灵蝶之约【动态】",
+      "packageName": "theme-1f645c4091",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "灵蝶之约",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "动态"
+      ],
+      "preview": "previews/theme-1f645c4091.jpg",
+      "themeUrl": "themes/theme-1f645c4091-52df490dbccf11b2883282fa9d949e48.mftheme",
+      "hash": "52df490dbccf11b2883282fa9d949e48",
+      "publishName": "theme-1f645c4091-52df490dbccf11b2883282fa9d949e48",
+      "createdAt": "2026-07-14T05:46:43.102Z",
+      "isNew": true
+    },
+    {
+      "id": "wr9BiZEZmzOnIFvE",
+      "spec": "bakamusic-theme@2",
+      "name": "心海丨深海公主【动态】",
+      "packageName": "theme-2da6b5193f",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "心海丨深海公主",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "动态"
+      ],
+      "preview": "previews/theme-2da6b5193f.jpg",
+      "themeUrl": "themes/theme-2da6b5193f-9bb3beef777906503847933505b98011.mftheme",
+      "hash": "9bb3beef777906503847933505b98011",
+      "publishName": "theme-2da6b5193f-9bb3beef777906503847933505b98011",
+      "createdAt": "2026-07-14T05:46:43.102Z",
+      "isNew": true
+    },
+    {
+      "id": "bCuowpCnwVaIpGge",
+      "spec": "bakamusic-theme@2",
+      "name": "满月【动态】蓝",
+      "packageName": "theme-4ed879be52",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "满月",
+      "version": "2.0.0",
+      "scheme": "light",
+      "tags": [
+        "动态"
+      ],
+      "preview": "previews/theme-4ed879be52.jpg",
+      "themeUrl": "themes/theme-4ed879be52-8bf809180c92a72310b5dec238027046.mftheme",
+      "hash": "8bf809180c92a72310b5dec238027046",
+      "publishName": "theme-4ed879be52-8bf809180c92a72310b5dec238027046",
+      "createdAt": "2026-07-14T05:46:43.102Z",
+      "isNew": true
+    },
+    {
+      "id": "5ZEtBJ1gN2ptAHg0",
+      "spec": "bakamusic-theme@2",
+      "name": "月下拈花【动态】",
+      "packageName": "theme-610630b9e1",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "月下拈花",
+      "version": "2.0.0",
+      "scheme": "light",
+      "tags": [
+        "动态"
+      ],
+      "preview": "previews/theme-610630b9e1.jpg",
+      "themeUrl": "themes/theme-610630b9e1-c16d408349e0d45d887e96b6c71924dd.mftheme",
+      "hash": "c16d408349e0d45d887e96b6c71924dd",
+      "publishName": "theme-610630b9e1-c16d408349e0d45d887e96b6c71924dd",
+      "createdAt": "2026-07-14T05:46:43.102Z",
+      "isNew": false
+    },
+    {
+      "id": "Zuh5uxsr35dGwD_2",
+      "spec": "bakamusic-theme@2",
+      "name": "时光齿轮【动态】",
+      "packageName": "theme-82b3d23f72",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "兰音Reine／目映",
+      "version": "2.0.0",
+      "scheme": "light",
+      "tags": [
+        "动态"
+      ],
+      "preview": "previews/theme-82b3d23f72.jpg",
+      "themeUrl": "themes/theme-82b3d23f72-d9f865bb5110e76493eca39fb7947489.mftheme",
+      "hash": "d9f865bb5110e76493eca39fb7947489",
+      "publishName": "theme-82b3d23f72-d9f865bb5110e76493eca39fb7947489",
+      "createdAt": "2026-07-14T05:46:43.102Z",
+      "isNew": false
+    },
+    {
+      "id": "Cl-rXsEIueQZ4P8y",
+      "spec": "bakamusic-theme@2",
+      "name": "樱花·八重神子【动态】",
+      "packageName": "theme-8ac5c0b3ff",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "樱花·八重神子",
+      "version": "2.0.0",
+      "scheme": "light",
+      "tags": [
+        "动态"
+      ],
+      "preview": "previews/theme-8ac5c0b3ff.jpg",
+      "themeUrl": "themes/theme-8ac5c0b3ff-aec8e6a7ebeb55ba424de47026ee052c.mftheme",
+      "hash": "aec8e6a7ebeb55ba424de47026ee052c",
+      "publishName": "theme-8ac5c0b3ff-aec8e6a7ebeb55ba424de47026ee052c",
+      "createdAt": "2026-07-14T05:46:43.102Z",
+      "isNew": false
+    },
+    {
+      "id": "OLTnpljqAcbygIGi",
+      "spec": "bakamusic-theme@2",
+      "name": "爱弥斯-凤冠霞帔【动态】",
+      "packageName": "theme-9801f8a4de",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "爱弥斯-凤冠霞帔",
+      "version": "2.0.0",
+      "scheme": "light",
+      "tags": [
+        "动态"
+      ],
+      "preview": "previews/theme-9801f8a4de.jpg",
+      "themeUrl": "themes/theme-9801f8a4de-b733ef04900e9578a1cbe7d1f2ed7275.mftheme",
+      "hash": "b733ef04900e9578a1cbe7d1f2ed7275",
+      "publishName": "theme-9801f8a4de-b733ef04900e9578a1cbe7d1f2ed7275",
+      "createdAt": "2026-07-14T05:46:43.102Z",
+      "isNew": false
+    },
+    {
+      "id": "xI65d4cvQnldRkaO",
+      "spec": "bakamusic-theme@2",
+      "name": "梦幻生长【动态】",
+      "packageName": "theme-9890898eac",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "光影生长树",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "动态"
+      ],
+      "preview": "previews/theme-9890898eac.jpg",
+      "themeUrl": "themes/theme-9890898eac-aef74456e1f8d0f443fdfc4b27225402.mftheme",
+      "hash": "aef74456e1f8d0f443fdfc4b27225402",
+      "publishName": "theme-9890898eac-aef74456e1f8d0f443fdfc4b27225402",
+      "createdAt": "2026-07-14T05:46:43.102Z",
+      "isNew": false
+    },
+    {
+      "id": "4mgJjIlQuQERoQzc",
+      "spec": "bakamusic-theme@2",
+      "name": "灵魂独白【动态】",
+      "packageName": "theme-9d4f7e8f32",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "灵魂独白",
+      "version": "2.0.0",
+      "scheme": "light",
+      "tags": [
+        "动态"
+      ],
+      "preview": "previews/theme-9d4f7e8f32.jpg",
+      "themeUrl": "themes/theme-9d4f7e8f32-28c612ed5c674d35b312cfcdad8e1147.mftheme",
+      "hash": "28c612ed5c674d35b312cfcdad8e1147",
+      "publishName": "theme-9d4f7e8f32-28c612ed5c674d35b312cfcdad8e1147",
+      "createdAt": "2026-07-14T05:46:43.102Z",
+      "isNew": false
+    },
+    {
+      "id": "pcenKqgnwsrk1ozd",
+      "spec": "bakamusic-theme@2",
+      "name": "流萤-破晓萤光【动态】",
+      "packageName": "theme-aac58b8b61",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "流萤",
+      "version": "2.0.0",
+      "scheme": "light",
+      "tags": [
+        "动态"
+      ],
+      "preview": "previews/theme-aac58b8b61.jpg",
+      "themeUrl": "themes/theme-aac58b8b61-ce4a4de4623a95a5dc7a86dceff4f621.mftheme",
+      "hash": "ce4a4de4623a95a5dc7a86dceff4f621",
+      "publishName": "theme-aac58b8b61-ce4a4de4623a95a5dc7a86dceff4f621",
+      "createdAt": "2026-07-14T05:46:43.102Z",
+      "isNew": false
+    },
+    {
+      "id": "OH7NSG7jLccYPYO8",
+      "spec": "bakamusic-theme@2",
+      "name": "椿【动态】",
+      "packageName": "theme-b439c15d4c",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "椿",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "动态"
+      ],
+      "preview": "previews/theme-b439c15d4c.jpg",
+      "themeUrl": "themes/theme-b439c15d4c-f2ca9813f71ba299a71d7b9d9fd77dd2.mftheme",
+      "hash": "f2ca9813f71ba299a71d7b9d9fd77dd2",
+      "publishName": "theme-b439c15d4c-f2ca9813f71ba299a71d7b9d9fd77dd2",
+      "createdAt": "2026-07-14T05:46:43.102Z",
+      "isNew": false
+    },
+    {
+      "id": "anVPNXE_U9Zh1GbL",
+      "spec": "bakamusic-theme@2",
+      "name": "满月【动态】紫",
+      "packageName": "theme-d1ea75e1a4",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "满月",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "动态"
+      ],
+      "preview": "previews/theme-d1ea75e1a4.jpg",
+      "themeUrl": "themes/theme-d1ea75e1a4-196772b0b33767dbad17284a9b004af4.mftheme",
+      "hash": "196772b0b33767dbad17284a9b004af4",
+      "publishName": "theme-d1ea75e1a4-196772b0b33767dbad17284a9b004af4",
+      "createdAt": "2026-07-14T05:46:43.102Z",
+      "isNew": false
+    },
+    {
+      "id": "wSpORvhUfVnCiiZc",
+      "spec": "bakamusic-theme@2",
+      "name": "桃花仙【动态】",
+      "packageName": "theme-da1357b3b2",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "桃花仙",
+      "version": "2.0.0",
+      "scheme": "light",
+      "tags": [
+        "动态"
+      ],
+      "preview": "previews/theme-da1357b3b2.jpg",
+      "themeUrl": "themes/theme-da1357b3b2-da06aecb55c377238907f1a65003965f.mftheme",
+      "hash": "da06aecb55c377238907f1a65003965f",
+      "publishName": "theme-da1357b3b2-da06aecb55c377238907f1a65003965f",
+      "createdAt": "2026-07-14T05:46:43.102Z",
+      "isNew": false
+    },
+    {
+      "id": "EwIkZjt2j8cjt0TF",
+      "spec": "bakamusic-theme@2",
+      "name": "浮光跃金【动态】",
+      "packageName": "theme-e0a96bdc8e",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "浮光跃金",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "动态"
+      ],
+      "preview": "previews/theme-e0a96bdc8e.jpg",
+      "themeUrl": "themes/theme-e0a96bdc8e-c0450d6e68f38d6b6c917e82579e14fa.mftheme",
+      "hash": "c0450d6e68f38d6b6c917e82579e14fa",
+      "publishName": "theme-e0a96bdc8e-c0450d6e68f38d6b6c917e82579e14fa",
+      "createdAt": "2026-07-14T05:46:43.102Z",
+      "isNew": false
+    },
+    {
+      "id": "jXOp4RBPK65MwD8g",
+      "spec": "bakamusic-theme@2",
+      "name": "幻湖【动态】",
+      "packageName": "theme-fb7d231a05",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "幻湖",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "动态"
+      ],
+      "preview": "previews/theme-fb7d231a05.jpg",
+      "themeUrl": "themes/theme-fb7d231a05-496e923a37fb271374e9c940421932ab.mftheme",
+      "hash": "496e923a37fb271374e9c940421932ab",
+      "publishName": "theme-fb7d231a05-496e923a37fb271374e9c940421932ab",
+      "createdAt": "2026-07-14T05:46:43.102Z",
+      "isNew": false
+    },
+    {
+      "id": "sKz1Oi8eW89BXxKS",
+      "spec": "bakamusic-theme@2",
+      "name": "卡提希娅-风吹月影的独步【动态】",
+      "packageName": "theme-fc6a1e1841",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "卡提希娅-风吹月影的独步",
+      "version": "2.0.0",
+      "scheme": "light",
+      "tags": [
+        "动态"
+      ],
+      "preview": "previews/theme-fc6a1e1841.jpg",
+      "themeUrl": "themes/theme-fc6a1e1841-4344f4ff730e2b136172e5fe82e83730.mftheme",
+      "hash": "4344f4ff730e2b136172e5fe82e83730",
+      "publishName": "theme-fc6a1e1841-4344f4ff730e2b136172e5fe82e83730",
+      "createdAt": "2026-07-14T05:46:43.102Z",
+      "isNew": false
+    },
+    {
+      "id": "3xzQJGHJIl2kVtWj",
+      "spec": "bakamusic-theme@2",
+      "name": "庄周梦蝶【动态】",
+      "packageName": "theme-fcb180a381",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "庄周梦蝶",
+      "version": "2.0.0",
+      "scheme": "light",
+      "tags": [
+        "动态"
+      ],
+      "preview": "previews/theme-fcb180a381.jpg",
+      "themeUrl": "themes/theme-fcb180a381-445ee5b9af5acc7f4117ed38bd3f9b0c.mftheme",
+      "hash": "445ee5b9af5acc7f4117ed38bd3f9b0c",
+      "publishName": "theme-fcb180a381-445ee5b9af5acc7f4117ed38bd3f9b0c",
+      "createdAt": "2026-07-14T05:46:43.102Z",
+      "isNew": false
+    },
+    {
+      "id": "VXBXmwPmvQHULKhY",
+      "spec": "bakamusic-theme@2",
+      "name": "Yamato Kancolle【动态】",
+      "packageName": "yamato-kancolle",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "Yamato Kancolle",
+      "version": "2.0.0",
+      "scheme": "dark",
+      "tags": [
+        "动态"
+      ],
+      "preview": "previews/yamato-kancolle.jpg",
+      "themeUrl": "themes/yamato-kancolle-8f77e6ca0a9556fdc3be4af350fb4b0d.mftheme",
+      "hash": "8f77e6ca0a9556fdc3be4af350fb4b0d",
+      "publishName": "yamato-kancolle-8f77e6ca0a9556fdc3be4af350fb4b0d",
+      "createdAt": "2026-07-14T05:46:43.102Z",
+      "isNew": false
+    },
+    {
+      "id": "e8KE3G0V8O9lfExn",
+      "spec": "bakamusic-theme@2",
+      "name": "Akie秋绘【动态】",
+      "packageName": "akie",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "Akie秋绘",
+      "version": "2.0.0",
+      "scheme": "light",
+      "tags": [
+        "动态"
+      ],
+      "preview": "previews/akie.jpg",
+      "themeUrl": "themes/akie-99d0032669c8c6bcb6039e0cf000e170.mftheme",
+      "hash": "99d0032669c8c6bcb6039e0cf000e170",
+      "publishName": "akie-99d0032669c8c6bcb6039e0cf000e170",
+      "createdAt": "2026-07-14T05:46:43.101Z",
+      "isNew": false
+    },
     {
       "id": "O9lTRwPPQi1UAoc",
       "spec": "bakamusic-theme@2",
@@ -21,7 +541,7 @@
       "hash": "bdfe41f12433a83b2a4ebbcfb742e259",
       "publishName": "cute-fluff-ball-bdfe41f12433a83b2a4ebbcfb742e259",
       "createdAt": "2026-07-14T05:25:17.675Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "zsG0fMhcwxEsyRsD02ET3",
@@ -42,7 +562,7 @@
       "hash": "3eb5a5dcf51bbbeb967669c7eea0607e",
       "publishName": "light-red-3eb5a5dcf51bbbeb967669c7eea0607e",
       "createdAt": "2025-11-02T14:50:18+08:00",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "7Tqa2W1J7IysmlYrR-yCp",
@@ -63,7 +583,7 @@
       "hash": "aa8621534e4bf4bf23a0cb29e4cad6cc",
       "publishName": "limuwan-dynamic-aa8621534e4bf4bf23a0cb29e4cad6cc",
       "createdAt": "2025-11-02T14:50:18+08:00",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "azouwGKBcVY9B6UtpOr5F",
@@ -84,7 +604,7 @@
       "hash": "be27bdfa94ef1125c538d2ed1ca0f2f4",
       "publishName": "cyberpunk-dynamics-be27bdfa94ef1125c538d2ed1ca0f2f4",
       "createdAt": "2025-09-07T19:33:06+08:00",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "_gijJS3TTtjiIygnzJCm2",
@@ -105,7 +625,7 @@
       "hash": "935214abe0cae5b305cbc1449ef93f99",
       "publishName": "pouring-clouds-dynamic-935214abe0cae5b305cbc1449ef93f99",
       "createdAt": "2025-08-22T20:36:52+08:00",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "zEi4HYbyIwZ0f-NcHHafo",
@@ -125,7 +645,7 @@
       "hash": "aaa1739e4e980072cf168c0dac2b9e1c",
       "publishName": "the-clouds-crimson-aaa1739e4e980072cf168c0dac2b9e1c",
       "createdAt": "2025-08-22T09:17:59+08:00",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "0CxAzYYA1yq0CXZ9E_Rga",
@@ -145,7 +665,7 @@
       "hash": "bd8140b2d53fc3302fde153e560794c7",
       "publishName": "muranhuishou-bd8140b2d53fc3302fde153e560794c7",
       "createdAt": "2025-06-09T15:28:40+08:00",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "c5VRpgBwc0eE0jt9z4RDc",
@@ -165,7 +685,7 @@
       "hash": "93ea1e257308fc991593dfc37004779a",
       "publishName": "frieren-93ea1e257308fc991593dfc37004779a",
       "createdAt": "2025-02-22T15:22:54+08:00",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "ToZYm-NKnNVsJrHQd9UFq",
@@ -185,7 +705,7 @@
       "hash": "47e12e5c6c2ad0ab650a68bcae72e1d5",
       "publishName": "Qingzhiyu-47e12e5c6c2ad0ab650a68bcae72e1d5",
       "createdAt": "2025-01-14T23:56:21+08:00",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "Z0UiqelHdAju-VIS9AmHx",
@@ -206,7 +726,7 @@
       "hash": "c05eb2c3fe0790f89df0be80ec2ae458",
       "publishName": "chun-dynamic-c05eb2c3fe0790f89df0be80ec2ae458",
       "createdAt": "2024-09-10T11:54:54+08:00",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "ZQM3IWpp-zb3B6XZ5_jif",
@@ -1179,6 +1699,32 @@
   ],
   "tagIndex": {
     "动态": [
+      "uXJu7fAti4YGQMsz",
+      "1T8Sh_HbjdBfiRap",
+      "ruvoAf5KjUm2MybM",
+      "z3OYcA_r4aJcNO3E",
+      "p3Wbj-ExH5SuFUlh",
+      "tCH5oblzHykffOpq",
+      "OpUEsjSpkNNegPlK",
+      "G2YGjGITMj0Q6HFt",
+      "wr9BiZEZmzOnIFvE",
+      "bCuowpCnwVaIpGge",
+      "5ZEtBJ1gN2ptAHg0",
+      "Zuh5uxsr35dGwD_2",
+      "Cl-rXsEIueQZ4P8y",
+      "OLTnpljqAcbygIGi",
+      "xI65d4cvQnldRkaO",
+      "4mgJjIlQuQERoQzc",
+      "pcenKqgnwsrk1ozd",
+      "OH7NSG7jLccYPYO8",
+      "anVPNXE_U9Zh1GbL",
+      "wSpORvhUfVnCiiZc",
+      "EwIkZjt2j8cjt0TF",
+      "jXOp4RBPK65MwD8g",
+      "sKz1Oi8eW89BXxKS",
+      "3xzQJGHJIl2kVtWj",
+      "VXBXmwPmvQHULKhY",
+      "e8KE3G0V8O9lfExn",
       "O9lTRwPPQi1UAoc",
       "7Tqa2W1J7IysmlYrR-yCp",
       "azouwGKBcVY9B6UtpOr5F",
