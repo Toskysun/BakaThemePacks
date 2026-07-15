@@ -1,7 +1,27 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-07-15T09:27:42.476Z",
+  "updatedAt": "2026-07-15T09:41:52.668Z",
   "themes": [
+    {
+      "id": "mTmgEf32iPRo5vnwZo_2e",
+      "spec": "bakamusic-theme@2",
+      "name": "心海丨花好月圆【动态】",
+      "packageName": "kokomi-hua-hao-yue-yuan",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "心海丨花好月圆动态主题",
+      "version": "2.1.1",
+      "scheme": "dark",
+      "tags": [
+        "动态"
+      ],
+      "preview": "previews/kokomi-hua-hao-yue-yuan.jpg",
+      "themeUrl": "themes/kokomi-hua-hao-yue-yuan-b0a3a9be01ab2218484967afa1739b42.mftheme",
+      "hash": "b0a3a9be01ab2218484967afa1739b42",
+      "publishName": "kokomi-hua-hao-yue-yuan-b0a3a9be01ab2218484967afa1739b42",
+      "createdAt": "2026-07-15T09:41:51.244Z",
+      "isNew": true
+    },
     {
       "id": "uXJu7fAti4YGQMsz",
       "spec": "bakamusic-theme@2",
@@ -200,7 +220,7 @@
       "hash": "dcc329cf3589c41a80f7aad86fb5d1b0",
       "publishName": "theme-4ed879be52-dcc329cf3589c41a80f7aad86fb5d1b0",
       "createdAt": "2026-07-14T05:46:43.102Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "5ZEtBJ1gN2ptAHg0",
@@ -1699,6 +1719,7 @@
   ],
   "tagIndex": {
     "动态": [
+      "mTmgEf32iPRo5vnwZo_2e",
       "uXJu7fAti4YGQMsz",
       "1T8Sh_HbjdBfiRap",
       "ruvoAf5KjUm2MybM",
