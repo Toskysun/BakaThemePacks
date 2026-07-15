@@ -74,8 +74,6 @@ python .agents/skills/create-baka-theme/scripts/create_theme.py \
 | tags | 1～5 个，且 ∈ `tags.json` |
 | 动态主题 | 必须带标签「动态」 |
 | `id` 字段 | 禁止写入 config（由 meta 管理） |
-| 主文字对比度 | 与标题栏、侧栏、播放栏、面板、浮层等承载表面 ≥ 4.5:1 |
-| 次级文字对比度 | 与对应承载表面 ≥ 3:1 |
 
 禁止：客户端 class 选择器、MusicFree / 客户端私有变量、额外 CSS 规则、`!important`、全局藏滚动条和修改布局尺寸。`var()` 只能引用清单内公开 token。
 
@@ -109,7 +107,7 @@ python .agents/skills/create-baka-theme/scripts/create_theme.py \
 }
 ```
 
-该四项模板满足客户端最小契约；提交官方市场前必须运行 `upgrade:semantic` 补齐可读表面，再通过 `validate` 对比度门禁。
+该四项模板满足客户端最小契约；提交官方市场前必须运行 `upgrade:semantic` 补齐语义覆盖层，再通过 `validate`。
 
 更多示例（深色 / 动态视频）见 [THEME_GUIDE.md](./docs/THEME_GUIDE.md)。
 

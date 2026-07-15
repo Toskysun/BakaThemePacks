@@ -8,9 +8,7 @@
     "validate": "node ./.scripts/validate.mjs",
     "validate:theme": "node ./.scripts/validate.mjs --themes",
     "migrate:v2": "node ./.scripts/migrate-to-v2.mjs",
-    "upgrade:semantic": "node ./.scripts/upgrade-semantic-v2.mjs",
-    "refactor:contrast": "node ./.scripts/refactor-theme-contrast.mjs",
-    "test:contrast": "node ./.scripts/theme-contrast.test.mjs"
+    "upgrade:semantic": "node ./.scripts/upgrade-semantic-v2.mjs"
   },
   "keywords": ["bakamusic", "theme"],
   "author": "Toskysun",

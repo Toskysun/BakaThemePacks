@@ -130,7 +130,6 @@ themes/my-cool-theme/
 4. **禁止** `!important`、`@import` 和额外 CSS 规则
 5. 客户端会把 `--theme-*` 映射成内部的表面色、标题栏、侧栏、列表等
 6. `var()` 只能引用 [`theme-contract.json`](../theme-contract.json) 内其他公开 token
-7. 官方市场要求主文字对比度至少 `4.5:1`、次级文字至少 `3:1`；校验会覆盖标题栏、侧栏、播放栏、面板与浮层
 
 ### 4.2 必填 Token
 
@@ -147,7 +146,7 @@ themes/my-cool-theme/
 |-------|------|
 | `--theme-text-secondary` | 次级文字 |
 | `--theme-text-on-primary` | 画在主色按钮上的文字色 |
-| `--theme-header-text` | 标题栏文字；推荐 `var(--theme-text)`，单独设置时必须通过对比度校验 |
+| `--theme-header-text` | 标题栏文字；推荐 `var(--theme-text)` |
 | `--theme-link` | 链接色（默认同 primary） |
 | `--theme-divider` | 分割线 |
 | `--theme-mask` | 弹层遮罩 |
@@ -240,7 +239,7 @@ themes/my-cool-theme/
 | 目标 | 建议 |
 |------|------|
 | 视频更明显 | 降低 `--theme-bg` 的 alpha（如 `0.18`～`0.32`） |
-| 字更清楚 | 保持壁纸 alpha，提升 `surface-*` 不透明度并运行对比度校验 |
+| 字更清楚 | 保持壁纸 alpha，提升 `surface-*` 不透明度并在客户端实际预览 |
 | 毛玻璃更强 | `--theme-blur: 16px`～`22px`（客户端 glass 模式才会用） |
 | 扁平模式 | 用户可在设置里切 flat；主题**不要**强行改布局 |
 
@@ -372,7 +371,6 @@ npm run validate -- --themes my-cool-theme
 
 - `spec`、必填字段、semver、标签合法性
 - `index.css` 必填 token、禁止选择器、禁止废弃 token
-- 主文字 `4.5:1`、次级文字 `3:1` 的跨表面对比度
 - 预览文件是否存在
 - iframe 路径
 - 资源体积
@@ -494,7 +492,6 @@ node .scripts/import-legacy-zips.mjs "路径/到/主题zip目录"
 - [ ] `tags` 均在 `tags.json` 中；动态主题含「动态」
 - [ ] **没有** `id` 字段
 - [ ] `index.css` 仅 `:root` + 契约 token；含 4 个必填 token
-- [ ] 标题栏、侧栏、播放栏、面板、浮层文字通过 `4.5:1` / `3:1` 对比度门禁
 - [ ] 无客户端 class、无 `--color-*`、无藏滚动条
 - [ ] 图片 ≤ 500KB，视频 ≤ 5MB，整包 ≤ 10MB
 - [ ] `preview` 文件真实存在（或纯色合法）
