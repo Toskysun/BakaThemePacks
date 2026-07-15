@@ -164,7 +164,7 @@ npm run upgrade:semantic  # 为旧 V2 包补齐 2.1 主要区域 token
 | 用 header/sidebar/player/detail 等语义 token | 引用 `--appSurface` 等私有变量 |
 | `iframe.app` 只播背景 | 改 `--appHeaderHeight` 等布局 |
 | 标签来自 `tags.json` | 在 config 里写 `id` |
-| 压图 ≤500KB、视频 ≤5MB | 提交 4K 原片 |
+| 压图 ≤10MB、视频 ≤5MB | 提交 4K 原片 |
 
 ---
 

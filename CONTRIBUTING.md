@@ -68,7 +68,7 @@ python .agents/skills/create-baka-theme/scripts/create_theme.py \
 
 | 项 | 限制 |
 |----|------|
-| 单图 | ≤ 500 KB |
+| 单图 | ≤ 10 MB |
 | 单视频 | ≤ 5 MB |
 | 整包 | ≤ 10 MB |
 | tags | 1～5 个，且 ∈ `tags.json` |

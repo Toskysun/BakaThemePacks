@@ -318,7 +318,7 @@ themes/my-cool-theme/
 
 | 类型 | 上限 |
 |------|------|
-| 单张图片 | **≤ 500 KB** |
+| 单张图片 | **≤ 10 MB** |
 | 单个视频 | **≤ 5 MB** |
 | 整个主题包 | **≤ 10 MB** |
 
@@ -493,7 +493,7 @@ node .scripts/import-legacy-zips.mjs "路径/到/主题zip目录"
 - [ ] **没有** `id` 字段
 - [ ] `index.css` 仅 `:root` + 契约 token；含 4 个必填 token
 - [ ] 无客户端 class、无 `--color-*`、无藏滚动条
-- [ ] 图片 ≤ 500KB，视频 ≤ 5MB，整包 ≤ 10MB
+- [ ] 图片 ≤ 10MB，视频 ≤ 5MB，整包 ≤ 10MB
 - [ ] `preview` 文件真实存在（或纯色合法）
 - [ ] 若有 iframe：路径正确，资源 `@/` 可解析
 - [ ] `npm run validate -- --themes 你的主题` 通过

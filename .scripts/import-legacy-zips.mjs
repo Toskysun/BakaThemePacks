@@ -26,7 +26,7 @@ const SPEC = "bakamusic-theme@2";
 const DEFAULT_AUTHOR = "轻舟折枝";
 
 const SIZE = {
-  IMAGE_MAX: 500 * 1024,
+  IMAGE_MAX: 10 * 1024 * 1024,
   VIDEO_MAX: 5 * 1024 * 1024,
   THEME_TOTAL_MAX: 10 * 1024 * 1024,
 };

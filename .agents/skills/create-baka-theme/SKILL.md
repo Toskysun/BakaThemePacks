@@ -50,7 +50,7 @@ Useful options:
 - Keep wallpaper transparency in `--theme-bg`; use high-opacity tinted `surface-*` values for every text-bearing region.
 - Choose text and surface colors that remain readable over the intended wallpaper; visual judgment belongs to the theme author.
 - Use `@/imgs/...` for pack assets and only `iframe.app` for dynamic backgrounds.
-- Keep images at most 500 KB, videos at most 5 MB, and the whole theme at most 10 MB.
+- Keep images at most 10 MB, videos at most 5 MB, and the whole theme at most 10 MB.
 - Do not edit `meta.json` for a normal theme addition; publishing owns `id` and `createdAt`.
 
 ## Packaging
