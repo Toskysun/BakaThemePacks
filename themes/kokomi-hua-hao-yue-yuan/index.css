@@ -62,7 +62,7 @@
     --theme-input-bg-hover: var(--theme-card-bg-hover);
     --theme-input-border: var(--theme-surface-border);
     --theme-input-border-active: var(--theme-primary);
-    --theme-popover-bg: color-mix(in srgb, var(--theme-primary) 8%, rgba(255, 255, 255, 0.25));
+    --theme-popover-bg: color-mix(in srgb, var(--theme-primary) 8%, #17171d);
     --theme-popover-text: var(--theme-text);
     --theme-popover-text-secondary: var(--theme-text-secondary);
     --theme-popover-border: var(--theme-surface-border-strong);
