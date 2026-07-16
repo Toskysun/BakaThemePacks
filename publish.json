@@ -1,7 +1,29 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-07-16T09:48:47.542Z",
+  "updatedAt": "2026-07-16T09:50:53.086Z",
   "themes": [
+    {
+      "id": "ZNrObG67-6g0uHP4oWNkp",
+      "spec": "bakamusic-theme@2",
+      "name": "夕阳神龛【动态】",
+      "packageName": "Sunset-Shrine",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "夕阳神龛",
+      "version": "2.1.1",
+      "scheme": "light",
+      "tags": [
+        "动态",
+        "亮色",
+        "简约"
+      ],
+      "preview": "previews/Sunset-Shrine.jpg",
+      "themeUrl": "themes/Sunset-Shrine-7556f63e340ea3a512915b1a407ae674.mftheme",
+      "hash": "7556f63e340ea3a512915b1a407ae674",
+      "publishName": "Sunset-Shrine-7556f63e340ea3a512915b1a407ae674",
+      "createdAt": "2026-07-16T09:50:51.651Z",
+      "isNew": true
+    },
     {
       "id": "mTmgEf32iPRo5vnwZo_2e",
       "spec": "bakamusic-theme@2",
@@ -200,7 +222,7 @@
       "hash": "12ffb7b9e9189b12661db3151cc9b3d9",
       "publishName": "theme-2da6b5193f-12ffb7b9e9189b12661db3151cc9b3d9",
       "createdAt": "2026-07-14T05:46:43.102Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "bCuowpCnwVaIpGge",
@@ -1719,6 +1741,7 @@
   ],
   "tagIndex": {
     "动态": [
+      "ZNrObG67-6g0uHP4oWNkp",
       "mTmgEf32iPRo5vnwZo_2e",
       "uXJu7fAti4YGQMsz",
       "1T8Sh_HbjdBfiRap",
@@ -1768,17 +1791,14 @@
       "4C3iJxQc5o-9QEIF7Ih0_",
       "_Cv5IxWH8WIUd24j-RQgy"
     ],
-    "可爱": [
-      "O9lTRwPPQi1UAoc",
-      "cKhbOOn53HoLvieyfZz7_",
-      "hkclu6Dc4QAJl6PJsk2n3"
-    ],
     "亮色": [
+      "ZNrObG67-6g0uHP4oWNkp",
       "zsG0fMhcwxEsyRsD02ET3",
       "0vdPAd8oqGMBVtvrW8mk-",
       "iTsBcAhCH5_TYByejTtFr"
     ],
     "简约": [
+      "ZNrObG67-6g0uHP4oWNkp",
       "zsG0fMhcwxEsyRsD02ET3",
       "0vdPAd8oqGMBVtvrW8mk-",
       "fRQjhe9hvOUQ5de77ym0E",
@@ -1786,6 +1806,11 @@
       "iTsBcAhCH5_TYByejTtFr",
       "Jh53eoHmKOL0lQOw7T4ji",
       "RpUgsCFv2uNOQEpxaMfag"
+    ],
+    "可爱": [
+      "O9lTRwPPQi1UAoc",
+      "cKhbOOn53HoLvieyfZz7_",
+      "hkclu6Dc4QAJl6PJsk2n3"
     ],
     "动漫": [
       "7Tqa2W1J7IysmlYrR-yCp",
