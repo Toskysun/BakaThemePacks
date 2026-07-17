@@ -11,7 +11,7 @@
     --theme-mask: rgba(0, 0, 0, 0.28);
     --theme-placeholder: rgba(31, 35, 41, 0.10);
     --theme-surface-alpha: 0.9;
-    --theme-blur: 10px;
+    --theme-blur: 5px;
     --theme-scrollbar-thumb: rgb(236, 109, 90);
     --theme-primary-hover: color-mix(in srgb, var(--theme-primary) 84%, black);
     --theme-primary-active: color-mix(in srgb, var(--theme-primary) 72%, black);
