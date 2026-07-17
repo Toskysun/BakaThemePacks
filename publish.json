@@ -1,7 +1,27 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-07-17T07:15:53.566Z",
+  "updatedAt": "2026-07-17T09:00:53.643Z",
   "themes": [
+    {
+      "id": "Up3Opjs8htTjTQzPxETOB",
+      "spec": "bakamusic-theme@2",
+      "name": "星海低语【动态】",
+      "packageName": "Star-Sea",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "星海低语",
+      "version": "2.1.1",
+      "scheme": "dark",
+      "tags": [
+        "动态"
+      ],
+      "preview": "previews/Star-Sea.jpg",
+      "themeUrl": "themes/Star-Sea-0b27aa30a17ed53fbdf5d5a0316ccaa5.mftheme",
+      "hash": "0b27aa30a17ed53fbdf5d5a0316ccaa5",
+      "publishName": "Star-Sea-0b27aa30a17ed53fbdf5d5a0316ccaa5",
+      "createdAt": "2026-07-17T09:00:52.163Z",
+      "isNew": true
+    },
     {
       "id": "qfxKXHegGEIM3sSq3Zfnw",
       "spec": "bakamusic-theme@2",
@@ -202,7 +222,7 @@
       "hash": "efcf1849675d54d6b5213934494bfd67",
       "publishName": "theme-1ec8ccc1db-efcf1849675d54d6b5213934494bfd67",
       "createdAt": "2026-07-14T05:46:43.102Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "G2YGjGITMj0Q6HFt",
@@ -1761,6 +1781,7 @@
   ],
   "tagIndex": {
     "动态": [
+      "Up3Opjs8htTjTQzPxETOB",
       "qfxKXHegGEIM3sSq3Zfnw",
       "ZNrObG67-6g0uHP4oWNkp",
       "mTmgEf32iPRo5vnwZo_2e",
