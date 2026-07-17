@@ -1,8 +1,12 @@
-/* bakamusic-theme@2.1 — semantic token pack*/
+/* bakamusic-theme@2.1 — semantic token pack
+遵循 BakaThemePacks v2 THEME_GUIDE.md 规范
+主题：星空竖琴冰蓝暗色主题
+全局输入框边框改为透明白色
+*/
 :root {
     /* 4项强制核心Token */
     --theme-primary: rgb(122, 196, 255);
-    --theme-bg: color-mix(in srgb, var(--theme-primary) 6%, transparent);
+    --theme-bg: rgba(10, 16, 38, 0.42);
     --theme-text: #f8fbff;
     --theme-scheme: dark;
 
@@ -18,7 +22,7 @@
 
     /* 面板基础配置与主色变体 */
     --theme-surface-alpha: 0.12;
-    --theme-blur: 5px;
+    --theme-blur: 8px;
     --theme-scrollbar-thumb: var(--theme-primary);
     --theme-primary-hover: color-mix(in srgb, var(--theme-primary) 85%, #062040);
     --theme-primary-active: color-mix(in srgb, var(--theme-primary) 70%, #041530);
@@ -40,13 +44,13 @@
     --theme-card-bg-hover: var(--theme-surface-strong);
     --theme-card-border: var(--theme-surface-border);
 
-    /* 顶部标题栏 */
+    /* 顶部标题栏 + 搜索框 */
     --theme-header-bg: var(--theme-surface-strong);
     --theme-header-border: var(--theme-surface-border);
     --theme-header-control-bg: var(--theme-interactive);
     --theme-header-control-hover-bg: var(--theme-interactive-hover);
-    --theme-header-search-bg: var(--theme-surface-muted);
-    --theme-header-search-border: var(--theme-surface-border);
+    --theme-header-search-bg: color-mix(in srgb, var(--theme-primary) 6%, rgba(10, 18, 40, 0.45));
+    --theme-header-search-border: rgba(160, 210, 255, 0.35);
 
     /* 侧边栏（文字统一白色） */
     --theme-sidebar-bg: var(--theme-surface);
@@ -66,8 +70,7 @@
     --theme-player-accent: var(--theme-primary);
     --theme-player-border: var(--theme-surface-border);
 
-    /* 歌曲列表 */
-    --theme-list-bg: color-mix(in srgb, var(--theme-primary) 12%, rgba(10, 18, 40, 0.20));
+    /* 歌曲列表：无list-bg，保留8px毛玻璃 */
     --theme-list-row-bg: transparent;
     --theme-list-row-alt-bg: color-mix(in srgb, var(--theme-primary) 5%, transparent);
     --theme-list-row-hover-bg: var(--theme-interactive-hover);
@@ -83,10 +86,10 @@
     --theme-panel-row-hover-bg: var(--theme-interactive-hover);
     --theme-panel-row-border: var(--theme-divider);
 
-    /* 输入框 */
+    /* 全局输入框【弹窗/设置内搜索框边框改为白色】 */
     --theme-input-bg: var(--theme-surface-strong);
     --theme-input-bg-hover: var(--theme-card-bg-hover);
-    --theme-input-border: var(--theme-surface-border);
+    --theme-input-border: rgba(255, 255, 255, 0.25);
     --theme-input-border-active: var(--theme-primary);
 
     /* 下拉弹窗 */
