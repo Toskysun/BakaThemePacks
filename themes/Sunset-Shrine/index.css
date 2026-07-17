@@ -13,7 +13,7 @@
     --theme-mask: rgba(0, 0, 0, 0.28);
     --theme-placeholder: rgba(20, 20, 20, 0.20);
     --theme-surface-alpha: 0.1;
-    --theme-blur: 0px;
+    --theme-blur: 5px;
     --theme-scrollbar-thumb: rgb(255, 211, 150);
 
     /* 主色交互深浅（浅色模式适配暖金加深） */
@@ -66,7 +66,7 @@
     --theme-player-border: var(--theme-surface-border);
 
     /* 歌曲列表 */
-    --theme-list-bg: var(--theme-card-bg);
+    --theme-list-bg: color-mix (in srgb, rgba (255, 211, 150) 35%, white 10%);
     --theme-list-row-hover-bg: var(--theme-interactive-hover);
     --theme-list-row-active-bg: var(--theme-interactive-active);
     --theme-list-row-border: var(--theme-divider);
