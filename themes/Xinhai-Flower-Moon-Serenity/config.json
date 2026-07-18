@@ -1,0 +1,15 @@
+{
+    "spec": "bakamusic-theme@2",
+    "name":"Xinhai-Blooming Moon",
+    "author": "轻舟折枝",
+    "version": "2.1.1",
+    "preview": "@/imgs/preview.jpg",
+    "description":"Xinhai-Blooming Moon",
+    "tags": [
+        "动态"
+    ],
+    "scheme": "dark",
+    "iframe": {
+        "app": "@/iframes/app.html"
+    }
+}
