@@ -1,7 +1,31 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-07-18T04:01:18.706Z",
+  "updatedAt": "2026-07-18T08:05:35.948Z",
   "themes": [
+    {
+      "id": "ntPbHKHNaMVheq6lYXiw7",
+      "spec": "bakamusic-theme@2",
+      "name": "青野【动态】",
+      "packageName": "Aono",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "青野",
+      "version": "2.1.0",
+      "scheme": "light",
+      "tags": [
+        "亮色",
+        "简约",
+        "自然",
+        "插画",
+        "动态"
+      ],
+      "preview": "previews/Aono.jpg",
+      "themeUrl": "themes/Aono-60eb8d2f29974071ae76f8bdd258d2ee.mftheme",
+      "hash": "60eb8d2f29974071ae76f8bdd258d2ee",
+      "publishName": "Aono-60eb8d2f29974071ae76f8bdd258d2ee",
+      "createdAt": "2026-07-18T08:05:34.236Z",
+      "isNew": true
+    },
     {
       "id": "eMUzDBM1Jw6NTb-BMZxY_",
       "spec": "bakamusic-theme@2",
@@ -202,7 +226,7 @@
       "hash": "38e77ff79ec1f726ffe7849c10c0bb9a",
       "publishName": "cute-fluff-ball-critter-38e77ff79ec1f726ffe7849c10c0bb9a",
       "createdAt": "2026-07-14T05:46:43.102Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "tCH5oblzHykffOpq",
@@ -1800,7 +1824,51 @@
     }
   ],
   "tagIndex": {
+    "亮色": [
+      "ntPbHKHNaMVheq6lYXiw7",
+      "ZNrObG67-6g0uHP4oWNkp",
+      "zsG0fMhcwxEsyRsD02ET3",
+      "0vdPAd8oqGMBVtvrW8mk-",
+      "iTsBcAhCH5_TYByejTtFr"
+    ],
+    "简约": [
+      "ntPbHKHNaMVheq6lYXiw7",
+      "ZNrObG67-6g0uHP4oWNkp",
+      "zsG0fMhcwxEsyRsD02ET3",
+      "0vdPAd8oqGMBVtvrW8mk-",
+      "fRQjhe9hvOUQ5de77ym0E",
+      "gpMpMQuj5zot53Ca_YlXF",
+      "iTsBcAhCH5_TYByejTtFr",
+      "Jh53eoHmKOL0lQOw7T4ji",
+      "RpUgsCFv2uNOQEpxaMfag"
+    ],
+    "自然": [
+      "ntPbHKHNaMVheq6lYXiw7",
+      "ZQM3IWpp-zb3B6XZ5_jif",
+      "dONCjxCKM1tQUl4d-7NE_",
+      "Vcx9pp4-CuXN9-AU-nf-f",
+      "mRVCjtJYLf0EtFVuNYSpn",
+      "V52fVc-ztv1cG_mxgFs4f",
+      "EIY5V7tND8S8udI_qqAdO",
+      "fqDKd1xoZ6_flNjhsRi9T",
+      "4C3iJxQc5o-9QEIF7Ih0_"
+    ],
+    "插画": [
+      "ntPbHKHNaMVheq6lYXiw7",
+      "0CxAzYYA1yq0CXZ9E_Rga",
+      "ToZYm-NKnNVsJrHQd9UFq",
+      "dONCjxCKM1tQUl4d-7NE_",
+      "RV7s9TjIoi_OvkLDM5WSI",
+      "KkCzmMSlZeQOeYxztpFr9",
+      "0ouuxVcb4i8OUAGCVEG9e",
+      "nyZvQY5Ym_U_lYgJWBQ-k",
+      "UOVwwV1NfFLB0BWvB44VN",
+      "av_M5CZe9JnRFu6-jAKKw",
+      "SBzyAo-AInR7naLcoccHN",
+      "lfFIro-7IQNubVotuMRkP"
+    ],
     "动态": [
+      "ntPbHKHNaMVheq6lYXiw7",
       "eMUzDBM1Jw6NTb-BMZxY_",
       "yzIQs1hMWaVrBQGNiCFh4",
       "Up3Opjs8htTjTQzPxETOB",
@@ -1854,22 +1922,6 @@
       "4C3iJxQc5o-9QEIF7Ih0_",
       "_Cv5IxWH8WIUd24j-RQgy"
     ],
-    "亮色": [
-      "ZNrObG67-6g0uHP4oWNkp",
-      "zsG0fMhcwxEsyRsD02ET3",
-      "0vdPAd8oqGMBVtvrW8mk-",
-      "iTsBcAhCH5_TYByejTtFr"
-    ],
-    "简约": [
-      "ZNrObG67-6g0uHP4oWNkp",
-      "zsG0fMhcwxEsyRsD02ET3",
-      "0vdPAd8oqGMBVtvrW8mk-",
-      "fRQjhe9hvOUQ5de77ym0E",
-      "gpMpMQuj5zot53Ca_YlXF",
-      "iTsBcAhCH5_TYByejTtFr",
-      "Jh53eoHmKOL0lQOw7T4ji",
-      "RpUgsCFv2uNOQEpxaMfag"
-    ],
     "可爱": [
       "O9lTRwPPQi1UAoc",
       "cKhbOOn53HoLvieyfZz7_",
@@ -1912,29 +1964,6 @@
       "jTXimF4z39Nal9YPKX3bn",
       "UOVwwV1NfFLB0BWvB44VN",
       "P-Or4HUL71ZRxpf4zpAhf"
-    ],
-    "插画": [
-      "0CxAzYYA1yq0CXZ9E_Rga",
-      "ToZYm-NKnNVsJrHQd9UFq",
-      "dONCjxCKM1tQUl4d-7NE_",
-      "RV7s9TjIoi_OvkLDM5WSI",
-      "KkCzmMSlZeQOeYxztpFr9",
-      "0ouuxVcb4i8OUAGCVEG9e",
-      "nyZvQY5Ym_U_lYgJWBQ-k",
-      "UOVwwV1NfFLB0BWvB44VN",
-      "av_M5CZe9JnRFu6-jAKKw",
-      "SBzyAo-AInR7naLcoccHN",
-      "lfFIro-7IQNubVotuMRkP"
-    ],
-    "自然": [
-      "ZQM3IWpp-zb3B6XZ5_jif",
-      "dONCjxCKM1tQUl4d-7NE_",
-      "Vcx9pp4-CuXN9-AU-nf-f",
-      "mRVCjtJYLf0EtFVuNYSpn",
-      "V52fVc-ztv1cG_mxgFs4f",
-      "EIY5V7tND8S8udI_qqAdO",
-      "fqDKd1xoZ6_flNjhsRi9T",
-      "4C3iJxQc5o-9QEIF7Ih0_"
     ],
     "游戏": [
       "eF0HSyzQ_jrSoE-wJpzwT",
