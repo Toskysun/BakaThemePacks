@@ -1,7 +1,27 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-07-18T02:16:29.182Z",
+  "updatedAt": "2026-07-18T02:18:15.195Z",
   "themes": [
+    {
+      "id": "yzIQs1hMWaVrBQGNiCFh4",
+      "spec": "bakamusic-theme@2",
+      "name": "Lonely Cat【动态】",
+      "packageName": "Lonely-Cat",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "Lonely Cat",
+      "version": "2.1.1",
+      "scheme": "dark",
+      "tags": [
+        "动态"
+      ],
+      "preview": "previews/Lonely-Cat.jpg",
+      "themeUrl": "themes/Lonely-Cat-a364c80bfa781ca36cdb8aead9cda343.mftheme",
+      "hash": "a364c80bfa781ca36cdb8aead9cda343",
+      "publishName": "Lonely-Cat-a364c80bfa781ca36cdb8aead9cda343",
+      "createdAt": "2026-07-18T02:18:13.637Z",
+      "isNew": true
+    },
     {
       "id": "Up3Opjs8htTjTQzPxETOB",
       "spec": "bakamusic-theme@2",
@@ -202,7 +222,7 @@
       "hash": "6efbe310c17fa0b6c7a9ae18e49e48fa",
       "publishName": "cute-girl-with-forest-ghosts-6efbe310c17fa0b6c7a9ae18e49e48fa",
       "createdAt": "2026-07-14T05:46:43.102Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "OpUEsjSpkNNegPlK",
@@ -1781,6 +1801,7 @@
   ],
   "tagIndex": {
     "动态": [
+      "yzIQs1hMWaVrBQGNiCFh4",
       "Up3Opjs8htTjTQzPxETOB",
       "qfxKXHegGEIM3sSq3Zfnw",
       "ZNrObG67-6g0uHP4oWNkp",
