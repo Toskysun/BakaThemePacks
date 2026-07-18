@@ -1,7 +1,27 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-07-18T03:56:39.111Z",
+  "updatedAt": "2026-07-18T04:01:18.706Z",
   "themes": [
+    {
+      "id": "eMUzDBM1Jw6NTb-BMZxY_",
+      "spec": "bakamusic-theme@2",
+      "name": "Xinhai-Blooming Moon",
+      "packageName": "Xinhai-Flower-Moon-Serenity",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "Xinhai-Blooming Moon",
+      "version": "2.1.1",
+      "scheme": "dark",
+      "tags": [
+        "动态"
+      ],
+      "preview": "previews/Xinhai-Flower-Moon-Serenity.jpg",
+      "themeUrl": "themes/Xinhai-Flower-Moon-Serenity-47f8e369946d12c664514ac3f2e359c1.mftheme",
+      "hash": "47f8e369946d12c664514ac3f2e359c1",
+      "publishName": "Xinhai-Flower-Moon-Serenity-47f8e369946d12c664514ac3f2e359c1",
+      "createdAt": "2026-07-18T04:01:17.232Z",
+      "isNew": true
+    },
     {
       "id": "yzIQs1hMWaVrBQGNiCFh4",
       "spec": "bakamusic-theme@2",
@@ -202,7 +222,7 @@
       "hash": "6efbe310c17fa0b6c7a9ae18e49e48fa",
       "publishName": "cute-girl-with-forest-ghosts-6efbe310c17fa0b6c7a9ae18e49e48fa",
       "createdAt": "2026-07-14T05:46:43.102Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "OpUEsjSpkNNegPlK",
@@ -1781,6 +1801,7 @@
   ],
   "tagIndex": {
     "动态": [
+      "eMUzDBM1Jw6NTb-BMZxY_",
       "yzIQs1hMWaVrBQGNiCFh4",
       "Up3Opjs8htTjTQzPxETOB",
       "qfxKXHegGEIM3sSq3Zfnw",
