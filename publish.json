@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-07-17T10:47:17.150Z",
+  "updatedAt": "2026-07-18T01:39:44.847Z",
   "themes": [
     {
       "id": "Up3Opjs8htTjTQzPxETOB",
@@ -20,6 +20,26 @@
       "hash": "0b27aa30a17ed53fbdf5d5a0316ccaa5",
       "publishName": "Star-Sea-0b27aa30a17ed53fbdf5d5a0316ccaa5",
       "createdAt": "2026-07-17T09:00:52.163Z",
+      "isNew": true
+    },
+    {
+      "id": "qfxKXHegGEIM3sSq3Zfnw",
+      "spec": "bakamusic-theme@2",
+      "name": "竹林清音【动态】",
+      "packageName": "Bamboo-Whisper-Grove",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "竹林清音",
+      "version": "2.1.1",
+      "scheme": "dark",
+      "tags": [
+        "动态"
+      ],
+      "preview": "previews/Bamboo-Whisper-Grove.jpg",
+      "themeUrl": "themes/Bamboo-Whisper-Grove-99190bf796273c7cfe3434b84718e0f7.mftheme",
+      "hash": "99190bf796273c7cfe3434b84718e0f7",
+      "publishName": "Bamboo-Whisper-Grove-99190bf796273c7cfe3434b84718e0f7",
+      "createdAt": "2026-07-17T04:52:13.033Z",
       "isNew": true
     },
     {
@@ -202,7 +222,7 @@
       "hash": "efcf1849675d54d6b5213934494bfd67",
       "publishName": "theme-1ec8ccc1db-efcf1849675d54d6b5213934494bfd67",
       "createdAt": "2026-07-14T05:46:43.102Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "G2YGjGITMj0Q6HFt",
@@ -1762,6 +1782,7 @@
   "tagIndex": {
     "动态": [
       "Up3Opjs8htTjTQzPxETOB",
+      "qfxKXHegGEIM3sSq3Zfnw",
       "ZNrObG67-6g0uHP4oWNkp",
       "mTmgEf32iPRo5vnwZo_2e",
       "uXJu7fAti4YGQMsz",
