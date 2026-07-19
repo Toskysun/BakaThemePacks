@@ -1,7 +1,27 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-07-18T08:05:35.948Z",
+  "updatedAt": "2026-07-19T10:53:30.557Z",
   "themes": [
+    {
+      "id": "-Lir2ucnOnV3g4lN4_OHm",
+      "spec": "bakamusic-theme@2",
+      "name": "水中月是天上月【动态】",
+      "packageName": "Water-Moon",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "水中月是天上月",
+      "version": "2.1.1",
+      "scheme": "dark",
+      "tags": [
+        "动态"
+      ],
+      "preview": "previews/Water-Moon.jpg",
+      "themeUrl": "themes/Water-Moon-739b4be565a7d514dc0e78b30c583914.mftheme",
+      "hash": "739b4be565a7d514dc0e78b30c583914",
+      "publishName": "Water-Moon-739b4be565a7d514dc0e78b30c583914",
+      "createdAt": "2026-07-19T10:53:28.868Z",
+      "isNew": true
+    },
     {
       "id": "ntPbHKHNaMVheq6lYXiw7",
       "spec": "bakamusic-theme@2",
@@ -206,7 +226,7 @@
       "hash": "fcafb7d14d37feab742bea56b9ff677f",
       "publishName": "theme-808ce545b0-fcafb7d14d37feab742bea56b9ff677f",
       "createdAt": "2026-07-14T05:46:43.103Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "p3Wbj-ExH5SuFUlh",
@@ -1824,50 +1844,8 @@
     }
   ],
   "tagIndex": {
-    "亮色": [
-      "ntPbHKHNaMVheq6lYXiw7",
-      "ZNrObG67-6g0uHP4oWNkp",
-      "zsG0fMhcwxEsyRsD02ET3",
-      "0vdPAd8oqGMBVtvrW8mk-",
-      "iTsBcAhCH5_TYByejTtFr"
-    ],
-    "简约": [
-      "ntPbHKHNaMVheq6lYXiw7",
-      "ZNrObG67-6g0uHP4oWNkp",
-      "zsG0fMhcwxEsyRsD02ET3",
-      "0vdPAd8oqGMBVtvrW8mk-",
-      "fRQjhe9hvOUQ5de77ym0E",
-      "gpMpMQuj5zot53Ca_YlXF",
-      "iTsBcAhCH5_TYByejTtFr",
-      "Jh53eoHmKOL0lQOw7T4ji",
-      "RpUgsCFv2uNOQEpxaMfag"
-    ],
-    "自然": [
-      "ntPbHKHNaMVheq6lYXiw7",
-      "ZQM3IWpp-zb3B6XZ5_jif",
-      "dONCjxCKM1tQUl4d-7NE_",
-      "Vcx9pp4-CuXN9-AU-nf-f",
-      "mRVCjtJYLf0EtFVuNYSpn",
-      "V52fVc-ztv1cG_mxgFs4f",
-      "EIY5V7tND8S8udI_qqAdO",
-      "fqDKd1xoZ6_flNjhsRi9T",
-      "4C3iJxQc5o-9QEIF7Ih0_"
-    ],
-    "插画": [
-      "ntPbHKHNaMVheq6lYXiw7",
-      "0CxAzYYA1yq0CXZ9E_Rga",
-      "ToZYm-NKnNVsJrHQd9UFq",
-      "dONCjxCKM1tQUl4d-7NE_",
-      "RV7s9TjIoi_OvkLDM5WSI",
-      "KkCzmMSlZeQOeYxztpFr9",
-      "0ouuxVcb4i8OUAGCVEG9e",
-      "nyZvQY5Ym_U_lYgJWBQ-k",
-      "UOVwwV1NfFLB0BWvB44VN",
-      "av_M5CZe9JnRFu6-jAKKw",
-      "SBzyAo-AInR7naLcoccHN",
-      "lfFIro-7IQNubVotuMRkP"
-    ],
     "动态": [
+      "-Lir2ucnOnV3g4lN4_OHm",
       "ntPbHKHNaMVheq6lYXiw7",
       "eMUzDBM1Jw6NTb-BMZxY_",
       "yzIQs1hMWaVrBQGNiCFh4",
@@ -1921,6 +1899,49 @@
       "fqDKd1xoZ6_flNjhsRi9T",
       "4C3iJxQc5o-9QEIF7Ih0_",
       "_Cv5IxWH8WIUd24j-RQgy"
+    ],
+    "亮色": [
+      "ntPbHKHNaMVheq6lYXiw7",
+      "ZNrObG67-6g0uHP4oWNkp",
+      "zsG0fMhcwxEsyRsD02ET3",
+      "0vdPAd8oqGMBVtvrW8mk-",
+      "iTsBcAhCH5_TYByejTtFr"
+    ],
+    "简约": [
+      "ntPbHKHNaMVheq6lYXiw7",
+      "ZNrObG67-6g0uHP4oWNkp",
+      "zsG0fMhcwxEsyRsD02ET3",
+      "0vdPAd8oqGMBVtvrW8mk-",
+      "fRQjhe9hvOUQ5de77ym0E",
+      "gpMpMQuj5zot53Ca_YlXF",
+      "iTsBcAhCH5_TYByejTtFr",
+      "Jh53eoHmKOL0lQOw7T4ji",
+      "RpUgsCFv2uNOQEpxaMfag"
+    ],
+    "自然": [
+      "ntPbHKHNaMVheq6lYXiw7",
+      "ZQM3IWpp-zb3B6XZ5_jif",
+      "dONCjxCKM1tQUl4d-7NE_",
+      "Vcx9pp4-CuXN9-AU-nf-f",
+      "mRVCjtJYLf0EtFVuNYSpn",
+      "V52fVc-ztv1cG_mxgFs4f",
+      "EIY5V7tND8S8udI_qqAdO",
+      "fqDKd1xoZ6_flNjhsRi9T",
+      "4C3iJxQc5o-9QEIF7Ih0_"
+    ],
+    "插画": [
+      "ntPbHKHNaMVheq6lYXiw7",
+      "0CxAzYYA1yq0CXZ9E_Rga",
+      "ToZYm-NKnNVsJrHQd9UFq",
+      "dONCjxCKM1tQUl4d-7NE_",
+      "RV7s9TjIoi_OvkLDM5WSI",
+      "KkCzmMSlZeQOeYxztpFr9",
+      "0ouuxVcb4i8OUAGCVEG9e",
+      "nyZvQY5Ym_U_lYgJWBQ-k",
+      "UOVwwV1NfFLB0BWvB44VN",
+      "av_M5CZe9JnRFu6-jAKKw",
+      "SBzyAo-AInR7naLcoccHN",
+      "lfFIro-7IQNubVotuMRkP"
     ],
     "可爱": [
       "O9lTRwPPQi1UAoc",
