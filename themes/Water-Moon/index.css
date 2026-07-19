@@ -1,0 +1,299 @@
+/* =========================================================
+   bakamusic-theme@2.1 — 语义化 Token 包（逐行注释版）
+   规范依据：Toskysun BakaThemePacks V2.1 THEME_GUIDE.md
+   =========================================================
+   重要约定：
+   - 只允许在 :root 内声明 --theme-* 变量
+   - 禁止使用选择器、!important、@import
+   - 禁止使用旧版 --color-* Token
+   - 所有颜色必须通过 CSS 变量统一管理
+   ========================================================= */
+
+:root {
+
+    /* =====================================================
+       四大强制必填基础 Token（❗主题核心，必须存在）
+       ===================================================== */
+
+    /* 主题主色（品牌色）
+       用途：按钮、高亮、选中态、滚动条、链接
+       换主题时：✅ 必改 */
+    --theme-primary: rgb(167, 125, 240);
+
+    /* 页面最底层背景色（App 根背景）
+       用途：窗口底色、毛玻璃底层
+       建议：深色主题用低透明度，方便透出壁纸 */
+    --theme-bg: rgba(26, 34, 58, 0.38);
+
+    /* 全局主文字颜色
+       用途：标题、正文、主要可读文本
+       注意：需与 --theme-bg 保持足够对比度 */
+    --theme-text: #F8F8F8;
+
+    /* 色彩方案声明
+       取值：light / dark
+       用途：告知系统当前主题模式
+       影响：系统控件、滚动条、原生组件表现 */
+    --theme-scheme: dark;
+
+    /* =====================================================
+       全局文字层级 & 基础 UI 元素
+       ===================================================== */
+
+    /* 次级文字颜色（如副标题、描述信息）
+       实现方式：在主文字基础上降低透明度，保证一致性 */
+    --theme-text-secondary: rgba(255, 255, 245, 0.72);
+
+    /* 顶部标题栏文字颜色
+       通常直接继承主文字色，预留独立覆盖能力 */
+    --theme-header-text: var(--theme-text);
+
+    /* 链接文字颜色
+       建议：与主色区分开，提升可识别性 */
+    --theme-link: rgb(199, 191, 255);
+
+    /* 分割线颜色
+       用途：列表分隔线、面板内部分割线 */
+    --theme-divider: rgba(232, 232, 245, 0.12);
+
+    /* 遮罩层颜色
+       用途：模态弹窗背景、禁用态蒙层
+       深色模式下通常为深色半透明 */
+    --theme-mask: rgba(18, 18, 30, 0.62);
+
+    /* 占位文字颜色
+       用途：输入框 placeholder、空状态提示 */
+    --theme-placeholder: rgba(232, 232, 245, 0.22);
+
+    /* 表面混合透明度系数
+       用途：color-mix() 中统一控制面板透明度 */
+    --theme-surface-alpha: 0.10;
+
+    /* 全局毛玻璃模糊强度
+       单位：px
+       数值越大，磨砂感越强 */
+    --theme-blur: 5px;
+
+    /* 滚动条滑块颜色
+       通常绑定主色，保持视觉统一 */
+    --theme-scrollbar-thumb: rgb(167, 125, 240);
+
+    /* 主色 Hover 态
+       实现方式：主色混入白色，自动生成浅色变体
+       禁止：手动写死颜色 */
+    --theme-primary-hover: color-mix(in srgb, var(--theme-primary) 82%, white);
+
+    /* 主色 Active / Pressed 态
+       比 hover 更深，用于点击瞬间反馈 */
+    --theme-primary-active: color-mix(in srgb, var(--theme-primary) 68%, white);
+
+    /* 弱化文字颜色
+       用途：时间、ID、辅助说明等最弱层级文字 */
+    --theme-text-muted: rgba(232, 232, 245, 0.50);
+
+    /* 主色上的文字颜色
+       用途：按钮文字、标签文字
+       深色主题通常为白色或近白 */
+    --theme-text-on-primary: #161625;
+
+    /* =====================================================
+       三层面板底色体系（背景层级规范）
+       ===================================================== */
+
+    /* 基础面板背景
+       用途：卡片、侧边栏、普通面板
+       实现：主色微量混入深色，形成主题氛围 */
+    --theme-surface: color-mix(in srgb, var(--theme-primary) 9%, rgba(32, 32, 54, 0.18));
+
+    /* 强调面板背景（更强一层）
+       用途：弹窗、Header、Player 等高层级区域 */
+    --theme-surface-strong: color-mix(in srgb, var(--theme-primary) 6%, rgba(38, 38, 64, 0.10));
+
+    /* 弱化面板背景
+       用途：输入框、搜索框、次级卡片 */
+    --theme-surface-muted: color-mix(in srgb, var(--theme-primary) 5%, rgba(42, 42, 68, 0.78));
+
+    /* 面板默认边框颜色 */
+    --theme-surface-border: rgba(232, 232, 245, 0.13);
+
+    /* 面板强边框颜色
+       用途：聚焦态、重要分隔线 */
+    --theme-surface-border-strong: rgba(232, 232, 245, 0.20);
+
+    /* =====================================================
+       全局交互状态 Token
+       ===================================================== */
+
+    /* 默认交互层颜色（极淡） */
+    --theme-interactive: color-mix(in srgb, var(--theme-text) 5%, transparent);
+
+    /* Hover 态交互层颜色
+       用途：列表项、按钮、菜单项悬停 */
+    --theme-interactive-hover: color-mix(in srgb, var(--theme-primary) 16%, transparent);
+
+    /* Active / Pressed 态交互层颜色
+       用途：点击按下时的背景反馈 */
+    --theme-interactive-active: color-mix(in srgb, var(--theme-primary) 28%, transparent);
+
+    /* =====================================================
+       卡片通用 Token（复用性最高）
+       ===================================================== */
+
+    /* 卡片默认背景 */
+    --theme-card-bg: var(--theme-surface);
+
+    /* 卡片 Hover 态背景 */
+    --theme-card-bg-hover: var(--theme-surface-strong);
+
+    /* 卡片边框颜色 */
+    --theme-card-border: var(--theme-surface-border);
+
+    /* =====================================================
+       顶部标题栏（Header）Token
+       ===================================================== */
+
+    --theme-header-bg: var(--theme-surface-strong);
+    --theme-header-border: var(--theme-surface-border);
+    --theme-header-control-bg: var(--theme-interactive);
+    --theme-header-control-hover-bg: var(--theme-interactive-hover);
+    --theme-header-search-bg: var(--theme-surface-muted);
+    --theme-header-search-border: rgba(232, 232, 245, 0.26);
+
+    /* =====================================================
+       左侧侧边栏（Sidebar）Token
+       ===================================================== */
+
+    --theme-sidebar-bg: var(--theme-surface);
+    --theme-sidebar-text: var(--theme-text);
+    --theme-sidebar-text-secondary: var(--theme-text-secondary);
+    --theme-sidebar-text-muted: var(--theme-text-muted);
+    --theme-sidebar-border: var(--theme-surface-border);
+    --theme-sidebar-item-hover: var(--theme-interactive-hover);
+    --theme-sidebar-item-active: var(--theme-interactive-active);
+    --theme-sidebar-item-active-border: color-mix(in srgb, var(--theme-primary) 42%, transparent);
+
+    /* =====================================================
+       底部播放栏（Player）Token
+       ===================================================== */
+
+    --theme-player-bg: var(--theme-surface);
+    --theme-player-bg-alt: var(--theme-surface-strong);
+    --theme-player-text: var(--theme-text);
+    --theme-player-text-secondary: var(--theme-text-secondary);
+    --theme-player-accent: var(--theme-primary);
+    --theme-player-text-on-accent: var(--theme-text-on-primary);
+    --theme-player-border: var(--theme-surface-border);
+
+    /* =====================================================
+       歌曲列表（List / Table）Token
+       ===================================================== */
+
+    /* 列表整体背景 */
+    --theme-list-bg: var(--theme-card-bg);
+
+    /* 单行默认背景（通常为透明） */
+    --theme-list-row-bg: transparent;
+
+    /* 交替行背景（斑马纹）
+       用途：提升长列表可读性
+       深色主题：混入微量白色 */
+    --theme-list-row-alt-bg: color-mix(in srgb, rgba(255,255,255,0.07) 60%, transparent);
+
+    /* 列表行 Hover 态 */
+    --theme-list-row-hover-bg: var(--theme-interactive-hover);
+
+    /* 列表行 Active / Selected 态 */
+    --theme-list-row-active-bg: var(--theme-interactive-active);
+
+    /* 列表行底部细分割线 */
+    --theme-list-row-border: var(--theme-divider);
+
+    /* =====================================================
+       设置页 / 大弹窗面板 Token
+       ===================================================== */
+
+    --theme-panel-bg: var(--theme-surface-strong);
+    --theme-panel-text: var(--theme-text);
+    --theme-panel-text-secondary: var(--theme-text-secondary);
+    --theme-panel-border: var(--theme-surface-border);
+    --theme-panel-row-bg: var(--theme-interactive);
+    --theme-panel-row-hover-bg: var(--theme-interactive-hover);
+    --theme-panel-row-border: var(--theme-divider);
+
+    /* =====================================================
+       输入框 Token
+       ===================================================== */
+
+    --theme-input-bg: var(--theme-surface-strong);
+    --theme-input-bg-hover: var(--theme-card-bg-hover);
+    --theme-input-border: rgba(232, 232, 245, 0.22);
+    --theme-input-border-active: var(--theme-primary);
+
+    /* =====================================================
+       下拉弹窗（Popover / Dropdown）Token
+       ===================================================== */
+
+    --theme-popover-bg: color-mix(in srgb, var(--theme-primary) 7%, #1e1e32);
+    --theme-popover-text: var(--theme-text);
+    --theme-popover-text-secondary: var(--theme-text-secondary);
+    --theme-popover-border: var(--theme-surface-border-strong);
+
+    /* =====================================================
+       滚动条三态 Token
+       ===================================================== */
+
+    --theme-scrollbar-track: transparent;
+    --theme-scrollbar-thumb-hover: var(--theme-primary-hover);
+    --theme-scrollbar-thumb-active: var(--theme-primary-active);
+
+    /* =====================================================
+       状态提示色（语义色）
+       ===================================================== */
+
+    /* 成功态：下载完成、操作成功 */
+    --theme-success: #6fcf7a;
+
+    /* 警告态：风险提示、注意事项 */
+    --theme-warning: #e6c86e;
+
+    /* 危险态：删除、错误、断连 */
+    --theme-danger: #f27979;
+
+    /* 信息态：通知、提示、加载 */
+    --theme-info: #5fc8ec;
+
+    /* =====================================================
+       阴影 & 壁纸控制
+       ===================================================== */
+
+    /* 主阴影（弹窗、卡片） */
+    --theme-shadow: 0 22px 48px color-mix(in srgb, black 18%, transparent);
+
+    /* 次级阴影（悬浮按钮、小面板） */
+    --theme-shadow-soft: 0 12px 28px color-mix(in srgb, black 10%, transparent);
+
+    /* 页面纯色兜底背景
+       通常设为 transparent，以显示壁纸 */
+    --theme-page-bg: transparent;
+
+    /* 内置背景图片
+       一般设为 none，由用户壁纸接管 */
+    --theme-bg-image: none;
+
+    /* =====================================================
+       统一圆角尺寸规范
+       ===================================================== */
+
+    /* 小控件：按钮、输入框、标签 */
+    --theme-radius-control: 10px;
+
+    /* 卡片、封面、大区块 */
+    --theme-radius-card: 18px;
+
+    /* 弹窗、面板 */
+    --theme-radius-panel: 18px;
+
+    /* 专辑封面、头像 */
+    --theme-radius-cover: 12px;
+
+}
