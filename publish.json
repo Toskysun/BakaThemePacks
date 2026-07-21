@@ -1,7 +1,27 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-07-21T05:36:03.265Z",
+  "updatedAt": "2026-07-21T05:38:21.855Z",
   "themes": [
+    {
+      "id": "AH-47CChULHtpfvgPaCUG",
+      "spec": "bakamusic-theme@2",
+      "name": "樱落浅梦【动态】",
+      "packageName": "SakuraDream",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "樱落浅梦",
+      "version": "2.1.1",
+      "scheme": "light",
+      "tags": [
+        "动态"
+      ],
+      "preview": "previews/SakuraDream.jpg",
+      "themeUrl": "themes/SakuraDream-d6e680c0bccf4519d3e5b419e19814bb.mftheme",
+      "hash": "d6e680c0bccf4519d3e5b419e19814bb",
+      "publishName": "SakuraDream-d6e680c0bccf4519d3e5b419e19814bb",
+      "createdAt": "2026-07-21T05:38:18.623Z",
+      "isNew": true
+    },
     {
       "id": "-Lir2ucnOnV3g4lN4_OHm",
       "spec": "bakamusic-theme@2",
@@ -206,7 +226,7 @@
       "hash": "2c67ee2210b5049b4ba017f471efb3ad",
       "publishName": "theme-4dc00941af-2c67ee2210b5049b4ba017f471efb3ad",
       "createdAt": "2026-07-14T05:46:43.103Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "z3OYcA_r4aJcNO3E",
@@ -1845,6 +1865,7 @@
   ],
   "tagIndex": {
     "动态": [
+      "AH-47CChULHtpfvgPaCUG",
       "-Lir2ucnOnV3g4lN4_OHm",
       "ntPbHKHNaMVheq6lYXiw7",
       "eMUzDBM1Jw6NTb-BMZxY_",
