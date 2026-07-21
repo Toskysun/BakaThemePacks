@@ -1,0 +1,119 @@
+/* bakamusic-theme@2.1 — semantic token pack*/
+:root {
+    /* 【四大强制必填基础Token】浅色模式切换，浅透底层遮罩、深灰阅读文字 */
+    --theme-primary: rgb(140, 105, 80); /* ✅ 深咖色主题色 */
+    --theme-bg: rgba(252, 244, 246, 0.20);
+    --theme-text: #2c2023;
+    --theme-scheme: light;
+
+    /* 【全局文字层级、链接、分割、遮罩、占位、滚动条基础】浅色适配文字透明度 */
+    --theme-text-secondary: rgba(44, 32, 35, 0.72);
+    --theme-header-text: var(--theme-text);
+    --theme-link: rgb(140, 105, 80); /* ✅ 同步链接色 */
+    --theme-divider: rgba(44, 32, 35, 0.12);
+    --theme-mask: rgba(255, 255, 255, 0.62);
+    --theme-placeholder: rgba(44, 32, 35, 0.22);
+    --theme-surface-alpha: 0.08;
+    --theme-blur: 5px;
+    --theme-scrollbar-thumb: rgb(140, 105, 80); /* ✅ 滚动条主色 */
+    --theme-primary-hover: color-mix(in srgb, var(--theme-primary) 82%, white);
+    --theme-primary-active: color-mix(in srgb, var(--theme-primary) 70%, white);
+    --theme-text-muted: rgba(44, 32, 35, 0.52);
+    --theme-text-on-primary: #ffffff;
+
+    /* 【三层面板底色 + 面板边框】浅白半透面板，混入深咖色，适配复古壁纸 */
+    --theme-surface: color-mix(in srgb, var(--theme-primary) 8%, rgba(255, 255, 255, 0.12));
+    --theme-surface-strong: color-mix(in srgb, var(--theme-primary) 5%, rgba(253, 247, 249, 0.18));
+    --theme-surface-muted: color-mix(in srgb, var(--theme-primary) 6%, rgba(250, 242, 245, 0.75));
+    --theme-surface-border: rgba(44, 32, 35, 0.14);
+    --theme-surface-border-strong: rgba(44, 32, 35, 0.20);
+
+    /* 【全局交互底色】浅色hover淡咖透明遮罩，柔和不刺眼 */
+    --theme-interactive: color-mix(in srgb, var(--theme-text) 6%, transparent);
+    --theme-interactive-hover: color-mix(in srgb, var(--theme-primary) 14%, transparent);
+    --theme-interactive-active: color-mix(in srgb, var(--theme-primary) 26%, transparent);
+
+    /* 【卡片通用样式】歌曲卡片、各类小面板底色与边框 */
+    --theme-card-bg: var(--theme-surface);
+    --theme-card-bg-hover: var(--theme-surface-strong);
+    --theme-card-border: var(--theme-surface-border);
+
+    /* 【顶部标题栏全套语义Token】顶部全局搜索框浅灰边框适配浅色 */
+    --theme-header-bg: var(--theme-surface-strong);
+    --theme-header-border: var(--theme-surface-border);
+    --theme-header-control-bg: var(--theme-interactive);
+    --theme-header-control-hover-bg: var(--theme-interactive-hover);
+    --theme-header-search-bg: var(--theme-surface-muted);
+    --theme-header-search-border: rgba(44, 32, 35, 0.28);
+
+    /* 【左侧侧边栏全套语义Token】浅色侧边浅透底色，深灰文字 */
+    --theme-sidebar-bg: var(--theme-surface);
+    --theme-sidebar-text: var(--theme-text);
+    --theme-sidebar-text-secondary: var(--theme-text-secondary);
+    --theme-sidebar-text-muted: var(--theme-text-muted);
+    --theme-sidebar-border: var(--theme-surface-border);
+    --theme-sidebar-item-hover: var(--theme-interactive-hover);
+    --theme-sidebar-item-active: var(--theme-interactive-active);
+    --theme-sidebar-item-active-border: color-mix(in srgb, var(--theme-primary) 40%, transparent);
+
+    /* 【底部播放栏全套语义Token】浅色播放器浅底搭配深咖色高亮 */
+    --theme-player-bg: var(--theme-surface);
+    --theme-player-bg-alt: var(--theme-surface-strong);
+    --theme-player-text: var(--theme-text);
+    --theme-player-text-secondary: var(--theme-text-secondary);
+    --theme-player-accent: var(--theme-primary);
+    --theme-player-text-on-accent: var(--theme-text-on-primary);
+    --theme-player-border: var(--theme-surface-border);
+
+    /* 【歌曲列表全套语义Token】保留list-bg，交替行加深灰区分，不破坏毛玻璃 */
+    --theme-list-bg: var(--theme-card-bg);
+    --theme-list-row-bg: transparent;
+    --theme-list-row-alt-bg: color-mix(in srgb, rgba(0,0,0,0.12) 65%, transparent);
+    --theme-list-row-hover-bg: var(--theme-interactive-hover);
+    --theme-list-row-active-bg: var(--theme-interactive-active);
+    --theme-list-row-border: var(--theme-divider);
+
+    /* 【设置/大弹窗面板全套语义Token】浅色弹窗浅透底色 */
+    --theme-panel-bg: var(--theme-surface-strong);
+    --theme-panel-text: var(--theme-text);
+    --theme-panel-text-secondary: var(--theme-text-secondary);
+    --theme-panel-border: var(--theme-surface-border);
+    --theme-panel-row-bg: var(--theme-interactive);
+    --theme-panel-row-hover-bg: var(--theme-interactive-hover);
+    --theme-panel-row-border: var(--theme-divider);
+
+    /* 【全局输入框语义Token】浅色模式输入框低饱和深灰边框 */
+    --theme-input-bg: var(--theme-surface-strong);
+    --theme-input-bg-hover: var(--theme-card-bg-hover);
+    --theme-input-border: rgba(44, 32, 35, 0.22);
+    --theme-input-border-active: var(--theme-primary);
+
+    /* 【下拉弹窗（搜索历史、筛选）】浅色悬浮弹窗 */
+    --theme-popover-bg: color-mix(in srgb, var(--theme-primary) 6%, #fdf4f6);
+    --theme-popover-text: will-change: var(--theme-text);
+    --theme-popover-text-secondary: var(--theme-text-secondary);
+    --theme-popover-border: var(--theme-surface-border-strong);
+
+    /* 【滚动条补充三态】轨道、悬浮、按压滑块 */
+    --theme-scrollbar-track: transparent;
+    --theme-scrollbar-thumb-hover: var(--theme-primary-hover);
+    --theme-scrollbar-thumb-active: var(--theme-primary-active);
+
+    /* 【状态提示色】浅色模式柔和低饱和提示色，适配深咖色氛围 */
+    --theme-success: #68b968;
+    --theme-warning: #d9a946;
+    --theme-danger: #a0522d; /* ✅ 棕红色危险色 */
+    --theme-info: #5a7a8a;  /* ✅ 灰蓝色信息色 */
+
+    /* 【阴影、页面底层、静态壁纸控制】浅淡柔和阴影，不遮挡暖光氛围 */
+    --theme-shadow: 0 22px 48px color-mix(in srgb, black 10%, transparent);
+    --theme-shadow-soft: 0 12px 28px color-mix(in srgb, black 6%, transparent);
+    --theme-page-bg: transparent;
+    --theme-bg-image: none;
+
+    /* 【统一圆角尺寸】控件、卡片、封面、面板圆角规范 */
+    --theme-radius-control: 10px;
+    --theme-radius-card: 18px;
+    --theme-radius-panel: 18px;
+    --theme-radius-cover: 12px;
+}
