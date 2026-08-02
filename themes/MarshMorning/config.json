@@ -1,0 +1,13 @@
+{
+  "spec": "bakamusic-theme@2",
+  "name": "水泽晨吟【动态】",
+  "author": "轻舟折枝",
+  "version": "2.1.0",
+  "preview": "@/imgs/preview.jpg",
+  "iframe": {
+    "app": "@/iframes/app.html"
+  },
+  "description": "水泽晨吟",
+  "tags": ["亮色", "动态"],
+  "scheme": "light"
+}
