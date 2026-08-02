@@ -1,0 +1,13 @@
+{
+  "spec": "bakamusic-theme@2",
+  "name": "星紫提琴【动态】",
+  "author": "轻舟折枝",
+  "version": "2.1.0",
+  "preview": "@/imgs/preview.jpg",
+  "iframe": {
+    "app": "@/iframes/app.html"
+  },
+  "description": "星紫提琴",
+  "tags": ["暗色", "动态"],
+  "scheme": "dark"
+}
