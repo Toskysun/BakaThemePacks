@@ -2,7 +2,7 @@
 :root {
     /* 【四大强制基础Token（最小契约必填，缺一不可）】 */
     --theme-primary: rgb(242, 162, 176);
-    --theme-bg: rgba(242, 162, 176, 0.08);
+    --theme-bg: rgba(242, 162, 176, 0.33);
     --theme-text: #0f0f14;
     --theme-scheme: light;
 
