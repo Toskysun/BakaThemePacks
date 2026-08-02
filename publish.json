@@ -1,7 +1,27 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-08-02T12:34:24.358Z",
+  "updatedAt": "2026-08-02T12:43:20.628Z",
   "themes": [
+    {
+      "id": "ugx29NhwEQfIl9u-_04tX",
+      "spec": "bakamusic-theme@2",
+      "name": "奶油焦糖【动态】",
+      "packageName": "Caramel",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "奶油焦糖",
+      "version": "2.1.1",
+      "scheme": "light",
+      "tags": [
+        "动态"
+      ],
+      "preview": "previews/Caramel.jpg",
+      "themeUrl": "themes/Caramel-46d375ae7c0fbe2be83e13447f4852d7.mftheme",
+      "hash": "46d375ae7c0fbe2be83e13447f4852d7",
+      "publishName": "Caramel-46d375ae7c0fbe2be83e13447f4852d7",
+      "createdAt": "2026-08-02T12:43:16.359Z",
+      "isNew": true
+    },
     {
       "id": "c3QosUgmSxseSLpgimmZm",
       "spec": "bakamusic-theme@2",
@@ -208,7 +228,7 @@
       "hash": "7556f63e340ea3a512915b1a407ae674",
       "publishName": "Sunset-Shrine-7556f63e340ea3a512915b1a407ae674",
       "createdAt": "2026-07-16T09:50:51.651Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "uXJu7fAti4YGQMsz",
@@ -1906,19 +1926,8 @@
     }
   ],
   "tagIndex": {
-    "暗色": [
-      "c3QosUgmSxseSLpgimmZm",
-      "RV7s9TjIoi_OvkLDM5WSI",
-      "v7vpT4e0q0f5Aqv5GzyRI",
-      "OlWvJvWZo4M26UUpaXl-j",
-      "mRVCjtJYLf0EtFVuNYSpn",
-      "J5XSMFUeBTFxn51lMG0p5",
-      "EIY5V7tND8S8udI_qqAdO",
-      "Jh53eoHmKOL0lQOw7T4ji",
-      "RpUgsCFv2uNOQEpxaMfag",
-      "_Cv5IxWH8WIUd24j-RQgy"
-    ],
     "动态": [
+      "ugx29NhwEQfIl9u-_04tX",
       "c3QosUgmSxseSLpgimmZm",
       "6zOjrnTszS9u_VzZkmPef",
       "AH-47CChULHtpfvgPaCUG",
@@ -1975,6 +1984,18 @@
       "RpUgsCFv2uNOQEpxaMfag",
       "fqDKd1xoZ6_flNjhsRi9T",
       "4C3iJxQc5o-9QEIF7Ih0_",
+      "_Cv5IxWH8WIUd24j-RQgy"
+    ],
+    "暗色": [
+      "c3QosUgmSxseSLpgimmZm",
+      "RV7s9TjIoi_OvkLDM5WSI",
+      "v7vpT4e0q0f5Aqv5GzyRI",
+      "OlWvJvWZo4M26UUpaXl-j",
+      "mRVCjtJYLf0EtFVuNYSpn",
+      "J5XSMFUeBTFxn51lMG0p5",
+      "EIY5V7tND8S8udI_qqAdO",
+      "Jh53eoHmKOL0lQOw7T4ji",
+      "RpUgsCFv2uNOQEpxaMfag",
       "_Cv5IxWH8WIUd24j-RQgy"
     ],
     "亮色": [
