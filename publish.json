@@ -1,7 +1,28 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-08-02T10:53:06.349Z",
+  "updatedAt": "2026-08-02T12:34:24.358Z",
   "themes": [
+    {
+      "id": "c3QosUgmSxseSLpgimmZm",
+      "spec": "bakamusic-theme@2",
+      "name": "星紫提琴【动态】",
+      "packageName": "StarlightViolin",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "星紫提琴",
+      "version": "2.1.0",
+      "scheme": "dark",
+      "tags": [
+        "暗色",
+        "动态"
+      ],
+      "preview": "previews/StarlightViolin.jpg",
+      "themeUrl": "themes/StarlightViolin-3dc7a22777053ab1f371afbc3e09c77d.mftheme",
+      "hash": "3dc7a22777053ab1f371afbc3e09c77d",
+      "publishName": "StarlightViolin-3dc7a22777053ab1f371afbc3e09c77d",
+      "createdAt": "2026-08-02T12:34:20.374Z",
+      "isNew": true
+    },
     {
       "id": "6zOjrnTszS9u_VzZkmPef",
       "spec": "bakamusic-theme@2",
@@ -207,7 +228,7 @@
       "hash": "74b831660bec81632bbd9c6345003486",
       "publishName": "theme-09d9ab7850-74b831660bec81632bbd9c6345003486",
       "createdAt": "2026-07-14T05:46:43.103Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "1T8Sh_HbjdBfiRap",
@@ -1885,15 +1906,20 @@
     }
   ],
   "tagIndex": {
-    "亮色": [
-      "6zOjrnTszS9u_VzZkmPef",
-      "ntPbHKHNaMVheq6lYXiw7",
-      "ZNrObG67-6g0uHP4oWNkp",
-      "zsG0fMhcwxEsyRsD02ET3",
-      "0vdPAd8oqGMBVtvrW8mk-",
-      "iTsBcAhCH5_TYByejTtFr"
+    "暗色": [
+      "c3QosUgmSxseSLpgimmZm",
+      "RV7s9TjIoi_OvkLDM5WSI",
+      "v7vpT4e0q0f5Aqv5GzyRI",
+      "OlWvJvWZo4M26UUpaXl-j",
+      "mRVCjtJYLf0EtFVuNYSpn",
+      "J5XSMFUeBTFxn51lMG0p5",
+      "EIY5V7tND8S8udI_qqAdO",
+      "Jh53eoHmKOL0lQOw7T4ji",
+      "RpUgsCFv2uNOQEpxaMfag",
+      "_Cv5IxWH8WIUd24j-RQgy"
     ],
     "动态": [
+      "c3QosUgmSxseSLpgimmZm",
       "6zOjrnTszS9u_VzZkmPef",
       "AH-47CChULHtpfvgPaCUG",
       "-Lir2ucnOnV3g4lN4_OHm",
@@ -1950,6 +1976,14 @@
       "fqDKd1xoZ6_flNjhsRi9T",
       "4C3iJxQc5o-9QEIF7Ih0_",
       "_Cv5IxWH8WIUd24j-RQgy"
+    ],
+    "亮色": [
+      "6zOjrnTszS9u_VzZkmPef",
+      "ntPbHKHNaMVheq6lYXiw7",
+      "ZNrObG67-6g0uHP4oWNkp",
+      "zsG0fMhcwxEsyRsD02ET3",
+      "0vdPAd8oqGMBVtvrW8mk-",
+      "iTsBcAhCH5_TYByejTtFr"
     ],
     "简约": [
       "ntPbHKHNaMVheq6lYXiw7",
@@ -2044,17 +2078,6 @@
       "Nk8Lt2qDQnP_a_ggmzCS8",
       "UOVwwV1NfFLB0BWvB44VN",
       "4C3iJxQc5o-9QEIF7Ih0_"
-    ],
-    "暗色": [
-      "RV7s9TjIoi_OvkLDM5WSI",
-      "v7vpT4e0q0f5Aqv5GzyRI",
-      "OlWvJvWZo4M26UUpaXl-j",
-      "mRVCjtJYLf0EtFVuNYSpn",
-      "J5XSMFUeBTFxn51lMG0p5",
-      "EIY5V7tND8S8udI_qqAdO",
-      "Jh53eoHmKOL0lQOw7T4ji",
-      "RpUgsCFv2uNOQEpxaMfag",
-      "_Cv5IxWH8WIUd24j-RQgy"
     ],
     "影视": [
       "r865CgdVWPGhIF6KEMy0O",
