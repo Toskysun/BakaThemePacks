@@ -1,0 +1,122 @@
+:root {
+    /* ========== 四大强制基础Token ========== */
+    --theme-primary: #d4a373;
+    --theme-bg: rgba(212, 163, 115, 0.10);
+    --theme-text: #1f1710;
+    --theme-scheme: light;
+
+    /* ========== 全局文字层级 ========== */
+    --theme-text-secondary: rgba(31, 23, 16, 0.78);
+    --theme-text-muted: rgba(31, 23, 16, 0.55);
+    --theme-text-on-primary: #ffffff;
+    --theme-header-text: var(--theme-text);
+
+    /* ========== 链接、分割线、遮罩、占位、滚动条基础 ========== */
+    --theme-link: var(--theme-primary);
+    --theme-divider: rgba(139, 90, 43, 0.18);
+    --theme-mask: rgba(255, 255, 255, 0.65);
+    --theme-placeholder: rgba(31, 23, 16, 0.23);
+    --theme-surface-alpha: 0.1;
+    --theme-blur: 1px;
+    --theme-scrollbar-thumb: var(--theme-primary);
+
+    /* ========== 主色Hover/Active三态 ========== */
+    --theme-primary-hover: color-mix(in srgb, var(--theme-primary) 86%, white);
+    --theme-primary-active: color-mix(in srgb, var(--theme-primary) 74%, white);
+
+    /* ========== 三层半透面板（带透明度，透出壁纸） ========== */
+    --theme-surface: color-mix(in srgb, var(--theme-primary) 20%, transparent);
+    --theme-surface-strong: color-mix(in srgb, var(--theme-primary) 4%, rgba(255, 255, 255, 0.85));
+    --theme-surface-muted: color-mix(in srgb, var(--theme-primary) 5%, rgba(255, 255, 255, 0.65));
+    --theme-surface-border: rgba(139, 90, 43, 0.16);
+    --theme-surface-border-strong: rgba(139, 90, 43, 0.28);
+
+    /* ========== 通用交互悬浮底色 ========== */
+    --theme-interactive: color-mix(in srgb, var(--theme-text) 5%, transparent);
+    --theme-interactive-hover: color-mix(in srgb, var(--theme-primary) 10%, transparent);
+    --theme-interactive-active: color-mix(in srgb, var(--theme-primary) 18%, transparent);
+
+    /* ========== 卡片模块 ========== */
+    --theme-card-bg: var(--theme-surface);
+    --theme-card-bg-hover: var(--theme-surface-strong);
+    --theme-card-border: var(--theme-surface-border);
+
+    /* ========== 顶部导航栏+搜索框 ========== */
+    --theme-header-bg: var(--theme-surface-strong);
+    --theme-header-border: var(--theme-surface-border);
+    --theme-header-control-bg: var(--theme-interactive);
+    --theme-header-control-hover-bg: var(--theme-interactive-hover);
+    --theme-header-search-bg: var(--theme-surface-muted);
+    --theme-header-search-border: var(--theme-surface-border);
+
+    /* ========== 侧边栏 ========== */
+    --theme-sidebar-bg: var(--theme-surface);
+    --theme-sidebar-text: var(--theme-text);
+    --theme-sidebar-text-secondary: var(--theme-text-secondary);
+    --theme-sidebar-text-muted: var(--theme-text-muted);
+    --theme-sidebar-border: var(--theme-surface-border);
+    --theme-sidebar-item-hover: var(--theme-interactive-hover);
+    --theme-sidebar-item-active: var(--theme-interactive-active);
+    --theme-sidebar-item-active-border: color-mix(in srgb, var(--theme-primary) 40%, transparent);
+
+    /* ========== 底部播放栏 ========== */
+    --theme-player-bg: var(--theme-surface);
+    --theme-player-bg-alt: var(--theme-surface-strong);
+    --theme-player-text: var(--theme-text);
+    --theme-player-text-secondary: var(--theme-text-secondary);
+    --theme-player-accent: var(--theme-primary);
+    --theme-player-text-on-accent: var(--theme-text-on-primary);
+    --theme-player-border: var(--theme-surface-border);
+
+    /* ========== 歌曲列表 ========== */
+    --theme-list-bg: var(--theme-card-bg);
+    --theme-list-row-bg: transparent;
+    --theme-list-row-alt-bg: color-mix(in srgb, rgba(0, 0, 0, 0.04), transparent);
+    --theme-list-row-hover-bg: var(--theme-interactive-hover);
+    --theme-list-row-active-bg: var(--theme-interactive-active);
+    --theme-list-row-border: var(--theme-divider);
+
+    /* ========== 设置弹窗面板 ========== */
+    --theme-panel-bg: var(--theme-surface-strong);
+    --theme-panel-text: var(--theme-text);
+    --theme-panel-text-secondary: var(--theme-text-secondary);
+    --theme-panel-border: var(--theme-surface-border);
+    --theme-panel-row-bg: var(--theme-interactive);
+    --theme-panel-row-hover-bg: var(--theme-interactive-hover);
+    --theme-panel-row-border: var(--theme-divider);
+
+    /* ========== 输入框 ========== */
+    --theme-input-bg: var(--theme-surface-strong);
+    --theme-input-bg-hover: var(--theme-card-bg-hover);
+    --theme-input-border: var(--theme-surface-border);
+    --theme-input-border-active: var(--theme-primary);
+
+    /* ========== 下拉气泡弹窗 ========== */
+    --theme-popover-bg: color-mix(in srgb, var(--theme-primary) 5%, rgba(255, 255, 255, 0.88));
+    --theme-popover-text: var(--theme-text);
+    --theme-popover-text-secondary: var(--theme-text-secondary);
+    --theme-popover-border: var(--theme-surface-border-strong);
+
+    /* ========== 滚动条三态 ========== */
+    --theme-scrollbar-track: transparent;
+    --theme-scrollbar-thumb-hover: var(--theme-primary-hover);
+    --theme-scrollbar-thumb-active: var(--theme-primary-active);
+
+    /* ========== 状态提示色（亮色模式适配） ========== */
+    --theme-success: #27a053;
+    --theme-warning: #d69428;
+    --theme-danger: #e65b73;
+    --theme-info: #368fc9;
+
+    /* ========== 阴影、底层页面、静态壁纸控制 ========== */
+    --theme-shadow: 0 22px 48px color-mix(in srgb, black 6%, transparent);
+    --theme-shadow-soft: 0 12px 28px color-mix(in srgb, black 4%, transparent);
+    --theme-page-bg: transparent;
+    --theme-bg-image: none;
+
+    /* ========== 统一圆角规范 ========== */
+    --theme-radius-control: 10px;
+    --theme-radius-card: 18px;
+    --theme-radius-panel: 18px;
+    --theme-radius-cover: 12px;
+}
