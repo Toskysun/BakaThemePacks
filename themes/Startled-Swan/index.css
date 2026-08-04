@@ -1,8 +1,8 @@
 /* bakamusic-theme@2.1 — semantic token pack*/
 :root {
     /* 【四大强制必填基础Token】程序识别主题明暗、主色、全局文字、底层底色 */
-    --theme-primary: rgb(224, 100, 60);
-    --theme-bg: rgba(224, 100, 60, 0.10);
+    --theme-primary: rgb(255, 176, 32);
+    --theme-bg: rgba(255, 176, 32, 0.10);
     --theme-text: #f8f3ee;
     --theme-scheme: dark;
 
@@ -14,7 +14,7 @@
 
     /* 链接、分割线、遮罩、占位 */
     --theme-link: var(--theme-primary);
-    --theme-divider: rgba(224, 100, 60, 0.14);
+    --theme-divider: rgba(255, 176, 32, 0.14);
     --theme-mask: rgba(0, 0, 0, 0.55);
     --theme-placeholder: rgba(248, 243, 238, 0.18);
     --theme-surface-alpha: 0.12;
@@ -26,10 +26,10 @@
     --theme-primary-active: color-mix(in srgb, var(--theme-primary) 62%, #fff);
 
     /* 三层面板 */
-    --theme-surface: color-mix(in srgb, var(--theme-primary) 10%, rgba(0, 0, 0, 0.30));
+    --theme-surface: color-mix(in srgb, var(--theme-primary) 10%, transparent);
     --theme-surface-strong: color-mix(in srgb, var(--theme-primary) 4%, rgba(0, 0, 0, 0.68));
     --theme-surface-muted: color-mix(in srgb, var(--theme-primary) 5%, rgba(0, 0, 0, 0.46));
-    --theme-surface-border: rgba(224, 100, 60, 0.22);
+    --theme-surface-border: rgba(255, 176, 32, 0.22);
     --theme-surface-border-strong: rgba(224, 100, 60, 0.36);
 
     /* 通用交互底色 */
