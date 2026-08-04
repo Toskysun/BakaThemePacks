@@ -1,7 +1,28 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-08-02T12:43:20.628Z",
+  "updatedAt": "2026-08-04T03:23:46.122Z",
   "themes": [
+    {
+      "id": "lNtxe3H3zIcmZWBGmQkx5",
+      "spec": "bakamusic-theme@2",
+      "name": "惊鸿【动态】",
+      "packageName": "Startled-Swan",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "惊鸿",
+      "version": "2.1.0",
+      "scheme": "dark",
+      "tags": [
+        "暗色",
+        "动态"
+      ],
+      "preview": "previews/Startled-Swan.jpg",
+      "themeUrl": "themes/Startled-Swan-219792a8022e534550252d872d635987.mftheme",
+      "hash": "219792a8022e534550252d872d635987",
+      "publishName": "Startled-Swan-219792a8022e534550252d872d635987",
+      "createdAt": "2026-08-04T03:23:44.067Z",
+      "isNew": true
+    },
     {
       "id": "ugx29NhwEQfIl9u-_04tX",
       "spec": "bakamusic-theme@2",
@@ -206,7 +227,7 @@
       "hash": "99190bf796273c7cfe3434b84718e0f7",
       "publishName": "Bamboo-Whisper-Grove-99190bf796273c7cfe3434b84718e0f7",
       "createdAt": "2026-07-17T04:52:13.033Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "ZNrObG67-6g0uHP4oWNkp",
@@ -1926,7 +1947,21 @@
     }
   ],
   "tagIndex": {
+    "暗色": [
+      "lNtxe3H3zIcmZWBGmQkx5",
+      "c3QosUgmSxseSLpgimmZm",
+      "RV7s9TjIoi_OvkLDM5WSI",
+      "v7vpT4e0q0f5Aqv5GzyRI",
+      "OlWvJvWZo4M26UUpaXl-j",
+      "mRVCjtJYLf0EtFVuNYSpn",
+      "J5XSMFUeBTFxn51lMG0p5",
+      "EIY5V7tND8S8udI_qqAdO",
+      "Jh53eoHmKOL0lQOw7T4ji",
+      "RpUgsCFv2uNOQEpxaMfag",
+      "_Cv5IxWH8WIUd24j-RQgy"
+    ],
     "动态": [
+      "lNtxe3H3zIcmZWBGmQkx5",
       "ugx29NhwEQfIl9u-_04tX",
       "c3QosUgmSxseSLpgimmZm",
       "6zOjrnTszS9u_VzZkmPef",
@@ -1984,18 +2019,6 @@
       "RpUgsCFv2uNOQEpxaMfag",
       "fqDKd1xoZ6_flNjhsRi9T",
       "4C3iJxQc5o-9QEIF7Ih0_",
-      "_Cv5IxWH8WIUd24j-RQgy"
-    ],
-    "暗色": [
-      "c3QosUgmSxseSLpgimmZm",
-      "RV7s9TjIoi_OvkLDM5WSI",
-      "v7vpT4e0q0f5Aqv5GzyRI",
-      "OlWvJvWZo4M26UUpaXl-j",
-      "mRVCjtJYLf0EtFVuNYSpn",
-      "J5XSMFUeBTFxn51lMG0p5",
-      "EIY5V7tND8S8udI_qqAdO",
-      "Jh53eoHmKOL0lQOw7T4ji",
-      "RpUgsCFv2uNOQEpxaMfag",
       "_Cv5IxWH8WIUd24j-RQgy"
     ],
     "亮色": [
