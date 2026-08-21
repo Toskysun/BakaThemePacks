@@ -1,7 +1,27 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-08-21T05:02:53.635Z",
+  "updatedAt": "2026-08-21T05:31:23.760Z",
   "themes": [
+    {
+      "id": "EFd-JnT5jfDEVkq-lGHEE",
+      "spec": "bakamusic-theme@2",
+      "name": "秋枫暮霭【动态】",
+      "packageName": "Dusk-Mist",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "秋枫暮霭",
+      "version": "2.1.1",
+      "scheme": "dark",
+      "tags": [
+        "动态"
+      ],
+      "preview": "previews/Dusk-Mist.jpg",
+      "themeUrl": "themes/Dusk-Mist-a2629d183a9775176d1380e39e101464.mftheme",
+      "hash": "a2629d183a9775176d1380e39e101464",
+      "publishName": "Dusk-Mist-a2629d183a9775176d1380e39e101464",
+      "createdAt": "2026-08-21T05:31:19.038Z",
+      "isNew": true
+    },
     {
       "id": "lNtxe3H3zIcmZWBGmQkx5",
       "spec": "bakamusic-theme@2",
@@ -207,7 +227,7 @@
       "hash": "0b27aa30a17ed53fbdf5d5a0316ccaa5",
       "publishName": "Star-Sea-0b27aa30a17ed53fbdf5d5a0316ccaa5",
       "createdAt": "2026-07-17T09:00:52.163Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "qfxKXHegGEIM3sSq3Zfnw",
@@ -1947,20 +1967,8 @@
     }
   ],
   "tagIndex": {
-    "暗色": [
-      "lNtxe3H3zIcmZWBGmQkx5",
-      "c3QosUgmSxseSLpgimmZm",
-      "RV7s9TjIoi_OvkLDM5WSI",
-      "v7vpT4e0q0f5Aqv5GzyRI",
-      "OlWvJvWZo4M26UUpaXl-j",
-      "mRVCjtJYLf0EtFVuNYSpn",
-      "J5XSMFUeBTFxn51lMG0p5",
-      "EIY5V7tND8S8udI_qqAdO",
-      "Jh53eoHmKOL0lQOw7T4ji",
-      "RpUgsCFv2uNOQEpxaMfag",
-      "_Cv5IxWH8WIUd24j-RQgy"
-    ],
     "动态": [
+      "EFd-JnT5jfDEVkq-lGHEE",
       "lNtxe3H3zIcmZWBGmQkx5",
       "ugx29NhwEQfIl9u-_04tX",
       "c3QosUgmSxseSLpgimmZm",
@@ -2019,6 +2027,19 @@
       "RpUgsCFv2uNOQEpxaMfag",
       "fqDKd1xoZ6_flNjhsRi9T",
       "4C3iJxQc5o-9QEIF7Ih0_",
+      "_Cv5IxWH8WIUd24j-RQgy"
+    ],
+    "暗色": [
+      "lNtxe3H3zIcmZWBGmQkx5",
+      "c3QosUgmSxseSLpgimmZm",
+      "RV7s9TjIoi_OvkLDM5WSI",
+      "v7vpT4e0q0f5Aqv5GzyRI",
+      "OlWvJvWZo4M26UUpaXl-j",
+      "mRVCjtJYLf0EtFVuNYSpn",
+      "J5XSMFUeBTFxn51lMG0p5",
+      "EIY5V7tND8S8udI_qqAdO",
+      "Jh53eoHmKOL0lQOw7T4ji",
+      "RpUgsCFv2uNOQEpxaMfag",
       "_Cv5IxWH8WIUd24j-RQgy"
     ],
     "亮色": [
