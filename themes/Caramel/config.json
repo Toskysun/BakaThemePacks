@@ -1,0 +1,15 @@
+{
+    "spec": "bakamusic-theme@2",
+    "name": "奶油焦糖【动态】",
+    "author": "轻舟折枝",
+    "version": "2.1.1",
+    "preview": "@/imgs/preview.jpg",
+    "description": "奶油焦糖",
+    "tags": [
+        "动态"
+    ],
+    "scheme": "light",
+    "iframe": {
+        "app": "@/iframes/app.html"
+    }
+}
