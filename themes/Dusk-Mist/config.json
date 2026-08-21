@@ -1,0 +1,15 @@
+{
+    "spec": "bakamusic-theme@2",
+    "name": "秋枫暮霭【动态】",
+    "author": "轻舟折枝",
+    "version": "2.1.1",
+    "preview": "@/imgs/preview.jpg",
+    "description": "秋枫暮霭",
+    "tags": [
+        "动态"
+    ],
+    "scheme": "dark",
+    "iframe": {
+        "app": "@/iframes/app.html"
+    }
+}

@@ -1,0 +1,127 @@
+/* bakamusic-theme@2.1 — semantic token pack
+规范遵循：Toskysun BakaThemePacks V2.1 CONTRIBUTING.md
+主题：秋枫暮霭｜深酒红沉浸式深色主题（专为当前背景图定制）
+作者：轻舟折枝
+*/
+:root {
+    /* 四大强制基础 Token */
+    --theme-primary: rgb(218, 175, 68);            /* 主色：深酒红，源自背景枫叶，高饱和+高对比 */
+    --theme-bg: rgba(0, 0, 0, 0.20);          /* 全局背景：深灰紫黑，透出背景枫叶纹理 */
+    --theme-text: #f5f0f0;                       /* 主文字：浅霜灰白，柔和但锐利，对比度 > 15:1 */
+    --theme-scheme: dark;
+
+    /* 全局文字层级 */
+    --theme-text-secondary: rgba(245, 240, 240, 0.82); /* 次要文字：略降透明度，标签/描述清晰 */
+    --theme-text-muted: rgba(245, 240, 240, 0.56);     /* 弱化文字：时间戳/版权安全可读 */
+    --theme-text-on-primary: rgb(255, 255, 255);
+    --theme-header-text: var(--theme-text);
+
+    /* 链接、分割线、遮罩、占位 */
+    --theme-link: var(--theme-primary);
+    --theme-divider: rgba(245, 240, 240, 0.12);        /* 分割线：极淡白灰，轻柔分隔不突兀 */
+    --theme-mask: rgba(0, 0, 0, 0.50);
+    --theme-placeholder: rgba(245, 240, 240, 0.16);
+    --theme-surface-alpha: 0.1;
+    --theme-blur: 15px;
+    --theme-scrollbar-thumb: var(--theme-primary);
+
+    /* 主色交互三态 */
+    --theme-primary-hover: color-mix(in srgb, var(--theme-primary) 75%, rgb(255, 255, 255)); /* 悬停：提亮酒红，反馈明确 */
+    --theme-primary-active: color-mix(in srgb, var(--theme-primary) 50%, rgb(0, 0, 0));     /* 按下：加深酒红，确认感扎实 */
+
+    /* 三层面板 */
+    --theme-surface: rgba(32, 24, 32, 0.10);      /* 一级表面：深灰微红透层，模拟秋日薄雾，与背景融合 */
+    --theme-surface-strong: rgba(48, 36, 48, 0.85);
+    --theme-surface-muted: rgba(64, 48, 64, 0.78);
+    --theme-surface-border: rgba(245, 240, 240, 0.12);
+    --theme-surface-border-strong: rgba(245, 240, 240, 0.20);
+
+    /* 通用交互底色 */
+    --theme-interactive: rgba(218, 175, 68, 0.20);
+    --theme-interactive-hover: rgba(218, 175, 68, 0.32);
+    --theme-interactive-active: rgba(218, 175, 68, 0.44);
+
+    /* 卡片 */
+    --theme-card-bg: var(--theme-surface);
+    --theme-card-bg-hover: rgba(218, 175, 68, 0.18);
+    --theme-card-border: var(--theme-surface-border);
+
+    /* 顶部标题栏、搜索框 */
+    --theme-header-bg: var(--theme-surface-strong);
+    --theme-header-border: var(--theme-surface-border);
+    --theme-header-control-bg: var(--theme-interactive);
+    --theme-header-control-hover-bg: var(--theme-interactive-hover);
+    --theme-header-search-bg: rgba(48, 36, 48, 0.85);   /* 深灰紫，非纯白，适配深色环境 */
+    --theme-header-search-border: rgba(245, 240, 240, 0.18);
+
+    /* 侧边栏 */
+    --theme-sidebar-bg: var(--theme-surface-strong);
+    --theme-sidebar-text: var(--theme-text);
+    --theme-sidebar-text-secondary: var(--theme-text-secondary);
+    --theme-sidebar-text-muted: var(--theme-text-muted);
+    --theme-sidebar-border: var(--theme-surface-border);
+    --theme-sidebar-item-hover: var(--theme-interactive-hover);
+    --theme-sidebar-item-active: var(--theme-interactive-active);
+    --theme-sidebar-item-active-border: var(--theme-primary);
+
+    /* 底部播放栏 */
+    --theme-player-bg: var(--theme-surface-strong);
+    --theme-player-bg-alt: var(--theme-surface-muted);
+    --theme-player-text: var(--theme-text);
+    --theme-player-text-secondary: var(--theme-text-secondary);
+    --theme-player-accent: var(--theme-primary);
+    --theme-player-text-on-accent: var(--theme-text-on-primary);
+    --theme-player-border: var(--theme-surface-border);
+
+    /* 歌曲列表 */
+    --theme-list-bg: var(--theme-surface);
+    --theme-list-row-bg: transparent;
+    --theme-list-row-alt-bg: rgba(48, 36, 48, 0.30);
+    --theme-list-row-hover-bg: var(--theme-interactive-hover);
+    --theme-list-row-active-bg: var(--theme-interactive-active);
+    --theme-list-row-border: var(--theme-divider);
+
+    /* 设置/大面板 */
+    --theme-panel-bg: var(--theme-surface-strong);
+    --theme-panel-text: var(--theme-text);
+    --theme-panel-text-secondary: var(--theme-text-secondary);
+    --theme-panel-border: var(--theme-surface-border-strong);
+    --theme-panel-row-bg: var(--theme-interactive);
+    --theme-panel-row-hover-bg: var(--theme-interactive-hover);
+    --theme-panel-row-border: var(--theme-divider);
+
+    /* 输入控件 */
+    --theme-input-bg: rgba(48, 36, 48, 0.85);
+    --theme-input-bg-hover: rgba(64, 48, 64, 0.90);
+    --theme-input-border: rgba(245, 240, 240, 0.20);
+    --theme-input-border-active: var(--theme-primary);
+
+    /* 下拉弹窗 */
+    --theme-popover-bg: var(--theme-surface-strong);
+    --theme-popover-text: var(--theme-text);
+    --theme-popover-text-secondary: var(--theme-text-secondary);
+    --theme-popover-border: var(--theme-surface-border-strong);
+
+    /* 滚动条 */
+    --theme-scrollbar-track: rgba(218, 175, 68, 0.30); /* 滑轨：明显可见 */
+    --theme-scrollbar-thumb-hover: var(--theme-primary-hover);
+    --theme-scrollbar-thumb-active: var(--theme-primary-active);
+
+    /* 状态提示色 */
+    --theme-success: rgb(104, 160, 128);            /* 成功：橄榄绿，与酒红形成自然秋调 */
+    --theme-warning: rgb(240, 176, 128);            /* 警告：暖琥珀，呼应落叶 */
+    --theme-danger: rgb(224, 112, 128);             /* 危险：柔砖红，警示清晰 */
+    --theme-info: rgb(218, 175, 68);                 /* 信息：复用主色 */
+
+    /* 阴影与页面底层 */
+    --theme-shadow: 0 10px 32px rgba(0, 0, 0, 0.35);
+    --theme-shadow-soft: 0 4px 16px rgba(0, 0, 0, 0.20);
+    --theme-page-bg: transparent;
+    --theme-bg-image: none;
+
+    /* 圆角规范 */
+    --theme-radius-control: 6px;
+    --theme-radius-card: 12px;
+    --theme-radius-panel: 16px;
+    --theme-radius-cover: 8px;
+}
