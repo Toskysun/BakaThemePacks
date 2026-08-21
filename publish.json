@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-08-04T04:06:02.776Z",
+  "updatedAt": "2026-08-21T05:01:51.686Z",
   "themes": [
     {
       "id": "lNtxe3H3zIcmZWBGmQkx5",
@@ -21,26 +21,6 @@
       "hash": "219792a8022e534550252d872d635987",
       "publishName": "Startled-Swan-219792a8022e534550252d872d635987",
       "createdAt": "2026-08-04T03:23:44.067Z",
-      "isNew": true
-    },
-    {
-      "id": "ugx29NhwEQfIl9u-_04tX",
-      "spec": "bakamusic-theme@2",
-      "name": "奶油焦糖【动态】",
-      "packageName": "Caramel",
-      "author": "轻舟折枝",
-      "authorUrl": "",
-      "description": "奶油焦糖",
-      "version": "2.1.1",
-      "scheme": "light",
-      "tags": [
-        "动态"
-      ],
-      "preview": "previews/Caramel.jpg",
-      "themeUrl": "themes/Caramel-46d375ae7c0fbe2be83e13447f4852d7.mftheme",
-      "hash": "46d375ae7c0fbe2be83e13447f4852d7",
-      "publishName": "Caramel-46d375ae7c0fbe2be83e13447f4852d7",
-      "createdAt": "2026-08-02T12:43:16.359Z",
       "isNew": true
     },
     {
@@ -227,7 +207,7 @@
       "hash": "99190bf796273c7cfe3434b84718e0f7",
       "publishName": "Bamboo-Whisper-Grove-99190bf796273c7cfe3434b84718e0f7",
       "createdAt": "2026-07-17T04:52:13.033Z",
-      "isNew": false
+      "isNew": true
     },
     {
       "id": "ZNrObG67-6g0uHP4oWNkp",
@@ -1962,7 +1942,6 @@
     ],
     "动态": [
       "lNtxe3H3zIcmZWBGmQkx5",
-      "ugx29NhwEQfIl9u-_04tX",
       "c3QosUgmSxseSLpgimmZm",
       "6zOjrnTszS9u_VzZkmPef",
       "AH-47CChULHtpfvgPaCUG",
