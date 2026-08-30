@@ -41,14 +41,14 @@ my-theme/
 | `version` | 必填 `x.y.z` |
 | `preview` | 必填 `@/…` 包内路径或十六进制颜色 |
 | `tags` | 必填 1–5 个仓库标签 |
-| `scheme` | 必填 `light` 或 `dark`，必须与 CSS 一致 |
+| `scheme` | 必填 `light` / `dark` / `system`；`system` 需要 CSS 深色媒体覆盖 |
 | `iframe` | 可选，只允许本地 `app` 槽位 |
 | `authorUrl` | 可选作者主页 |
 | `id` | 禁止；仅由仓库 `meta.json` 管理 |
 
 ## 3. CSS 语法边界
 
-`index.css` **必须且只能**有一个 `:root` 规则：
+固定明暗主题的 `index.css` **必须且只能**有一个 `:root` 规则；`scheme: "system"` 主题可以追加一个受控的深色媒体覆盖：
 
 ```css
 :root {
@@ -60,6 +60,7 @@ my-theme/
 ```
 
 - 禁止任何客户端 selector、`@import`、`!important` 和额外规则。
+- system 主题仅允许 `@media (prefers-color-scheme: dark) { :root { ... } }`，且两套 token 都必须完整声明四个必填项。
 - 禁止 MusicFree / 客户端私有变量（如 `--primaryColor`、`--appSurface`）。
 - token 值中的 `var()` 只能引用本规范的其他 `--theme-*` token。
 - `@/` 只能引用当前主题包内资源，不能使用 `../` 越界。
@@ -76,7 +77,7 @@ my-theme/
 | `--theme-primary` | 品牌 / 强调色 |
 | `--theme-bg` | 应用背景，可半透明以透出壁纸 / iframe |
 | `--theme-text` | 主文字 |
-| `--theme-scheme` | `light` / `dark` |
+| `--theme-scheme` | 固定主题为 `light` / `dark`；system 主题分别在两个块中声明 `light` / `dark` |
 
 ### 4.2 基础与状态
 

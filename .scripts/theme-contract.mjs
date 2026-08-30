@@ -16,6 +16,7 @@ export const CLIENT_OWNED_COMPATIBILITY_TOKENS = contract.clientOwnedCompatibili
 const TOKEN_SET = new Set(THEME_TOKENS);
 const COMMENT_PATTERN = /\/\*[\s\S]*?\*\//g;
 const ROOT_BLOCK_PATTERN = /^\s*:root\s*\{([\s\S]*)\}\s*$/;
+const ADAPTIVE_THEME_PATTERN = /^\s*:root\s*\{([\s\S]*?)\}\s*@media\s*\(\s*prefers-color-scheme\s*:\s*dark\s*\)\s*\{\s*:root\s*\{([\s\S]*?)\}\s*\}\s*$/;
 const UNSAFE_VALUE_PATTERN = /[{}]|@import|expression\s*\(|javascript\s*:/i;
 const VARIABLE_REFERENCE_PATTERN = /var\(\s*(--[a-zA-Z0-9-]+)/g;
 
@@ -49,13 +50,9 @@ function splitDeclarations(rawDeclarations) {
     return declarations;
 }
 
-export function parseThemeCss(rawCss) {
-    const withoutComments = rawCss.replace(COMMENT_PATTERN, '');
-    const rootMatch = withoutComments.match(ROOT_BLOCK_PATTERN);
-    if (!rootMatch) throw new Error('必须且只能包含一个 :root 规则');
-
+function parseTokenBlock(rawDeclarations) {
     const tokens = new Map();
-    for (const declaration of splitDeclarations(rootMatch[1])) {
+    for (const declaration of splitDeclarations(rawDeclarations)) {
         const colonIndex = declaration.indexOf(':');
         if (colonIndex < 1) throw new Error(`声明格式错误: ${declaration}`);
         const token = declaration.slice(0, colonIndex).trim();
@@ -84,5 +81,24 @@ export function parseThemeCss(rawCss) {
     for (const token of REQUIRED_THEME_TOKENS) {
         if (!tokens.has(token)) throw new Error(`缺少必填 token: ${token}`);
     }
+    return tokens;
+}
+
+export function parseThemeCss(rawCss) {
+    const withoutComments = rawCss.replace(COMMENT_PATTERN, '');
+    const adaptiveMatch = withoutComments.match(ADAPTIVE_THEME_PATTERN);
+    const rootMatch = adaptiveMatch ? null : withoutComments.match(ROOT_BLOCK_PATTERN);
+    if (!adaptiveMatch && !rootMatch) throw new Error('必须且只能包含一个 :root 规则');
+    const tokens = parseTokenBlock(adaptiveMatch?.[1] ?? rootMatch?.[1] ?? '');
+    const darkTokens = adaptiveMatch ? parseTokenBlock(adaptiveMatch[2]) : undefined;
+    if (darkTokens && tokens.get('--theme-scheme') !== 'light') {
+        throw new Error('自适应主题的基础块必须为浅色');
+    }
+    if (darkTokens && darkTokens.get('--theme-scheme') !== 'dark') {
+        throw new Error('自适应主题的深色块必须为暗色');
+    }
+    // Keep the historical Map return shape for migration tools while exposing
+    // the optional adaptive dark block to validators and publishers.
+    tokens.darkTokens = darkTokens;
     return tokens;
 }

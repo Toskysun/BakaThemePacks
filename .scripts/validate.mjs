@@ -158,8 +158,8 @@ class ThemeValidator {
             this.error(`version 格式不符合 semver: "${config.version}"`);
         }
 
-        if (config.scheme && config.scheme !== 'light' && config.scheme !== 'dark') {
-            this.error(`scheme 必须是 light 或 dark（当前: ${config.scheme}）`);
+        if (config.scheme && config.scheme !== 'light' && config.scheme !== 'dark' && config.scheme !== 'system') {
+            this.error(`scheme 必须是 light、dark 或 system（当前: ${config.scheme}）`);
         }
         if (config.authorUrl && !/^https?:\/\//.test(config.authorUrl)) {
             this.error('authorUrl 必须是 http(s) URL');
@@ -249,7 +249,10 @@ class ThemeValidator {
 
         if (config?.scheme) {
             const cssScheme = tokens.get('--theme-scheme');
-            if (cssScheme !== config.scheme) {
+            const adaptive = Boolean(tokens.darkTokens);
+            if (config.scheme === 'system' && (!adaptive || cssScheme !== 'light')) {
+                this.error('system 主题必须包含深色 prefers-color-scheme 覆盖');
+            } else if (config.scheme !== 'system' && (cssScheme !== config.scheme || adaptive)) {
                 this.error(`config.scheme (${config.scheme}) 与 CSS --theme-scheme (${cssScheme}) 不一致`);
             }
         }

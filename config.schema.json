@@ -45,8 +45,8 @@
         },
         "scheme": {
             "type": "string",
-            "enum": ["light", "dark"],
-            "description": "对比基调，应与 --theme-scheme 一致"
+            "enum": ["light", "dark", "system"],
+            "description": "对比基调；system 主题需要在 index.css 中提供浅色 :root 与深色 prefers-color-scheme 覆盖"
         },
         "tags": {
             "type": "array",

@@ -101,7 +101,7 @@ themes/my-cool-theme/
 | `preview` | ✅ | 市场缩略图：`@/imgs/...` **或** 纯色 `#RRGGBB` / `#RGB` |
 | `description` | ✅ | 一句话介绍，建议 ≤ 200 字 |
 | `tags` | ✅ | 1～5 个标签，**必须**来自仓库根目录 [`tags.json`](../tags.json) 的 `label` |
-| `scheme` | ✅ | `light` 或 `dark`，必须与 CSS 中 `--theme-scheme` 一致 |
+| `scheme` | ✅ | `light` / `dark`，或 `system`（同一主题在设备明暗之间自动切换） |
 | `iframe` | 否 | 仅允许 `{ "app": "@/iframes/xxx.html" }` |
 | `authorUrl` | 否 | 作者主页（GitHub / 个人站等） |
 | `id` | ❌ 禁止 | 由仓库 `meta.json` 统一管理，**不要写进 config** |
@@ -125,11 +125,12 @@ themes/my-cool-theme/
 ### 4.1 铁律
 
 1. **只允许**在 `:root { ... }` 里声明 **契约内的** `--theme-*` 变量
-2. **禁止**任何其它选择器（`.xxx`、`#root`、`body`、`::-webkit-scrollbar` 等）
-3. **禁止** MusicFree 旧 token：`--color-*`、`--primaryColor`、`--backgroundColor` 等
-4. **禁止** `!important`、`@import` 和额外 CSS 规则
-5. 客户端会把 `--theme-*` 映射成内部的表面色、标题栏、侧栏、列表等
-6. `var()` 只能引用 [`theme-contract.json`](../theme-contract.json) 内其他公开 token
+2. `scheme: "system"` 主题可追加唯一的 `@media (prefers-color-scheme: dark) { :root { ... } }` 覆盖块
+3. **禁止**任何其它选择器（`.xxx`、`#root`、`body`、`::-webkit-scrollbar` 等）
+4. **禁止** MusicFree 旧 token：`--color-*`、`--primaryColor`、`--backgroundColor` 等
+5. **禁止** `!important`、`@import` 和额外 CSS 规则
+6. 客户端会把 `--theme-*` 映射成内部的表面色、标题栏、侧栏、列表等
+7. `var()` 只能引用 [`theme-contract.json`](../theme-contract.json) 内其他公开 token
 
 ### 4.2 必填 Token
 
@@ -138,7 +139,7 @@ themes/my-cool-theme/
 | `--theme-primary` | 品牌色 / 强调色（按钮高亮、进度、链接默认） | 主视觉色 |
 | `--theme-bg` | 主背景色 | 可半透明，便于透出视频壁纸 |
 | `--theme-text` | 主文字色 | 与背景对比度要够 |
-| `--theme-scheme` | 对比基调 | 只能是 `light` 或 `dark` |
+| `--theme-scheme` | 对比基调 | 单套主题为 `light` 或 `dark`；`system` 主题的基础块为 `light`、深色覆盖块为 `dark` |
 
 ### 4.3 基础推荐 Token
 

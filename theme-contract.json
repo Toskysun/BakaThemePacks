@@ -27,6 +27,7 @@
         "--theme-text-muted",
         "--theme-text-on-primary",
         "--theme-header-text",
+        "--theme-main-header-button-text",
         "--theme-link",
         "--theme-success",
         "--theme-warning",
