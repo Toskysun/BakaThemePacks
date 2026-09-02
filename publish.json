@@ -1,7 +1,29 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-09-02T04:32:40.362Z",
+  "updatedAt": "2026-09-02T04:58:51.969Z",
   "themes": [
+    {
+      "id": "HkUoMZWU8tXrDASNQCSTM",
+      "spec": "bakamusic-theme@2",
+      "name": "霁蓝",
+      "packageName": "blue",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "科技蓝色 system 自适应主题",
+      "version": "2.1.0",
+      "scheme": "system",
+      "tags": [
+        "亮色",
+        "暗色",
+        "简约"
+      ],
+      "preview": "#0e6ff0",
+      "themeUrl": "themes/blue-4f24f5a9fba0611944a98031df67af32.mftheme",
+      "hash": "4f24f5a9fba0611944a98031df67af32",
+      "publishName": "blue-4f24f5a9fba0611944a98031df67af32",
+      "createdAt": "2026-09-02T04:58:49.718Z",
+      "isNew": true
+    },
     {
       "id": "r_AKbwn3KPs25BvrTgMxW",
       "spec": "bakamusic-theme@2",
@@ -211,7 +233,7 @@
       "hash": "60eb8d2f29974071ae76f8bdd258d2ee",
       "publishName": "Aono-60eb8d2f29974071ae76f8bdd258d2ee",
       "createdAt": "2026-07-18T08:05:34.236Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "eMUzDBM1Jw6NTb-BMZxY_",
@@ -2012,6 +2034,7 @@
   ],
   "tagIndex": {
     "亮色": [
+      "HkUoMZWU8tXrDASNQCSTM",
       "r_AKbwn3KPs25BvrTgMxW",
       "0ugnXyvzhtM6FTA0Uw4iw",
       "6zOjrnTszS9u_VzZkmPef",
@@ -2022,6 +2045,7 @@
       "iTsBcAhCH5_TYByejTtFr"
     ],
     "暗色": [
+      "HkUoMZWU8tXrDASNQCSTM",
       "r_AKbwn3KPs25BvrTgMxW",
       "0ugnXyvzhtM6FTA0Uw4iw",
       "lNtxe3H3zIcmZWBGmQkx5",
@@ -2037,6 +2061,7 @@
       "_Cv5IxWH8WIUd24j-RQgy"
     ],
     "简约": [
+      "HkUoMZWU8tXrDASNQCSTM",
       "r_AKbwn3KPs25BvrTgMxW",
       "0ugnXyvzhtM6FTA0Uw4iw",
       "ntPbHKHNaMVheq6lYXiw7",
