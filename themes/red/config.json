@@ -1,0 +1,10 @@
+{
+  "spec": "bakamusic-theme@2",
+  "name": "朱砂.素笺墨韵",
+  "author": "your-name",
+  "version": "2.1.0",
+  "preview": "#c20c0c",
+  "description": "深红色 system 自适应主题",
+  "tags": ["亮色", "暗色", "简约"],
+  "scheme": "system"
+}
