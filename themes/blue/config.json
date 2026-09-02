@@ -1,0 +1,11 @@
+{
+  "spec": "bakamusic-theme@2",
+  "name": "霁蓝",
+  "author": "轻舟折枝",
+  "version": "2.1.0",
+  "preview": "#0e6ff0",
+  "description": "科技蓝色 system 自适应主题",
+  "tags": ["亮色", "暗色", "简约"],
+  "scheme": "system"
+}
+
