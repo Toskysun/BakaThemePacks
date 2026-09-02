@@ -1,7 +1,29 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-09-02T04:12:23.569Z",
+  "updatedAt": "2026-09-02T04:32:40.362Z",
   "themes": [
+    {
+      "id": "r_AKbwn3KPs25BvrTgMxW",
+      "spec": "bakamusic-theme@2",
+      "name": "朱砂.素笺墨韵",
+      "packageName": "red",
+      "author": "your-name",
+      "authorUrl": "",
+      "description": "深红色 system 自适应主题",
+      "version": "2.1.0",
+      "scheme": "system",
+      "tags": [
+        "亮色",
+        "暗色",
+        "简约"
+      ],
+      "preview": "#c20c0c",
+      "themeUrl": "themes/red-a26f9930063c6a14c143cd30eec18eeb.mftheme",
+      "hash": "a26f9930063c6a14c143cd30eec18eeb",
+      "publishName": "red-a26f9930063c6a14c143cd30eec18eeb",
+      "createdAt": "2026-09-02T04:32:38.167Z",
+      "isNew": true
+    },
     {
       "id": "0ugnXyvzhtM6FTA0Uw4iw",
       "spec": "bakamusic-theme@2",
@@ -209,7 +231,7 @@
       "hash": "47f8e369946d12c664514ac3f2e359c1",
       "publishName": "Xinhai-Flower-Moon-Serenity-47f8e369946d12c664514ac3f2e359c1",
       "createdAt": "2026-07-18T04:01:17.232Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "yzIQs1hMWaVrBQGNiCFh4",
@@ -1990,6 +2012,7 @@
   ],
   "tagIndex": {
     "亮色": [
+      "r_AKbwn3KPs25BvrTgMxW",
       "0ugnXyvzhtM6FTA0Uw4iw",
       "6zOjrnTszS9u_VzZkmPef",
       "ntPbHKHNaMVheq6lYXiw7",
@@ -1999,6 +2022,7 @@
       "iTsBcAhCH5_TYByejTtFr"
     ],
     "暗色": [
+      "r_AKbwn3KPs25BvrTgMxW",
       "0ugnXyvzhtM6FTA0Uw4iw",
       "lNtxe3H3zIcmZWBGmQkx5",
       "c3QosUgmSxseSLpgimmZm",
@@ -2013,6 +2037,7 @@
       "_Cv5IxWH8WIUd24j-RQgy"
     ],
     "简约": [
+      "r_AKbwn3KPs25BvrTgMxW",
       "0ugnXyvzhtM6FTA0Uw4iw",
       "ntPbHKHNaMVheq6lYXiw7",
       "ZNrObG67-6g0uHP4oWNkp",
