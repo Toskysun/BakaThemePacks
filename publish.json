@@ -1,7 +1,29 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-09-02T05:15:48.574Z",
+  "updatedAt": "2026-09-02T05:33:42.485Z",
   "themes": [
+    {
+      "id": "h6_NqZmsp-dLYxehnQJVT",
+      "spec": "bakamusic-theme@2",
+      "name": "桃色.春晓夜阑",
+      "packageName": "pink",
+      "author": "your-name",
+      "authorUrl": "",
+      "description": "胭脂｜古妆柔润玫桃色，明暗自适应简约主题",
+      "version": "2.1.0",
+      "scheme": "system",
+      "tags": [
+        "亮色",
+        "暗色",
+        "简约"
+      ],
+      "preview": "#FB7299",
+      "themeUrl": "themes/pink-1d6470840b4768c0a9bafff5692ae7e4.mftheme",
+      "hash": "1d6470840b4768c0a9bafff5692ae7e4",
+      "publishName": "pink-1d6470840b4768c0a9bafff5692ae7e4",
+      "createdAt": "2026-09-02T05:33:40.504Z",
+      "isNew": true
+    },
     {
       "id": "o9a2vFyR_s7Oo-sszAwqH",
       "spec": "bakamusic-theme@2",
@@ -211,7 +233,7 @@
       "hash": "d6e680c0bccf4519d3e5b419e19814bb",
       "publishName": "SakuraDream-d6e680c0bccf4519d3e5b419e19814bb",
       "createdAt": "2026-07-21T05:38:18.623Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "-Lir2ucnOnV3g4lN4_OHm",
@@ -2056,6 +2078,7 @@
   ],
   "tagIndex": {
     "亮色": [
+      "h6_NqZmsp-dLYxehnQJVT",
       "o9a2vFyR_s7Oo-sszAwqH",
       "HkUoMZWU8tXrDASNQCSTM",
       "r_AKbwn3KPs25BvrTgMxW",
@@ -2068,6 +2091,7 @@
       "iTsBcAhCH5_TYByejTtFr"
     ],
     "暗色": [
+      "h6_NqZmsp-dLYxehnQJVT",
       "o9a2vFyR_s7Oo-sszAwqH",
       "HkUoMZWU8tXrDASNQCSTM",
       "r_AKbwn3KPs25BvrTgMxW",
@@ -2085,6 +2109,7 @@
       "_Cv5IxWH8WIUd24j-RQgy"
     ],
     "简约": [
+      "h6_NqZmsp-dLYxehnQJVT",
       "o9a2vFyR_s7Oo-sszAwqH",
       "HkUoMZWU8tXrDASNQCSTM",
       "r_AKbwn3KPs25BvrTgMxW",
