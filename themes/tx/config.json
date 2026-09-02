@@ -1,0 +1,10 @@
+{
+  "spec": "bakamusic-theme@2",
+  "name": "tx-苔痕",
+  "author": "轻舟折枝",
+  "version": "2.1.0",
+  "preview": "@/imgs/preview.jpg",
+  "description": "清爽浅色主题",
+  "tags": ["纯色", "系统自适应"],
+  "scheme": "system"
+}
