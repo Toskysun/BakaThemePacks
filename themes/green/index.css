@@ -139,7 +139,7 @@
         /* 文字层级 */
         --theme-text-secondary: #94a3b8;
         --theme-text-muted: color-mix(in srgb, #e2e8f0 52%, transparent);
-        --theme-text-on-primary: #0f172a;
+        --theme-text-on-primary: #ffffff;
         --theme-header-text: var(--theme-text);
         --theme-main-header-button-text: var(--theme-text);
 
