@@ -1,7 +1,29 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-09-02T04:09:41.456Z",
+  "updatedAt": "2026-09-02T04:12:23.569Z",
   "themes": [
+    {
+      "id": "0ugnXyvzhtM6FTA0Uw4iw",
+      "spec": "bakamusic-theme@2",
+      "name": "清新绿",
+      "packageName": "green",
+      "author": "轻舟折枝",
+      "authorUrl": "",
+      "description": "清新绿色 system 自适应主题",
+      "version": "2.1.0",
+      "scheme": "system",
+      "tags": [
+        "亮色",
+        "暗色",
+        "简约"
+      ],
+      "preview": "#31c27c",
+      "themeUrl": "themes/green-26515c3aee14f8f4f415bf2977fdc868.mftheme",
+      "hash": "26515c3aee14f8f4f415bf2977fdc868",
+      "publishName": "green-26515c3aee14f8f4f415bf2977fdc868",
+      "createdAt": "2026-09-02T04:12:21.361Z",
+      "isNew": true
+    },
     {
       "id": "EFd-JnT5jfDEVkq-lGHEE",
       "spec": "bakamusic-theme@2",
@@ -207,7 +229,7 @@
       "hash": "a364c80bfa781ca36cdb8aead9cda343",
       "publishName": "Lonely-Cat-a364c80bfa781ca36cdb8aead9cda343",
       "createdAt": "2026-07-18T02:18:13.637Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "Up3Opjs8htTjTQzPxETOB",
@@ -1967,6 +1989,41 @@
     }
   ],
   "tagIndex": {
+    "亮色": [
+      "0ugnXyvzhtM6FTA0Uw4iw",
+      "6zOjrnTszS9u_VzZkmPef",
+      "ntPbHKHNaMVheq6lYXiw7",
+      "ZNrObG67-6g0uHP4oWNkp",
+      "zsG0fMhcwxEsyRsD02ET3",
+      "0vdPAd8oqGMBVtvrW8mk-",
+      "iTsBcAhCH5_TYByejTtFr"
+    ],
+    "暗色": [
+      "0ugnXyvzhtM6FTA0Uw4iw",
+      "lNtxe3H3zIcmZWBGmQkx5",
+      "c3QosUgmSxseSLpgimmZm",
+      "RV7s9TjIoi_OvkLDM5WSI",
+      "v7vpT4e0q0f5Aqv5GzyRI",
+      "OlWvJvWZo4M26UUpaXl-j",
+      "mRVCjtJYLf0EtFVuNYSpn",
+      "J5XSMFUeBTFxn51lMG0p5",
+      "EIY5V7tND8S8udI_qqAdO",
+      "Jh53eoHmKOL0lQOw7T4ji",
+      "RpUgsCFv2uNOQEpxaMfag",
+      "_Cv5IxWH8WIUd24j-RQgy"
+    ],
+    "简约": [
+      "0ugnXyvzhtM6FTA0Uw4iw",
+      "ntPbHKHNaMVheq6lYXiw7",
+      "ZNrObG67-6g0uHP4oWNkp",
+      "zsG0fMhcwxEsyRsD02ET3",
+      "0vdPAd8oqGMBVtvrW8mk-",
+      "fRQjhe9hvOUQ5de77ym0E",
+      "gpMpMQuj5zot53Ca_YlXF",
+      "iTsBcAhCH5_TYByejTtFr",
+      "Jh53eoHmKOL0lQOw7T4ji",
+      "RpUgsCFv2uNOQEpxaMfag"
+    ],
     "动态": [
       "EFd-JnT5jfDEVkq-lGHEE",
       "lNtxe3H3zIcmZWBGmQkx5",
@@ -2028,38 +2085,6 @@
       "fqDKd1xoZ6_flNjhsRi9T",
       "4C3iJxQc5o-9QEIF7Ih0_",
       "_Cv5IxWH8WIUd24j-RQgy"
-    ],
-    "暗色": [
-      "lNtxe3H3zIcmZWBGmQkx5",
-      "c3QosUgmSxseSLpgimmZm",
-      "RV7s9TjIoi_OvkLDM5WSI",
-      "v7vpT4e0q0f5Aqv5GzyRI",
-      "OlWvJvWZo4M26UUpaXl-j",
-      "mRVCjtJYLf0EtFVuNYSpn",
-      "J5XSMFUeBTFxn51lMG0p5",
-      "EIY5V7tND8S8udI_qqAdO",
-      "Jh53eoHmKOL0lQOw7T4ji",
-      "RpUgsCFv2uNOQEpxaMfag",
-      "_Cv5IxWH8WIUd24j-RQgy"
-    ],
-    "亮色": [
-      "6zOjrnTszS9u_VzZkmPef",
-      "ntPbHKHNaMVheq6lYXiw7",
-      "ZNrObG67-6g0uHP4oWNkp",
-      "zsG0fMhcwxEsyRsD02ET3",
-      "0vdPAd8oqGMBVtvrW8mk-",
-      "iTsBcAhCH5_TYByejTtFr"
-    ],
-    "简约": [
-      "ntPbHKHNaMVheq6lYXiw7",
-      "ZNrObG67-6g0uHP4oWNkp",
-      "zsG0fMhcwxEsyRsD02ET3",
-      "0vdPAd8oqGMBVtvrW8mk-",
-      "fRQjhe9hvOUQ5de77ym0E",
-      "gpMpMQuj5zot53Ca_YlXF",
-      "iTsBcAhCH5_TYByejTtFr",
-      "Jh53eoHmKOL0lQOw7T4ji",
-      "RpUgsCFv2uNOQEpxaMfag"
     ],
     "自然": [
       "ntPbHKHNaMVheq6lYXiw7",
