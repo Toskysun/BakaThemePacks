@@ -1,7 +1,29 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-09-02T04:58:51.969Z",
+  "updatedAt": "2026-09-02T05:15:48.574Z",
   "themes": [
+    {
+      "id": "o9a2vFyR_s7Oo-sszAwqH",
+      "spec": "bakamusic-theme@2",
+      "name": "赭金缃杏",
+      "packageName": "yellow",
+      "author": "your-name",
+      "authorUrl": "",
+      "description": "赭金｜取自传统矿物赭石，温润暖金，明暗自适应简约主题",
+      "version": "2.1.0",
+      "scheme": "system",
+      "tags": [
+        "亮色",
+        "暗色",
+        "简约"
+      ],
+      "preview": "#f5a623",
+      "themeUrl": "themes/yellow-7a209c31f9beb40f474455d12457fff0.mftheme",
+      "hash": "7a209c31f9beb40f474455d12457fff0",
+      "publishName": "yellow-7a209c31f9beb40f474455d12457fff0",
+      "createdAt": "2026-09-02T05:15:45.424Z",
+      "isNew": true
+    },
     {
       "id": "HkUoMZWU8tXrDASNQCSTM",
       "spec": "bakamusic-theme@2",
@@ -209,7 +231,7 @@
       "hash": "739b4be565a7d514dc0e78b30c583914",
       "publishName": "Water-Moon-739b4be565a7d514dc0e78b30c583914",
       "createdAt": "2026-07-19T10:53:28.868Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "ntPbHKHNaMVheq6lYXiw7",
@@ -2034,6 +2056,7 @@
   ],
   "tagIndex": {
     "亮色": [
+      "o9a2vFyR_s7Oo-sszAwqH",
       "HkUoMZWU8tXrDASNQCSTM",
       "r_AKbwn3KPs25BvrTgMxW",
       "0ugnXyvzhtM6FTA0Uw4iw",
@@ -2045,6 +2068,7 @@
       "iTsBcAhCH5_TYByejTtFr"
     ],
     "暗色": [
+      "o9a2vFyR_s7Oo-sszAwqH",
       "HkUoMZWU8tXrDASNQCSTM",
       "r_AKbwn3KPs25BvrTgMxW",
       "0ugnXyvzhtM6FTA0Uw4iw",
@@ -2061,6 +2085,7 @@
       "_Cv5IxWH8WIUd24j-RQgy"
     ],
     "简约": [
+      "o9a2vFyR_s7Oo-sszAwqH",
       "HkUoMZWU8tXrDASNQCSTM",
       "r_AKbwn3KPs25BvrTgMxW",
       "0ugnXyvzhtM6FTA0Uw4iw",
