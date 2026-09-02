@@ -1,0 +1,253 @@
+/* bakamusic-theme@2 — semantic token pack
+主色：rgb(49, 194, 124) 清新绿
+遵循 BakaThemePacks V2.1 写作规范
+*/
+:root {
+    /* ========== 四大必填 Token ========== */
+    --theme-primary: rgb(49, 194, 124);
+    --theme-primary-hover: color-mix(in srgb, var(--theme-primary) 86%, #08703c);
+    --theme-primary-active: color-mix(in srgb, var(--theme-primary) 72%, #044d29);
+    --theme-bg: #f0f4f8;
+    --theme-text: #1e293b;
+    --theme-scheme: light;
+
+    /* ========== 文字层级 ========== */
+    --theme-text-secondary: #64748b;
+    --theme-text-muted: color-mix(in srgb, #1e293b 52%, transparent);
+    --theme-text-on-primary: #ffffff;
+    --theme-header-text: var(--theme-text);
+    --theme-main-header-button-text: var(--theme-text);
+
+    /* ========== 链接、状态色 ========== */
+    --theme-link: var(--theme-primary);
+    --theme-success: #34c759;
+    --theme-warning: #ff9500;
+    --theme-danger: #ff3b30;
+    --theme-info: #007aff;
+
+    /* ========== 分割线、遮罩、占位、玻璃参数 ========== */
+    --theme-divider: rgba(30, 41, 59, 0.12);
+    --theme-mask: rgba(0, 0, 0, 0.45);
+    --theme-placeholder: #cbd5e1;
+    --theme-surface-alpha: 0.96;
+    --theme-blur: 12px;
+
+    /* ========== 三层Surface面板 ========== */
+    --theme-surface: rgba(255, 255, 255, 0.85);
+    --theme-surface-strong: #ffffff;
+    --theme-surface-muted: rgba(241, 245, 249, 0.88);
+    --theme-surface-border: color-mix(in srgb, #1e293b 10%, transparent);
+    --theme-surface-border-strong: color-mix(in srgb, #1e293b 18%, transparent);
+
+    /* ========== 阴影 ========== */
+    --theme-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    --theme-shadow-soft: 0 1px 6px rgba(0, 0, 0, 0.04);
+
+    /* ========== 交互三态 ========== */
+    --theme-interactive: rgba(30, 41, 59, 0.05);
+    --theme-interactive-hover: color-mix(in srgb, var(--theme-primary) 10%, transparent);
+    --theme-interactive-active: color-mix(in srgb, var(--theme-primary) 16%, transparent);
+
+    /* ========== 页面背景 ========== */
+    --theme-page-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.5), transparent);
+
+    /* ========== 卡片 ========== */
+    --theme-card-bg: #ffffff;
+    --theme-card-bg-hover: #f8fafc;
+    --theme-card-border: color-mix(in srgb, #1e293b 8%, transparent);
+
+    /* ========== 顶部头部 ========== */
+    --theme-header-bg: rgba(240, 244, 248, 0.85);
+    --theme-header-border: color-mix(in srgb, #1e293b 8%, transparent);
+    --theme-header-control-bg: rgba(30, 41, 59, 0.05);
+    --theme-header-control-hover-bg: rgba(30, 41, 59, 0.1);
+    --theme-header-search-bg: rgba(30, 41, 59, 0.04);
+    --theme-header-search-border: color-mix(in srgb, #1e293b 10%, transparent);
+
+    /* ========== 侧边栏 ========== */
+    --theme-sidebar-bg: rgba(248, 250, 252, 0.85);
+    --theme-sidebar-text: #1e293b;
+    --theme-sidebar-text-secondary: #64748b;
+    --theme-sidebar-text-muted: color-mix(in srgb, #1e293b 48%, transparent);
+    --theme-sidebar-border: color-mix(in srgb, #1e293b 8%, transparent);
+    --theme-sidebar-item-hover: color-mix(in srgb, var(--theme-primary) 8%, transparent);
+    --theme-sidebar-item-active: color-mix(in srgb, var(--theme-primary) 14%, transparent);
+    --theme-sidebar-item-active-border: var(--theme-primary);
+
+    /* ========== 底部播放栏 ========== */
+    --theme-player-bg: rgba(240, 244, 248, 0.92);
+    --theme-player-bg-alt: rgba(248, 250, 252, 0.88);
+    --theme-player-text: #1e293b;
+    --theme-player-text-secondary: #64748b;
+    --theme-player-accent: var(--theme-primary);
+    --theme-player-text-on-accent: var(--theme-text-on-primary);
+    --theme-player-border: color-mix(in srgb, #1e293b 8%, transparent);
+
+    /* ========== 歌曲列表 ========== */
+    --theme-list-bg: transparent;
+    --theme-list-row-bg: transparent;
+    --theme-list-row-alt-bg: rgba(30, 41, 59, 0.02);
+    --theme-list-row-hover-bg: color-mix(in srgb, var(--theme-primary) 6%, transparent);
+    --theme-list-row-active-bg: color-mix(in srgb, var(--theme-primary) 12%, transparent);
+    --theme-list-row-border: color-mix(in srgb, #1e293b 6%, transparent);
+
+    /* ========== 设置面板 ========== */
+    --theme-panel-bg: #ffffff;
+    --theme-panel-text: #1e293b;
+    --theme-panel-text-secondary: #64748b;
+    --theme-panel-border: color-mix(in srgb, #1e293b 10%, transparent);
+    --theme-panel-row-bg: transparent;
+    --theme-panel-row-hover-bg: color-mix(in srgb, var(--theme-primary) 6%, transparent);
+    --theme-panel-row-border: color-mix(in srgb, #1e293b 6%, transparent);
+
+    /* ========== 输入框 ========== */
+    --theme-input-bg: #ffffff;
+    --theme-input-bg-hover: #f8fafc;
+    --theme-input-border: color-mix(in srgb, #1e293b 14%, transparent);
+    --theme-input-border-active: var(--theme-primary);
+
+    /* ========== 下拉气泡 ========== */
+    --theme-popover-bg: #ffffff;
+    --theme-popover-text: #1e293b;
+    --theme-popover-text-secondary: #64748b;
+    --theme-popover-border: color-mix(in srgb, #1e293b 10%, transparent);
+
+    /* ========== 背景图、滚动条 ========== */
+    --theme-bg-image: none;
+    --theme-scrollbar-track: transparent;
+    --theme-scrollbar-thumb: #94a3b8;
+    --theme-scrollbar-thumb-hover: var(--theme-primary-hover);
+    --theme-scrollbar-thumb-active: var(--theme-primary-active);
+
+    /* ========== 圆角尺寸 ========== */
+    --theme-radius-control: 6px;
+    --theme-radius-card: 10px;
+    --theme-radius-panel: 12px;
+    --theme-radius-cover: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* 必填四项 dark */
+        --theme-primary: rgb(49, 194, 124);
+        --theme-primary-hover: color-mix(in srgb, var(--theme-primary) 82%, #222);
+        --theme-primary-active: color-mix(in srgb, var(--theme-primary) 68%, #000);
+        --theme-bg: #17202a;
+        --theme-text: #e2e8f0;
+        --theme-scheme: dark;
+
+        /* 文字层级 */
+        --theme-text-secondary: #94a3b8;
+        --theme-text-muted: color-mix(in srgb, #e2e8f0 52%, transparent);
+        --theme-text-on-primary: #0f172a;
+        --theme-header-text: var(--theme-text);
+        --theme-main-header-button-text: var(--theme-text);
+
+        /* 链接、状态色 */
+        --theme-link: var(--theme-primary);
+        --theme-success: #30d158;
+        --theme-warning: #ff9f0a;
+        --theme-danger: #ff453a;
+        --theme-info: #0a84ff;
+
+        /* 分割线、遮罩、占位、玻璃参数 */
+        --theme-divider: rgba(226, 232, 240, 0.12);
+        --theme-mask: rgba(0, 0, 0, 0.60);
+        --theme-placeholder: #334155;
+        --theme-surface-alpha: 0.96;
+        --theme-blur: 12px;
+
+        /* 三层Surface面板 dark */
+        --theme-surface: rgba(30, 41, 59, 0.88);
+        --theme-surface-strong: #1e293b;
+        --theme-surface-muted: rgba(26, 32, 44, 0.82);
+        --theme-surface-border: rgba(226, 232, 240, 0.12);
+        --theme-surface-border-strong: rgba(226, 232, 240, 0.2);
+
+        /* 阴影 dark */
+        --theme-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+        --theme-shadow-soft: 0 1px 6px rgba(0, 0, 0, 0.16);
+
+        /* 交互三态 dark */
+        --theme-interactive: rgba(226, 232, 240, 0.07);
+        --theme-interactive-hover: color-mix(in srgb, var(--theme-primary) 14%, transparent);
+        --theme-interactive-active: color-mix(in srgb, var(--theme-primary) 20%, transparent);
+
+        /* 页面背景 dark */
+        --theme-page-bg: radial-gradient(circle at top left, rgba(49, 194, 124, 0.1), transparent 34%), linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
+
+        /* 卡片 dark */
+        --theme-card-bg: #1e293b;
+        --theme-card-bg-hover: #273449;
+        --theme-card-border: rgba(226, 232, 240, 0.08);
+
+        /* 顶部头部 dark */
+        --theme-header-bg: rgba(23, 32, 42, 0.85);
+        --theme-header-border: rgba(226, 232, 240, 0.08);
+        --theme-header-control-bg: rgba(226, 232, 240, 0.06);
+        --theme-header-control-hover-bg: rgba(226, 232, 240, 0.12);
+        --theme-header-search-bg: rgba(226, 232, 240, 0.05);
+        --theme-header-search-border: rgba(226, 232, 240, 0.1);
+
+        /* 侧边栏 dark */
+        --theme-sidebar-bg: rgba(20, 28, 38, 0.88);
+        --theme-sidebar-text: #e2e8f0;
+        --theme-sidebar-text-secondary: #94a3b8;
+        --theme-sidebar-text-muted: color-mix(in srgb, #e2e8f0 48%, transparent);
+        --theme-sidebar-border: rgba(226, 232, 240, 0.08);
+        --theme-sidebar-item-hover: color-mix(in srgb, var(--theme-primary) 8%, transparent);
+        --theme-sidebar-item-active: color-mix(in srgb, var(--theme-primary) 14%, transparent);
+        --theme-sidebar-item-active-border: var(--theme-primary);
+
+        /* 底部播放栏 dark */
+        --theme-player-bg: rgba(23, 32, 42, 0.92);
+        --theme-player-bg-alt: rgba(20, 28, 38, 0.88);
+        --theme-player-text: #e2e8f0;
+        --theme-player-text-secondary: #94a3b8;
+        --theme-player-accent: var(--theme-primary);
+        --theme-player-text-on-accent: var(--theme-text-on-primary);
+        --theme-player-border: rgba(226, 232, 240, 0.08);
+
+        /* 歌曲列表 dark */
+        --theme-list-bg: transparent;
+        --theme-list-row-bg: transparent;
+        --theme-list-row-alt-bg: rgba(226, 232, 240, 0.02);
+        --theme-list-row-hover-bg: color-mix(in srgb, var(--theme-primary) 6%, transparent);
+        --theme-list-row-active-bg: color-mix(in srgb, var(--theme-primary) 12%, transparent);
+        --theme-list-row-border: rgba(226, 232, 240, 0.06);
+
+        /* 设置面板 dark */
+        --theme-panel-bg: #1e293b;
+        --theme-panel-text: #e2e8f0;
+        --theme-panel-text-secondary: #94a3b8;
+        --theme-panel-border: rgba(226, 232, 240, 0.1);
+        --theme-panel-row-bg: transparent;
+        --theme-panel-row-hover-bg: color-mix(in srgb, var(--theme-primary) 6%, transparent);
+        --theme-panel-row-border: rgba(226, 232, 240, 0.06);
+
+        /* 输入框 dark */
+        --theme-input-bg: #1e293b;
+        --theme-input-bg-hover: #273449;
+        --theme-input-border: rgba(226, 232, 240, 0.14);
+        --theme-input-border-active: var(--theme-primary);
+
+        /* 下拉气泡 dark */
+        --theme-popover-bg: #1e293b;
+        --theme-popover-text: #e2e8f0;
+        --theme-popover-text-secondary: #94a3b8;
+        --theme-popover-border: rgba(226, 232, 240, 0.1);
+
+        /* 背景图、滚动条 dark */
+        --theme-bg-image: none;
+        --theme-scrollbar-track: transparent;
+        --theme-scrollbar-thumb: rgba(226, 232, 240, 0.34);
+        --theme-scrollbar-thumb-hover: var(--theme-primary-hover);
+        --theme-scrollbar-thumb-active: var(--theme-primary-active);
+
+        /* 圆角尺寸 dark */
+        --theme-radius-control: 6px;
+        --theme-radius-card: 10px;
+        --theme-radius-panel: 12px;
+        --theme-radius-cover: 8px;
+    }
+}
